@@ -372,6 +372,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to use
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -459,6 +468,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to use
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -535,6 +553,29 @@
 <li>Missing pull-up ⇒ bogus 85 °C/127 °C readings.</li>
 <li>Wrong color codes on cheap probes; check with a meter.</li>
 </ul>
+<h2 id="how-to-use">How to use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
+<pre><code class="language-cpp">// ESP32 + DS18B20 (Arduino)
+// Wiring: DS18B20 DQ -&gt; GPIO 4, 4.7k pull-up from DQ to 3.3V
+#include &lt;OneWire.h&gt;
+#include &lt;DallasTemperature.h&gt;
+
+constexpr int ONE_WIRE_BUS = 4;  // change if you use another pin
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&amp;oneWire);
+
+void setup() {
+  Serial.begin(115200);
+  sensors.begin();
+  sensors.setResolution(12);     // 9..12 bits (12 = ~750 ms conversion)
+}
+
+void loop() {
+  sensors.requestTemperatures(); // blocks until conversion done
+  float t = sensors.getTempCByIndex(0); // first sensor on the bus
+  Serial.printf(&quot;T = %.2f °C\n&quot;, t);
+  delay(1000);
+}
+</code></pre>
 <hr />
 <p><em>QR for printing will appear here after you run the script:</em></p>
 <p><img alt="QR sticker" src="../stickers/TS001.png" /></p>
