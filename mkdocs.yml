@@ -1,0 +1,13 @@
+site_name: Electronics Catalog
+site_url: https://thibserot.github.io/electronics-catalog/
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Components:
+      - TS001: TS001.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
