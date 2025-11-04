@@ -2,10 +2,21 @@ site_name: Electronics Catalog
 site_url: https://thibserot.github.io/electronics-catalog/
 theme:
   name: material
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md   # auto-builds a tag index at /tags/
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
 nav:
   - Home: index.md
+  - Browse by tag: tags.md
   - Components:
-      - TS001: TS001.md
+      - TS001.md
 markdown_extensions:
   - admonition
   - toc:

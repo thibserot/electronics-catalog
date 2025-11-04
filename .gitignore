@@ -1,0 +1,16 @@
+# MkDocs build output
+site/
+
+# Python / venv stuff
+.venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# OS junk
+.DS_Store
+Thumbs.db
+

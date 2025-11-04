@@ -1,2 +1,3 @@
 id,name,url,label_png
-TS001,DS18B20,https://<yourname>.github.io/electronics-catalog/TS001/,docs/stickers/TS001.png
+TS001,DS18B20,https://thibserot.github.io/electronics-catalog/TS001/,stickers/TS001.png
+tags,tags,https://thibserot.github.io/electronics-catalog/tags/,stickers/tags.png
