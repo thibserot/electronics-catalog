@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://thibserot.github.io/electronics-catalog/ENV001/">
+        <link rel="canonical" href="https://thibserot.github.io/electronics-catalog/AC001/">
       
       
-        <link rel="prev" href="../TS001/">
+        <link rel="prev" href="../ENV001/">
       
-      
-        <link rel="next" href="../AC001/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>BME280 / BMP280 - Electronics Catalog</title>
+        <title>AOD4184 MOSFET - Electronics Catalog</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bme280-bmp280-env001" class="md-skip">
+        <a href="#aod4184-d4184-mosfet-module-ac001" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BME280 / BMP280
+              AOD4184 MOSFET
             
           </span>
         </div>
@@ -300,6 +298,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../ENV001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BME280 / BMP280
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -317,7 +338,7 @@
   
   
   <span class="md-ellipsis">
-    BME280 / BMP280
+    AOD4184 MOSFET
     
   </span>
   
@@ -330,7 +351,7 @@
   
   
   <span class="md-ellipsis">
-    BME280 / BMP280
+    AOD4184 MOSFET
     
   </span>
   
@@ -371,18 +392,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pinout-addresses-common-breakout-labels" class="md-nav__link">
+  <a href="#typical-pinout-varies-by-seller" class="md-nav__link">
     <span class="md-ellipsis">
-      Pinout &amp; Addresses (common breakout labels)
+      Typical Pinout (varies by seller)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wiring-esp32-i2c" class="md-nav__link">
+  <a href="#wiring-esp32-12-v-fan-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Wiring (ESP32 • I²C)
+      Wiring (ESP32 → 12 V fan example)
     </span>
   </a>
   
@@ -398,9 +419,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-arduino-auto-detect-bme-vs-bmp" class="md-nav__link">
+  <a href="#code-easiest-5s-on-5s-off-esp32-arduino" class="md-nav__link">
     <span class="md-ellipsis">
-      How to use (Arduino • auto-detect BME vs BMP)
+      Code — Easiest: 5s ON, 5s OFF (ESP32 / Arduino)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-x-power-without-audible-whine-slow-time-proportioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code - "x% power" without audible whine (slow time-proportioning)
     </span>
   </a>
   
@@ -410,29 +440,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../AC001/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AOD4184 MOSFET
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -490,18 +497,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pinout-addresses-common-breakout-labels" class="md-nav__link">
+  <a href="#typical-pinout-varies-by-seller" class="md-nav__link">
     <span class="md-ellipsis">
-      Pinout &amp; Addresses (common breakout labels)
+      Typical Pinout (varies by seller)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wiring-esp32-i2c" class="md-nav__link">
+  <a href="#wiring-esp32-12-v-fan-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Wiring (ESP32 • I²C)
+      Wiring (ESP32 → 12 V fan example)
     </span>
   </a>
   
@@ -517,9 +524,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-arduino-auto-detect-bme-vs-bmp" class="md-nav__link">
+  <a href="#code-easiest-5s-on-5s-off-esp32-arduino" class="md-nav__link">
     <span class="md-ellipsis">
-      How to use (Arduino • auto-detect BME vs BMP)
+      Code — Easiest: 5s ON, 5s OFF (ESP32 / Arduino)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-x-power-without-audible-whine-slow-time-proportioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code - "x% power" without audible whine (slow time-proportioning)
     </span>
   </a>
   
@@ -544,168 +560,112 @@
       
       
       
-        <a href="../tags/#tag:digital" class="md-tag">digital</a>
+        <a href="../tags/#tag:3v3-logic" class="md-tag">3v3-logic</a>
       
     
       
       
       
-        <a href="../tags/#tag:humidity" class="md-tag">humidity</a>
+        <a href="../tags/#tag:low-side-switch" class="md-tag">low-side-switch</a>
       
     
       
       
       
-        <a href="../tags/#tag:i2c" class="md-tag">i2c</a>
+        <a href="../tags/#tag:mosfet" class="md-tag">mosfet</a>
       
     
       
       
       
-        <a href="../tags/#tag:pressure" class="md-tag">pressure</a>
-      
-    
-      
-      
-      
-        <a href="../tags/#tag:sensor" class="md-tag">sensor</a>
-      
-    
-      
-      
-      
-        <a href="../tags/#tag:spi" class="md-tag">spi</a>
-      
-    
-      
-      
-      
-        <a href="../tags/#tag:temperature" class="md-tag">temperature</a>
+        <a href="../tags/#tag:relay" class="md-tag">relay</a>
       
     
   </nav>
 
 
 
-<h1 id="bme280-bmp280-env001">BME280 / BMP280 — ENV001<a class="headerlink" href="#bme280-bmp280-env001" title="Permanent link">&para;</a></h1>
-<p><strong>Aliases:</strong> Bosch BME280 / BMP280 (common breakouts: CJMCU, GY-BME280, GY-BMP280)<br />
-<strong>Category:</strong> ENV</p>
+<h1 id="aod4184-d4184-mosfet-module-ac001">AOD4184 (D4184) MOSFET Module — AC001<a class="headerlink" href="#aod4184-d4184-mosfet-module-ac001" title="Permanent link">&para;</a></h1>
+<p><strong>Aliases:</strong> D4184 / AOD4184 “MOSFET relay” module (various vendors)<br />
+<strong>Category:</strong> AC</p>
 <h2 id="quick-facts">Quick Facts<a class="headerlink" href="#quick-facts" title="Permanent link">&para;</a></h2>
 <ul>
-<li>BME280: Temperature, <strong>Humidity</strong>, Pressure.  </li>
-<li>BMP280: Temperature, Pressure (<strong>no humidity</strong>).  </li>
-<li><strong>Buses:</strong> I²C or SPI • <strong>I²C addrs:</strong> <code>0x76</code> (default) / <code>0x77</code> (SDO high)  </li>
-<li><strong>Voltage (chip):</strong> 1.71–3.6 V • Most breakouts accept 3.3 V (some are 5 V-tolerant via onboard LDO/level shifting).  </li>
-<li><strong>Typical accuracy:</strong> T ±1.0 °C (can be improved with calibration), RH ±3% (BME280), Pressure ±1 hPa.</li>
+<li><strong>Type:</strong> N-channel MOSFET low-side switch (module). You put the <strong>load between <code>LOAD</code> and <code>+</code></strong>, the module <strong>switches the ground</strong> side.  </li>
+<li><strong>Logic:</strong> Accepts MCU input (3.3–5 V on most modules)</li>
+<li><strong>Current:</strong> Marketing says “50 A”, but real-world continuous is ~<strong>10 A @ 12 V</strong> without extra heatsinking due to PCB thermal limits.</li>
 </ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Tutorial:</strong> <a href="https://randomnerdtutorials.com/esp32-bme280-arduino-ide-pressure-temperature-humidity/">Random Nerd Tutorials</a></li>
-<li><strong>Where to buy:</strong> <a href="https://www.aliexpress.com/item/1005007274304296.html?spm=a2g0o.order_list.order_list_main.15.1b4918025rXc9J">AliExpress</a></li>
-<li><strong>Datasheets:</strong>  <ul>
-<li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf">BME280 (Bosch)</a>  </li>
-<li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf">BMP280 (Bosch)</a></li>
+<li><strong>Where to buy:</strong> <a href="https://www.aliexpress.com/item/1005008686365002.html">AliExpress</a>  </li>
 </ul>
-</li>
-</ul>
-<h2 id="pinout-addresses-common-breakout-labels">Pinout &amp; Addresses (common breakout labels)<a class="headerlink" href="#pinout-addresses-common-breakout-labels" title="Permanent link">&para;</a></h2>
+<h2 id="typical-pinout-varies-by-seller">Typical Pinout (varies by seller)<a class="headerlink" href="#typical-pinout-varies-by-seller" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>VIN / 3V3</strong> (power), <strong>GND</strong>  </li>
-<li><strong>SDA</strong>, <strong>SCL</strong> (I²C)  </li>
-<li><strong>SDO</strong> (I²C addr select): low→<code>0x76</code>, high→<code>0x77</code>  </li>
-<li><strong>CSB</strong>, <strong>SCK</strong>, <strong>SDI</strong>, <strong>SDO</strong> (SPI mode on some boards)</li>
+<li><strong>Power side:</strong> <code>+</code> (to supply +), <code>LOAD</code> (to load’s negative end), <code>-</code> must be connected to supply - and GND of esp</li>
+<li><strong>Control side:</strong> <code>PWM</code>: Connect to GPIO, <code>GND</code>: Connect to GND from esp. </li>
+</ul>
+<h2 id="wiring-esp32-12-v-fan-example">Wiring (ESP32 → 12 V fan example)<a class="headerlink" href="#wiring-esp32-12-v-fan-example" title="Permanent link">&para;</a></h2>
+<ul>
+<li>12 V <strong>+</strong> → <strong>+</strong> on module, 12 V <strong>−</strong> → module <strong>GND</strong> (power ground).  </li>
+<li>Fan <strong>+</strong> → 12 V <strong>+</strong>; fan <strong>−</strong> → <strong>LOAD</strong> on module.  </li>
+<li>ESP32 <strong>GPIO</strong> (e.g., <code>GPIO 23</code>) → <strong>PWM</strong> on module; ESP32 <strong>GND</strong> → module <strong>GND</strong>.  </li>
 </ul>
 <blockquote>
-<p>Many boards expose both I²C and SPI; leave <strong>CSB</strong> high for I²C.<br />
-For I²C on ESP32, default pins are <strong>GPIO21 (SDA)</strong> / <strong>GPIO22 (SCL)</strong> unless you choose others.</p>
+<p><strong>Remember:</strong> Load goes <strong>between <code>LOAD</code> and <code>+</code></strong>. The module sinks current to ground (low-side).</p>
 </blockquote>
-<h2 id="wiring-esp32-i2c">Wiring (ESP32 • I²C)<a class="headerlink" href="#wiring-esp32-i2c" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>VIN → 3.3 V</strong>, <strong>GND → GND</strong>  </li>
-<li><strong>SDA → GPIO 21</strong>, <strong>SCL → GPIO 22</strong>  </li>
-<li>If you have bus errors on long cables, drop I²C speed (e.g., 100 kHz) and use ~4.7 kΩ pull-ups to 3.3 V.</li>
-</ul>
-<p><img alt="BME280" src="../components/ENV001.png" />
-(Credit: <a href="https://randomnerdtutorials.com/esp32-bme280-arduino-ide-pressure-temperature-humidity/">Random Nerd Tutorials</a>)</p>
+<p><img alt="AOD4184" src="../components/AC001.png" /></p>
 <h2 id="gotchas">Gotchas<a class="headerlink" href="#gotchas" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Clone confusion:</strong> Many boards marked “BME280” actually carry <strong>BMP280</strong> (no RH). Check chip ID: <strong>BME280 = 0x60</strong>, <strong>BMP280 = 0x58</strong>.</li>
-<li><strong>Address mismatch:</strong> If <code>0x76</code> fails, try <code>0x77</code> (tie SDO high or use the solder-jumper).</li>
-<li><strong>Voltage:</strong> Some cheap boards are <strong>3.3 V only</strong> (no regulator/level shifter). Feeding 5 V can kill the sensor—inspect the PCB.</li>
-<li><strong>Condensation:</strong> For accurate RH, avoid mounting where moisture condenses; add a small vented enclosure and allow airflow.</li>
-<li><strong>Humidity reads 0 or NAN:</strong> You likely have a <strong>BMP280</strong> or a mislabeled breakout; check the chip ID.</li>
+<li><strong>Audible ringing with PWM:</strong> Buzz often comes from the load/PSU when you PWM in the <strong>audible band (&lt;20 kHz)</strong>. Two easy fixes: use <strong>time-proportioning (slow duty cycling)</strong> with multi-second periods (see example below) or push PWM <strong>&gt;20 kHz</strong>.</li>
 </ul>
-<h2 id="how-to-use-arduino-auto-detect-bme-vs-bmp">How to use (Arduino • auto-detect BME vs BMP)<a class="headerlink" href="#how-to-use-arduino-auto-detect-bme-vs-bmp" title="Permanent link">&para;</a></h2>
-<pre><code class="language-cpp">// ESP32 + BME280/BMP280 (I2C) — auto-detect, prints RH only if BME280
-// Libraries (Library Manager): Adafruit BME280, Adafruit BMP280, Adafruit Unified Sensor
-#include &lt;Wire.h&gt;
-#include &lt;Adafruit_BME280.h&gt;
-#include &lt;Adafruit_BMP280.h&gt;
-
-#define SDA_PIN 21
-#define SCL_PIN 22
-
-Adafruit_BME280 bme;   // for BME280
-Adafruit_BMP280 bmp;   // for BMP280
-bool hasBME = false;
-bool hasBMP = false;
-
-bool beginAt(uint8_t addr) {
-  if (bme.begin(addr)) { hasBME = true; return true; }
-  if (bmp.begin(addr)) { hasBMP = true; return true; }
-  return false;
-}
+<hr />
+<h2 id="code-easiest-5s-on-5s-off-esp32-arduino">Code — Easiest: 5s ON, 5s OFF (ESP32 / Arduino)<a class="headerlink" href="#code-easiest-5s-on-5s-off-esp32-arduino" title="Permanent link">&para;</a></h2>
+<pre><code class="language-cpp">// AC001: D4184 / AOD4184 module test — 5s ON, 5s OFF
+// Wire: ESP32 GPIO 23 -&gt; IN, GNDs common
+const int RELAY_PIN = 23;
 
 void setup() {
-  Serial.begin(115200);
-  Wire.begin(SDA_PIN, SCL_PIN);     // you can also Wire.setClock(100000);
-
-  // Try 0x76 then 0x77
-  if (!beginAt(0x76) &amp;&amp; !beginAt(0x77)) {
-    Serial.println(&quot;Sensor not found at 0x76/0x77. Check wiring/address.&quot;);
-    while (1) delay(10);
-  }
-
-  if (hasBME) {
-    // Oversampling settings (balance noise vs. power/latency)
-    bme.setSampling(Adafruit_BME280::MODE_NORMAL,
-                    Adafruit_BME280::SAMPLING_X2,   // Temp
-                    Adafruit_BME280::SAMPLING_X2,   // Hum
-                    Adafruit_BME280::SAMPLING_X4,   // Pressure
-                    Adafruit_BME280::FILTER_X4,
-                    Adafruit_BME280::STANDBY_MS_125);
-    Serial.println(&quot;BME280 ready (T/RH/Pressure).&quot;);
-  } else {
-    bmp.setSampling(Adafruit_BMP280::MODE_NORMAL,
-                    Adafruit_BMP280::SAMPLING_X2,   // Temp
-                    Adafruit_BMP280::SAMPLING_X4,   // Pressure
-                    Adafruit_BMP280::FILTER_X4,
-                    Adafruit_BMP280::STANDBY_MS_125);
-    Serial.println(&quot;BMP280 ready (T/Pressure).&quot;);
-  }
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, LOW); // start OFF
 }
-
-float seaLevelhPa = 1013.25;  // set to your local sea-level pressure for altitude calc
 
 void loop() {
-  if (hasBME) {
-    float t = bme.readTemperature();           // °C
-    float h = bme.readHumidity();              // %
-    float p = bme.readPressure() / 100.0F;     // hPa
-    float alt = bme.readAltitude(seaLevelhPa); // meters
-    Serial.printf(&quot;T=%.2f°C  RH=%.1f%%  P=%.2f hPa  Alt≈%.1f m\n&quot;, t, h, p, alt);
-  } else {
-    float t = bmp.readTemperature();           // °C
-    float p = bmp.readPressure() / 100.0F;     // hPa
-    float alt = bmp.readAltitude(seaLevelhPa); // meters
-    Serial.printf(&quot;T=%.2f°C  P=%.2f hPa  Alt≈%.1f m\n&quot;, t, p, alt);
-  }
-  delay(1000);
+  digitalWrite(RELAY_PIN, HIGH); // ON
+  delay(5000);
+  digitalWrite(RELAY_PIN, LOW);  // OFF
+  delay(5000);
 }
+</code></pre>
+<h2 id="code-x-power-without-audible-whine-slow-time-proportioning">Code - "x% power" without audible whine (slow time-proportioning)<a class="headerlink" href="#code-x-power-without-audible-whine-slow-time-proportioning" title="Permanent link">&para;</a></h2>
+<pre><code class="language-cpp">// AC001: Time-proportioning control (TPC) with a long period (no audible PWM)
+const int RELAY_PIN = 23;
+
+// set desired power level (0–100)
+int power_percent = 30;           // e.g., 30% average power
+const unsigned long PERIOD_MS = 10000; // 10s cycle
+
+void setup() {
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, LOW);
+}
+
+void loop() {
+  unsigned long on_ms  = (PERIOD_MS * power_percent) / 100;
+  unsigned long off_ms = PERIOD_MS - on_ms;
+
+  if (on_ms &gt; 0) {
+    digitalWrite(RELAY_PIN, HIGH);
+    delay(on_ms);
+  }
+  if (off_ms &gt; 0) {
+    digitalWrite(RELAY_PIN, LOW);
+    delay(off_ms);
+  }
+}
+
 </code></pre>
 <hr />
 <p><em>QR for printing will appear here after you run the script:</em></p>
-<p><img alt="QR sticker" src="../stickers/ENV001.png" /></p>
+<p><img alt="QR sticker" src="../stickers/AC001.png" /></p>
 
 
 
