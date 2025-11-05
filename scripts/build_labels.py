@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
 Build QR labels for each component page (T02-friendly).
+- Final width is exactly MAX_WIDTH to avoid blurry global rescaling.
+- Presets: 'compact' or 'large' (bigger QR + fonts).
 - QR left (sharp), wrapped text right (hi-DPI then LANCZOS downscale).
-- Title aligns to TOP of QR; code aligns to BOTTOM of QR (same total height).
+- Title aligns to TOP of QR; code aligns to BOTTOM of QR.
 - Title shows NAME only; footer shows CODE; URL only inside QR.
 - Output: docs/stickers/<ID>.png and docs/stickers/index.csv
 """
@@ -12,39 +14,54 @@ import re, csv, yaml
 import qrcode
 from PIL import Image, ImageDraw, ImageFont
 
-# ---------------- Paths ----------------
+# ----------------- Preset -----------------
+PRESET = "large"   # "compact" or "large"
+
+# --------------- Paths --------------------
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 OUT  = DOCS / "stickers"
 FONTS_DIR = ROOT / "fonts"
 OUT.mkdir(parents=True, exist_ok=True)
 
-# ------------- Printer/layout ----------
+# ----------- Printer/layout ---------------
 MAX_WIDTH = 384          # T02 (58mm). Use 576 for 80mm printers.
-QR_BOX_SIZE = 3          # smaller QR leaves more room for text; raise to 4 if needed
-QR_BORDER   = 1
+QR_BORDER = 1
 
-# Logical (pre-2x) text layout
-TITLE_FONT_SIZE = 18
-LINE_FONT_SIZE  = 16
-SMALL_FONT_SIZE = 13
-LINE_SPACING    = 20
-TITLE_SPACING   = 24
-TEXT_COL_WIDTH  = 260     # width of text column in final pixels
+# Common paddings
 PADDING_LEFT    = 8
 TEXT_LEFT_GAP   = 14
 TEXT_RIGHT_PAD  = 8
-TOP_PADDING     = 4       # small breathing room above title
-BOTTOM_PADDING  = 4       # small breathing room below code
-MAX_INFO_LINES  = 4       # total wrapped lines allowed (excludes title). Extra text gets ellipsis.
+TOP_PADDING     = 4
+BOTTOM_PADDING  = 4
+MAX_INFO_LINES  = 5
 
-# --------- Optional metadata block -----
+# Per-preset sizing
+if PRESET == "large":
+    # Larger QR and fonts; text rendered at higher DPI for smoothness
+    QR_BOX_SIZE      = 4
+    TITLE_FONT_SIZE  = 22
+    LINE_FONT_SIZE   = 18
+    SMALL_FONT_SIZE  = 14
+    LINE_SPACING     = 22
+    TITLE_SPACING    = 26
+    TEXT_SCALE       = 3   # hi-DPI text render factor
+else:  # compact
+    QR_BOX_SIZE      = 3
+    TITLE_FONT_SIZE  = 18
+    LINE_FONT_SIZE   = 16
+    SMALL_FONT_SIZE  = 13
+    LINE_SPACING     = 20
+    TITLE_SPACING    = 24
+    TEXT_SCALE       = 2
+
+# --------- Optional metadata block --------
 PRINTER_META_RE = re.compile(
     r"<!--\s*printer_meta:(.*?)-->\s*<!--\s*/printer_meta\s*-->",
     re.S
 )
 
-# ---------------- Fonts ----------------
+# ---------------- Fonts -------------------
 def load_font(path: Path, size: int):
     try:
         return ImageFont.truetype(str(path), size)
@@ -55,7 +72,7 @@ FONT_BOLD   = load_font(FONTS_DIR / "DejaVuSans-Bold.ttf", TITLE_FONT_SIZE) or I
 FONT_REG_16 = load_font(FONTS_DIR / "DejaVuSans.ttf",      LINE_FONT_SIZE)  or ImageFont.load_default()
 FONT_REG_13 = load_font(FONTS_DIR / "DejaVuSans.ttf",      SMALL_FONT_SIZE) or ImageFont.load_default()
 
-# --------------- Helpers ---------------
+# --------------- Helpers ------------------
 def parse_front_matter(text: str):
     if text.startswith("---"):
         end = text.find("\n---", 3)
@@ -91,13 +108,14 @@ def wrap_to_width(text: str, font: ImageFont.FreeTypeFont, max_w: int, draw: Ima
     lines.append(cur)
     return lines
 
-def render_text_panel(title: str, info_lines: list[str], code: str, height: int) -> Image.Image:
+def render_text_panel(title: str, info_lines: list[str], code: str, height: int, width: int) -> Image.Image:
     """
-    Render the right-hand text panel to EXACTLY 'height' pixels tall (so it matches the QR).
-    Do the text at 2x scale for smooth downsampling.
+    Render the right-hand text panel to EXACTLY the QR height and the
+    computed text column width. Text is drawn at TEXT_SCALE and downsampled
+    with LANCZOS to stay smooth on thermal paper.
     """
-    SCALE = 2
-    w_hi = TEXT_COL_WIDTH * SCALE
+    SCALE = TEXT_SCALE
+    w_hi = width * SCALE
     h_hi = height * SCALE
 
     img_hi = Image.new("L", (w_hi, h_hi), 255)
@@ -121,7 +139,6 @@ def render_text_panel(title: str, info_lines: list[str], code: str, height: int)
         wrapped += wrap_to_width(line, font_line, w_hi, d)
         if len(wrapped) >= MAX_INFO_LINES:
             wrapped = wrapped[:MAX_INFO_LINES]
-            # append ellipsis to last line if we truncated
             if len(wrapped[-1]) > 3:
                 wrapped[-1] = wrapped[-1].rstrip(".") + "..."
             break
@@ -135,12 +152,13 @@ def render_text_panel(title: str, info_lines: list[str], code: str, height: int)
     d.text((x, code_y), code, fill=0, font=font_small)
 
     # Downscale to final size with LANCZOS for smooth text
-    img = img_hi.resize((TEXT_COL_WIDTH, height), Image.LANCZOS)
+    img = img_hi.resize((width, height), Image.LANCZOS)
     return img
 
 def make_label_png(title: str, lines: list[str], url: str, code: str, out_path: Path):
     """
     Compose final label: QR (native sharp) + text panel with top/bottom alignment to QR.
+    The text column width is computed so the final image width equals MAX_WIDTH.
     """
     # Build QR at native pixel size (kept sharp)
     qr = qrcode.QRCode(border=QR_BORDER, box_size=QR_BOX_SIZE)
@@ -148,29 +166,24 @@ def make_label_png(title: str, lines: list[str], url: str, code: str, out_path: 
     qr.make(fit=True)
     qr_img = qr.make_image(fill_color="black", back_color="white").convert("L")
 
-    # Text panel height EXACTLY equals QR height
-    text_panel = render_text_panel(title, lines, code, qr_img.height)
+    # Compute text column width so total width == MAX_WIDTH (no final scaling)
+    fixed = PADDING_LEFT + qr_img.width + TEXT_LEFT_GAP + TEXT_RIGHT_PAD
+    text_col_w = max(120, MAX_WIDTH - fixed)  # keep a sane minimum width
 
-    # Compose with same height
-    W = PADDING_LEFT + qr_img.width + TEXT_LEFT_GAP + text_panel.width + TEXT_RIGHT_PAD
+    # Render text panel to the exact QR height and computed width
+    text_panel = render_text_panel(title, lines, code, qr_img.height, text_col_w)
+
+    # Compose exactly MAX_WIDTH wide
+    W = MAX_WIDTH
     H = qr_img.height
-
     img = Image.new("L", (W, H), 255)
-    # QR aligned to TOP
     img.paste(qr_img, (PADDING_LEFT, 0))
-    # Text panel aligned to TOP and BOTTOM matches QR by construction
     text_x = PADDING_LEFT + qr_img.width + TEXT_LEFT_GAP
     img.paste(text_panel, (text_x, 0))
 
-    # Cap width for printer; global downscale with LANCZOS (QR stays readable)
-    if img.width > MAX_WIDTH:
-        scale = MAX_WIDTH / img.width
-        new_h = int(img.height * scale)
-        img = img.resize((MAX_WIDTH, new_h), Image.LANCZOS)
-
     img.save(out_path)
 
-# ----------------- Main ----------------
+# ----------------- Main ------------------
 def main():
     rows = []
     for md in sorted(DOCS.glob("*.md")):
@@ -200,7 +213,7 @@ def main():
             if short:
                 lines.append(short)
             if use:
-                lines.append(f"Use: {use}")
+                lines.append(use)
 
         out_png = OUT / f"{comp_id}.png"
         make_label_png(title, lines, url, code=comp_id, out_path=out_png)

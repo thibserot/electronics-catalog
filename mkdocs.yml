@@ -17,6 +17,7 @@ nav:
   - Browse by tag: tags.md
   - Components:
       - TS001.md
+      - ENV001.md
 markdown_extensions:
   - admonition
   - toc:
