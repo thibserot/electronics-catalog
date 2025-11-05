@@ -19,6 +19,7 @@ nav:
       - TS001.md
       - ENV001.md
       - AC001.md
+      - PS101.md
 markdown_extensions:
   - admonition
   - toc:
