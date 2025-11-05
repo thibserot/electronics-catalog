@@ -1,5 +1,6 @@
 id,name,url,label_png
 AC001,AOD4184,https://thibserot.github.io/electronics-catalog/components/AC001/,stickers/AC001.png
-ENV001,BME280/BMP280,https://thibserot.github.io/electronics-catalog/components/ENV001/,stickers/ENV001.png
+ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/components/ENV001/,stickers/ENV001.png
 PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/components/PS101/,stickers/PS101.png
+RF001,MFRC522,https://thibserot.github.io/electronics-catalog/components/RF001/,stickers/RF001.png
 TS001,DS18B20,https://thibserot.github.io/electronics-catalog/components/TS001/,stickers/TS001.png
