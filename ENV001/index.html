@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://thibserot.github.io/electronics-catalog/TS001/">
+        <link rel="canonical" href="https://thibserot.github.io/electronics-catalog/ENV001/">
       
       
-        <link rel="prev" href="../tags/">
+        <link rel="prev" href="../TS001/">
       
-      
-        <link rel="next" href="../ENV001/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>DS18B20 - Electronics Catalog</title>
+        <title>BME280 / BMP280 - Electronics Catalog</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ds18b20-ts001" class="md-skip">
+        <a href="#bme280-bmp280-env001" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DS18B20
+              BME280 / BMP280
             
           </span>
         </div>
@@ -277,6 +275,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../TS001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DS18B20
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -294,7 +315,7 @@
   
   
   <span class="md-ellipsis">
-    DS18B20
+    BME280 / BMP280
     
   </span>
   
@@ -307,7 +328,7 @@
   
   
   <span class="md-ellipsis">
-    DS18B20
+    BME280 / BMP280
     
   </span>
   
@@ -348,18 +369,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pinout" class="md-nav__link">
+  <a href="#pinout-addresses-common-breakout-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      Pinout
+      Pinout &amp; Addresses (common breakout labels)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wiring-notes" class="md-nav__link">
+  <a href="#wiring-esp32-i2c" class="md-nav__link">
     <span class="md-ellipsis">
-      Wiring Notes
+      Wiring (ESP32 • I²C)
     </span>
   </a>
   
@@ -375,9 +396,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use" class="md-nav__link">
+  <a href="#how-to-use-arduino-auto-detect-bme-vs-bmp" class="md-nav__link">
     <span class="md-ellipsis">
-      How to use
+      How to use (Arduino • auto-detect BME vs BMP)
     </span>
   </a>
   
@@ -387,29 +408,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ENV001/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    BME280 / BMP280
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -467,18 +465,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pinout" class="md-nav__link">
+  <a href="#pinout-addresses-common-breakout-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      Pinout
+      Pinout &amp; Addresses (common breakout labels)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wiring-notes" class="md-nav__link">
+  <a href="#wiring-esp32-i2c" class="md-nav__link">
     <span class="md-ellipsis">
-      Wiring Notes
+      Wiring (ESP32 • I²C)
     </span>
   </a>
   
@@ -494,9 +492,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use" class="md-nav__link">
+  <a href="#how-to-use-arduino-auto-detect-bme-vs-bmp" class="md-nav__link">
     <span class="md-ellipsis">
-      How to use
+      How to use (Arduino • auto-detect BME vs BMP)
     </span>
   </a>
   
@@ -521,19 +519,37 @@
       
       
       
-        <a href="../tags/#tag:1-wire" class="md-tag">1-wire</a>
-      
-    
-      
-      
-      
         <a href="../tags/#tag:digital" class="md-tag">digital</a>
       
     
       
       
       
+        <a href="../tags/#tag:humidity" class="md-tag">humidity</a>
+      
+    
+      
+      
+      
+        <a href="../tags/#tag:i2c" class="md-tag">i2c</a>
+      
+    
+      
+      
+      
+        <a href="../tags/#tag:pressure" class="md-tag">pressure</a>
+      
+    
+      
+      
+      
         <a href="../tags/#tag:sensor" class="md-tag">sensor</a>
+      
+    
+      
+      
+      
+        <a href="../tags/#tag:spi" class="md-tag">spi</a>
       
     
       
@@ -546,64 +562,123 @@
 
 
 
-<h1 id="ds18b20-ts001">DS18B20 — TS001<a class="headerlink" href="#ds18b20-ts001" title="Permanent link">&para;</a></h1>
-<p><strong>Aliases:</strong> DS18B20, DS18B20B+<br />
-<strong>Category:</strong> TS  </p>
+<h1 id="bme280-bmp280-env001">BME280 / BMP280 — ENV001<a class="headerlink" href="#bme280-bmp280-env001" title="Permanent link">&para;</a></h1>
+<p><strong>Aliases:</strong> Bosch BME280 / BMP280 (common breakouts: CJMCU, GY-BME280, GY-BMP280)<br />
+<strong>Category:</strong> ENV</p>
 <h2 id="quick-facts">Quick Facts<a class="headerlink" href="#quick-facts" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Digital temperature sensor (1-Wire), unique 64-bit ID.</li>
-<li>Use cases: ambient/liquid/soil; long runs; many on one pin.</li>
-<li><strong>Voltage:</strong> 3.0–5.5 V • <strong>Signal:</strong> 1-Wire  </li>
-<li><strong>Accuracy/Range/Resolution:</strong> ±0.5 °C (−10..+85 °C), −55..+125 °C, 9–12-bit</li>
+<li>BME280: Temperature, <strong>Humidity</strong>, Pressure.  </li>
+<li>BMP280: Temperature, Pressure (<strong>no humidity</strong>).  </li>
+<li><strong>Buses:</strong> I²C or SPI • <strong>I²C addrs:</strong> <code>0x76</code> (default) / <code>0x77</code> (SDO high)  </li>
+<li><strong>Voltage (chip):</strong> 1.71–3.6 V • Most breakouts accept 3.3 V (some are 5 V-tolerant via onboard LDO/level shifting).  </li>
+<li><strong>Typical accuracy:</strong> T ±1.0 °C (can be improved with calibration), RH ±3% (BME280), Pressure ±1 hPa.</li>
 </ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Where to buy:</strong> <a href="https://www.aliexpress.com/item/1005008644135794.html">AliExpress</a></li>
-<li><strong>Tutorial:</strong> <a href="https://randomnerdtutorials.com/esp32-ds18b20-temperature-arduino-ide/">Random Nerd Tutorials</a></li>
-<li><strong>Datasheet:</strong> <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf">Analog Devices PDF</a></li>
+<li><strong>Tutorial:</strong> <a href="https://randomnerdtutorials.com/esp32-bme280-arduino-ide-pressure-temperature-humidity/">Random Nerd Tutorials</a></li>
+<li><strong>Where to buy:</strong> <a href="https://www.aliexpress.com/item/1005007274304296.html?spm=a2g0o.order_list.order_list_main.15.1b4918025rXc9J">AliExpress</a></li>
+<li><strong>Datasheets:</strong>  <ul>
+<li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf">BME280 (Bosch)</a>  </li>
+<li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf">BMP280 (Bosch)</a></li>
 </ul>
-<h2 id="pinout">Pinout<a class="headerlink" href="#pinout" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Flat face towards you, legs down: <strong>Left=GND</strong>, <strong>Middle=DQ</strong>, <strong>Right=VDD</strong>  </li>
-<li>Waterproof probes often: <strong>red=VDD</strong>, <strong>yellow/white=DQ</strong>, <strong>black=GND</strong> (verify!)</li>
+</li>
 </ul>
-<h2 id="wiring-notes">Wiring Notes<a class="headerlink" href="#wiring-notes" title="Permanent link">&para;</a></h2>
+<h2 id="pinout-addresses-common-breakout-labels">Pinout &amp; Addresses (common breakout labels)<a class="headerlink" href="#pinout-addresses-common-breakout-labels" title="Permanent link">&para;</a></h2>
 <ul>
-<li>4.7 kΩ pull-up DQ→VDD required.</li>
-<li>Prefer bus/backbone wiring over star; keep twisted pair DQ/GND.</li>
-<li>Parasitic power works but is fussier — avoid if possible.</li>
+<li><strong>VIN / 3V3</strong> (power), <strong>GND</strong>  </li>
+<li><strong>SDA</strong>, <strong>SCL</strong> (I²C)  </li>
+<li><strong>SDO</strong> (I²C addr select): low→<code>0x76</code>, high→<code>0x77</code>  </li>
+<li><strong>CSB</strong>, <strong>SCK</strong>, <strong>SDI</strong>, <strong>SDO</strong> (SPI mode on some boards)</li>
+</ul>
+<blockquote>
+<p>Many boards expose both I²C and SPI; leave <strong>CSB</strong> high for I²C.<br />
+For I²C on ESP32, default pins are <strong>GPIO21 (SDA)</strong> / <strong>GPIO22 (SCL)</strong> unless you choose others.</p>
+</blockquote>
+<h2 id="wiring-esp32-i2c">Wiring (ESP32 • I²C)<a class="headerlink" href="#wiring-esp32-i2c" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>VIN → 3.3 V</strong>, <strong>GND → GND</strong>  </li>
+<li><strong>SDA → GPIO 21</strong>, <strong>SCL → GPIO 22</strong>  </li>
+<li>If you have bus errors on long cables, drop I²C speed (e.g., 100 kHz) and use ~4.7 kΩ pull-ups to 3.3 V.</li>
 </ul>
 <h2 id="gotchas">Gotchas<a class="headerlink" href="#gotchas" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Missing pull-up ⇒ bogus 85 °C/127 °C readings.</li>
-<li>Wrong color codes on cheap probes; check with a meter.</li>
+<li><strong>Clone confusion:</strong> Many boards marked “BME280” actually carry <strong>BMP280</strong> (no RH). Check chip ID: <strong>BME280 = 0x60</strong>, <strong>BMP280 = 0x58</strong>.</li>
+<li><strong>Address mismatch:</strong> If <code>0x76</code> fails, try <code>0x77</code> (tie SDO high or use the solder-jumper).</li>
+<li><strong>Voltage:</strong> Some cheap boards are <strong>3.3 V only</strong> (no regulator/level shifter). Feeding 5 V can kill the sensor—inspect the PCB.</li>
+<li><strong>Condensation:</strong> For accurate RH, avoid mounting where moisture condenses; add a small vented enclosure and allow airflow.</li>
+<li><strong>Humidity reads 0 or NAN:</strong> You likely have a <strong>BMP280</strong> or a mislabeled breakout; check the chip ID.</li>
 </ul>
-<h2 id="how-to-use">How to use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
-<pre><code class="language-cpp">// ESP32 + DS18B20 (Arduino)
-// Wiring: DS18B20 DQ -&gt; GPIO 4, 4.7k pull-up from DQ to 3.3V
-#include &lt;OneWire.h&gt;
-#include &lt;DallasTemperature.h&gt;
+<h2 id="how-to-use-arduino-auto-detect-bme-vs-bmp">How to use (Arduino • auto-detect BME vs BMP)<a class="headerlink" href="#how-to-use-arduino-auto-detect-bme-vs-bmp" title="Permanent link">&para;</a></h2>
+<pre><code class="language-cpp">// ESP32 + BME280/BMP280 (I2C) — auto-detect, prints RH only if BME280
+// Libraries (Library Manager): Adafruit BME280, Adafruit BMP280, Adafruit Unified Sensor
+#include &lt;Wire.h&gt;
+#include &lt;Adafruit_BME280.h&gt;
+#include &lt;Adafruit_BMP280.h&gt;
 
-constexpr int ONE_WIRE_BUS = 4;  // change if you use another pin
-OneWire oneWire(ONE_WIRE_BUS);
-DallasTemperature sensors(&amp;oneWire);
+#define SDA_PIN 21
+#define SCL_PIN 22
+
+Adafruit_BME280 bme;   // for BME280
+Adafruit_BMP280 bmp;   // for BMP280
+bool hasBME = false;
+bool hasBMP = false;
+
+bool beginAt(uint8_t addr) {
+  if (bme.begin(addr)) { hasBME = true; return true; }
+  if (bmp.begin(addr)) { hasBMP = true; return true; }
+  return false;
+}
 
 void setup() {
   Serial.begin(115200);
-  sensors.begin();
-  sensors.setResolution(12);     // 9..12 bits (12 = ~750 ms conversion)
+  Wire.begin(SDA_PIN, SCL_PIN);     // you can also Wire.setClock(100000);
+
+  // Try 0x76 then 0x77
+  if (!beginAt(0x76) &amp;&amp; !beginAt(0x77)) {
+    Serial.println(&quot;Sensor not found at 0x76/0x77. Check wiring/address.&quot;);
+    while (1) delay(10);
+  }
+
+  if (hasBME) {
+    // Oversampling settings (balance noise vs. power/latency)
+    bme.setSampling(Adafruit_BME280::MODE_NORMAL,
+                    Adafruit_BME280::SAMPLING_X2,   // Temp
+                    Adafruit_BME280::SAMPLING_X2,   // Hum
+                    Adafruit_BME280::SAMPLING_X4,   // Pressure
+                    Adafruit_BME280::FILTER_X4,
+                    Adafruit_BME280::STANDBY_MS_125);
+    Serial.println(&quot;BME280 ready (T/RH/Pressure).&quot;);
+  } else {
+    bmp.setSampling(Adafruit_BMP280::MODE_NORMAL,
+                    Adafruit_BMP280::SAMPLING_X2,   // Temp
+                    Adafruit_BMP280::SAMPLING_X4,   // Pressure
+                    Adafruit_BMP280::FILTER_X4,
+                    Adafruit_BMP280::STANDBY_MS_125);
+    Serial.println(&quot;BMP280 ready (T/Pressure).&quot;);
+  }
 }
 
+float seaLevelhPa = 1013.25;  // set to your local sea-level pressure for altitude calc
+
 void loop() {
-  sensors.requestTemperatures(); // blocks until conversion done
-  float t = sensors.getTempCByIndex(0); // first sensor on the bus
-  Serial.printf(&quot;T = %.2f °C\n&quot;, t);
+  if (hasBME) {
+    float t = bme.readTemperature();           // °C
+    float h = bme.readHumidity();              // %
+    float p = bme.readPressure() / 100.0F;     // hPa
+    float alt = bme.readAltitude(seaLevelhPa); // meters
+    Serial.printf(&quot;T=%.2f°C  RH=%.1f%%  P=%.2f hPa  Alt≈%.1f m\n&quot;, t, h, p, alt);
+  } else {
+    float t = bmp.readTemperature();           // °C
+    float p = bmp.readPressure() / 100.0F;     // hPa
+    float alt = bmp.readAltitude(seaLevelhPa); // meters
+    Serial.printf(&quot;T=%.2f°C  P=%.2f hPa  Alt≈%.1f m\n&quot;, t, p, alt);
+  }
   delay(1000);
 }
 </code></pre>
 <hr />
 <p><em>QR for printing will appear here after you run the script:</em></p>
-<p><img alt="QR sticker" src="../stickers/TS001.png" /></p>
+<p><img alt="QR sticker" src="../stickers/ENV001.png" /></p>
 
 
 
