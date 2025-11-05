@@ -4,6 +4,7 @@ theme:
   name: material
 plugins:
   - search
+  - awesome-pages
   - tags:
       tags_file: tags.md   # auto-builds a tag index at /tags/
 markdown_extensions:
@@ -12,14 +13,6 @@ markdown_extensions:
       permalink: true
   - tables
   - attr_list
-nav:
-  - Home: index.md
-  - Browse by tag: tags.md
-  - Components:
-      - TS001.md
-      - ENV001.md
-      - AC001.md
-      - PS101.md
 markdown_extensions:
   - admonition
   - toc:

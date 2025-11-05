@@ -19,7 +19,7 @@ PRESET = "large"   # "compact" or "large"
 
 # --------------- Paths --------------------
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / "docs"
+DOCS = ROOT / "docs" / "components"
 OUT  = DOCS / "stickers"
 FONTS_DIR = ROOT / "fonts"
 OUT.mkdir(parents=True, exist_ok=True)
@@ -202,7 +202,7 @@ def main():
         # Default URL points to your GitHub Pages username
         url = (meta.get("qr_url")
                or fm.get("qr_url")
-               or f"https://thibserot.github.io/electronics-catalog/{md.stem}/").strip()
+               or f"https://thibserot.github.io/electronics-catalog/components/{md.stem}/").strip()
 
         title = (meta.get("title") or comp_name).strip()
 
