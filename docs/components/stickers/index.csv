@@ -1,6 +1,8 @@
 id,name,url,label_png
-AC001,AOD4184,https://thibserot.github.io/electronics-catalog/components/AC001/,stickers/AC001.png
-ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/components/ENV001/,stickers/ENV001.png
-PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/components/PS101/,stickers/PS101.png
-RF001,MFRC522,https://thibserot.github.io/electronics-catalog/components/RF001/,stickers/RF001.png
-TS001,DS18B20,https://thibserot.github.io/electronics-catalog/components/TS001/,stickers/TS001.png
+AC001,AOD4184,https://thibserot.github.io/electronics-catalog/qr/AC001/,stickers/AC001.png
+PS001,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS001/,stickers/PS001.png
+PS000,Step Down,https://thibserot.github.io/electronics-catalog/qr/PS000/,stickers/PS000.png
+ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,stickers/ENV001.png
+PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PS101/,stickers/PS101.png
+RF001,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF001/,stickers/RF001.png
+TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,stickers/TS001.png

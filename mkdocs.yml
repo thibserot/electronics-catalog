@@ -2,10 +2,13 @@ site_name: Electronics Catalog
 site_url: https://thibserot.github.io/electronics-catalog/
 theme:
   name: material
+  features:
+    - navigation.indexes
 plugins:
   - search
   - awesome-pages
   - tags
+  - macros
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -14,8 +17,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details
   - admonition
   - toc:
       permalink: true
   - tables
   - attr_list
+  - md_in_html

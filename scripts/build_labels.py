@@ -4,6 +4,7 @@ import re, csv, json
 import yaml
 from PIL import Image, ImageDraw, ImageFont
 import qrcode
+from urllib.parse import quote
 
 # ----------------- Preset -----------------
 PRESET = "large"   # "compact" or "large"
@@ -24,8 +25,6 @@ QR_BORDER = 1
 DPI = 203
 LABEL_HEIGHT_MM = 25
 LABEL_HEIGHT_PX = int(round(LABEL_HEIGHT_MM / 25.4 * DPI))  # ≈199 px
-SHEET_MAX_HEIGHT_MM = 150
-SHEET_MAX_H = int(round(SHEET_MAX_HEIGHT_MM / 25.4 * DPI))   # ≈1200 px
 
 # Layout between labels
 LABEL_GAP_PX = 8          # vertical gap between labels
@@ -45,8 +44,8 @@ CUT_LINE_WIDTH = 3
 PADDING_LEFT    = 8
 TEXT_LEFT_GAP   = 14
 TEXT_RIGHT_PAD  = 8
-TOP_PADDING     = 4
-BOTTOM_PADDING  = 4
+TOP_PADDING     = 2
+BOTTOM_PADDING  = 2
 MAX_INFO_LINES  = 5
 
 # Per-preset sizing
@@ -64,6 +63,12 @@ else:
     LINE_SPACING     = 18
     TITLE_SPACING    = 22
     TEXT_SCALE       = 2
+
+
+# -------- Short QR mode (uniform sizes) --------
+SHORT_QR_MODE = True   # if True, generate docs/components/qr/<ID>/index.html redirects
+QR_SHORT_PREFIX = "https://thibserot.github.io/electronics-catalog/qr/"
+QR_STUB_ROOT = DOCS / "qr"
 
 # --------- Optional metadata block --------
 PRINTER_META_RE = re.compile(
@@ -84,15 +89,51 @@ FONT_REG_13 = load_font(FONTS_DIR / "DejaVuSans.ttf",      SMALL_FONT_SIZE) or I
 
 # --------------- Helpers ------------------
 def parse_front_matter(text: str):
-    m = re.match(r'^---\s*\n(.*?)\n---\s*\n?(.*)\Z', text, re.S)
-    if m:
-        yml = m.group(1)
-        body = m.group(2)
-        try:
-            return yaml.safe_load(yml) or {}, body
-        except Exception:
-            return {}, text
-    return {}, text
+    """Parse YAML front-matter strictly at the start of the file.
+
+    Supports optional UTF-8 BOM and CRLF line endings.
+    Returns (front_matter_dict, body_text). If no front-matter is found,
+    returns ({}, original_text).
+    """
+    if text.startswith("\ufeff"):
+        text_wo_bom = text[1:]
+        had_bom = True
+    else:
+        text_wo_bom = text
+        had_bom = False
+
+    if not (text_wo_bom.startswith("---\n") or text_wo_bom.startswith("---\r\n")):
+        return {}, text
+
+    lines = text_wo_bom.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
+        return {}, text
+
+    yml_lines = []
+    i = 1
+    while i < len(lines):
+        if lines[i].strip() == "---":
+            i += 1
+            break
+        yml_lines.append(lines[i])
+        i += 1
+    else:
+        return {}, text
+
+    yml_text = "".join(yml_lines)
+    body = "".join(lines[i:])
+
+    try:
+        fm = yaml.safe_load(yml_text) or {}
+        if not isinstance(fm, dict):
+            fm = {}
+    except Exception:
+        fm = {}
+
+    if had_bom:
+        body = "\ufeff" + body
+
+    return fm, body
 
 def parse_printer_meta(text: str):
     m = PRINTER_META_RE.search(text)
@@ -120,6 +161,7 @@ def wrap_to_width(text: str, font, max_w, draw):
     return lines
 
 def render_text_panel(title, info_lines, code, height, width):
+    """Render text within EXACT height. Top-aligned, no overflow."""
     SCALE = TEXT_SCALE
     w_hi = width * SCALE
     h_hi = height * SCALE
@@ -130,55 +172,71 @@ def render_text_panel(title, info_lines, code, height, width):
     font_line  = load_font(FONTS_DIR / "DejaVuSans.ttf",      LINE_FONT_SIZE  * SCALE) or FONT_REG_16
     font_small = load_font(FONTS_DIR / "DejaVuSans.ttf",      SMALL_FONT_SIZE * SCALE) or FONT_REG_13
 
-    x = 0
-    y = TOP_PADDING * SCALE
+    def line_h(kind="line"):
+        return {
+            "title": TITLE_SPACING * SCALE,
+            "line":  LINE_SPACING * SCALE,
+            "small": (SMALL_FONT_SIZE * SCALE)
+        }[kind]
 
-    # Title (wrap to 2 lines max)
-    TITLE_MAX_LINES = 2
-    title_lines = wrap_to_width(title, font_title, w_hi, d)
-    if len(title_lines) > TITLE_MAX_LINES:
-        title_lines = title_lines[:TITLE_MAX_LINES]
-        if len(title_lines[-1]) > 3:
-            while d.textlength(title_lines[-1] + "...", font=font_title) > w_hi and len(title_lines[-1]) > 1:
-                title_lines[-1] = title_lines[-1][:-1]
-            title_lines[-1] += "..."
+    def ellipsize(txt, font, max_w):
+        if d.textlength(txt, font=font) <= max_w:
+            return txt
+        if len(txt) <= 1:
+            return txt
+        t = txt
+        while d.textlength(t + "...", font=font) > max_w and len(t) > 1:
+            t = t[:-1]
+        return t + "..."
 
-    for tl in title_lines:
-        d.text((x, y), tl, fill=0, font=font_title)
-        y += TITLE_SPACING * SCALE
+    # Prepare wrapped lines
+    title_wrapped = wrap_to_width(title, font_title, w_hi, d) or [""]
+    title_wrapped = title_wrapped[:2]
+    if title_wrapped:
+        title_wrapped[-1] = ellipsize(title_wrapped[-1], font_title, w_hi)
 
-    # Body lines (wrap, cap)
-    wrapped = []
-    for line in info_lines or []:
-        wrapped += wrap_to_width(line, font_line, w_hi, d)
-        if len(wrapped) >= MAX_INFO_LINES:
-            wrapped = wrapped[:MAX_INFO_LINES]
-            if len(wrapped[-1]) > 3:
-                while d.textlength(wrapped[-1] + "...", font=font_line) > w_hi and len(wrapped[-1]) > 1:
-                    wrapped[-1] = wrapped[-1][:-1]
-                wrapped[-1] += "..."
-            break
+    info_wrapped = []
+    for ln in info_lines or []:
+        info_wrapped += wrap_to_width(ln, font_line, w_hi, d)
+    info_wrapped = info_wrapped[:MAX_INFO_LINES]
 
-    for ln in wrapped:
-        d.text((x, y), ln, fill=0, font=font_line)
-        y += LINE_SPACING * SCALE
+    top_pad  = TOP_PADDING * SCALE
+    foot_h   = line_h("small") + (BOTTOM_PADDING * SCALE)
 
-    # Footer code at bottom
+    # Compute space
+    y = top_pad
+    for _ in title_wrapped:
+        y += line_h("title")
+
+    remaining = max(0, h_hi - y - foot_h)
+    can_fit = max(0, remaining // line_h("line"))
+    info_wrapped = info_wrapped[:can_fit]
+
+    # Draw
+    img_hi = Image.new("L", (w_hi, h_hi), 255)
+    d = ImageDraw.Draw(img_hi)
+    y = top_pad
+    for t in title_wrapped:
+        d.text((0, y), t, fill=0, font=font_title)
+        y += line_h("title")
+    for ln in info_wrapped:
+        d.text((0, y), ln, fill=0, font=font_line)
+        y += line_h("line")
+
     code_y = h_hi - (SMALL_FONT_SIZE * SCALE) - (BOTTOM_PADDING * SCALE)
-    d.text((x, code_y), code, fill=0, font=font_small)
+    d.text((0, code_y), code, fill=0, font=font_small)
 
-    img = img_hi.resize((width, height), Image.LANCZOS)
-    return img
+    return img_hi.resize((width, height), Image.LANCZOS)
 
 def compute_qr_for_height(data: str, target_h: int, border: int):
-    # First build to discover module count
-    probe = qrcode.QRCode(border=border, box_size=1)
+    # Probe for module count
+    probe = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_L, border=border, box_size=1)
     probe.add_data(data)
     probe.make(fit=True)
     modules = probe.modules_count + 2 * border
     # Choose integer box size so total height <= target_h
     box = max(3, min(10, target_h // modules))  # clamp for readability
-    qr = qrcode.QRCode(border=border, box_size=box)
+    qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_L, border=border, box_size=box)
     qr.add_data(data)
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white").convert("L")
@@ -192,20 +250,42 @@ def make_label_png(title, lines, url, code, out_path):
     fixed = PADDING_LEFT + qr_img.width + TEXT_LEFT_GAP + TEXT_RIGHT_PAD
     text_col_w = max(120, MAX_WIDTH - fixed)
 
-    text_panel = render_text_panel(title, lines, code, LABEL_HEIGHT_PX, text_col_w)
+    # Text panel *exactly* same height as QR
+    text_panel = render_text_panel(title, lines, code, qr_img.height, text_col_w)
 
     # Compose exactly MAX_WIDTH x LABEL_HEIGHT_PX
     W = MAX_WIDTH
     H = LABEL_HEIGHT_PX
     img = Image.new("L", (W, H), 255)
-    # center QR vertically
-    qr_y = (H - qr_img.height) // 2
+
+    # Top-align both blocks so text never exceeds QR vertically
+    qr_y = 0
+    text_y = 0
+
     img.paste(qr_img, (PADDING_LEFT, qr_y))
     text_x = PADDING_LEFT + qr_img.width + TEXT_LEFT_GAP
-    img.paste(text_panel, (text_x, 0))
+    img.paste(text_panel, (text_x, text_y))
 
     img.save(out_path)
     return img
+
+
+def ensure_redirect_stub(comp_id: str, target_url: str):
+    d = QR_STUB_ROOT / comp_id
+    d.mkdir(parents=True, exist_ok=True)
+    html = f"""<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={target_url}">
+    <title>{comp_id}</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{target_url}">{target_url}</a></p>
+  </body>
+</html>"""
+    (d / "index.html").write_text(html, encoding="utf-8")
+
 
 def load_assignment():
     if ASSIGNMENT_PATH.exists():
@@ -229,6 +309,8 @@ def build_order(comp_ids):
     return order
 
 def pack_sheets_stable(id_to_img, order):
+    from PIL import Image
+
     img_map = {cid: Image.open(path).convert("L") for cid, path in id_to_img.items()}
     seq = [cid for cid in order if cid in img_map]
 
@@ -280,38 +362,65 @@ def pack_sheets_stable(id_to_img, order):
 
     return sheets_meta
 
+# ----------------- URL helpers -----------------
+def build_page_url(md: Path) -> str:
+    rel = md.relative_to(DOCS).with_suffix('')
+    if md.name.lower() == "index.md":
+        rel_url = f"components/{rel.parent.as_posix()}/"
+    else:
+        rel_url = f"components/{rel.as_posix()}/"
+    return "https://thibserot.github.io/electronics-catalog/" + quote(rel_url, safe="/")
+
+def fallback_id_for(md: Path, fm: dict) -> str:
+    fid = (fm.get("id") or "").strip() if isinstance(fm, dict) else ""
+    if fid:
+        return fid
+    rel = md.relative_to(DOCS).with_suffix('')
+    if md.name.lower() == "index.md":
+        folder = rel.parent.name.strip() or "index"
+        unique = str(rel).replace("/", "_")
+        return f"{folder}__{unique}"
+    return md.stem
+
 def main():
     rows = []
     id_to_path = {}
 
-    for md in sorted(DOCS.glob("*.md")):
-        if md.name.lower() == "index.md":
-            continue
+    all_md_files = sorted(DOCS.rglob("*.md"))
+
+    for md in all_md_files:
         text = md.read_text(encoding="utf-8")
         fm, _ = parse_front_matter(text)
         meta = parse_printer_meta(text)
 
-        comp_id   = (fm.get("id")   or md.stem).strip()
-        comp_name = (fm.get("name") or "").strip()
-        short     = (fm.get("short") or "").strip()
-        use       = (fm.get("use")   or "").strip()
+        if isinstance(fm, dict) and fm.get("no_label") is True:
+            continue
 
-        url = (meta.get("qr_url") or fm.get("qr_url") or f"https://thibserot.github.io/electronics-catalog/components/{md.stem}/").strip()
-        title = (meta.get("title") or comp_name or md.stem).strip()
+        comp_id   = fallback_id_for(md, fm)
+        comp_name = (fm.get("name") or "").strip() if isinstance(fm, dict) else ""
+        short     = (fm.get("short") or "").strip() if isinstance(fm, dict) else ""
+        use       = (fm.get("use")   or "").strip() if isinstance(fm, dict) else ""
 
-        lines = meta.get("lines")
+        full_url = (meta.get("qr_url") if meta else None) or (fm.get("qr_url") if isinstance(fm, dict) else None) or build_page_url(md)
+        url = full_url
+        if SHORT_QR_MODE:
+            ensure_redirect_stub(comp_id, full_url)
+            url = QR_SHORT_PREFIX + comp_id + "/"
+        title = (meta.get("title") if meta else None) or comp_name or (md.stem if md.name.lower() != "index.md" else md.parent.name)
+
+        lines = (meta.get("lines") if meta else None)
         if not lines:
             lines = []
             if short: lines.append(short)
             if use:   lines.append(use)
 
         out_png = OUT / f"{comp_id}.png"
-        img = make_label_png(title, lines, url, code=comp_id, out_path=out_png)
+        make_label_png(title, lines, url, code=comp_id, out_path=out_png)
         id_to_path[comp_id] = out_png
 
         rows.append({
             "id": comp_id,
-            "name": comp_name or md.stem,
+            "name": comp_name or (md.parent.name if md.name.lower()=="index.md" else md.stem),
             "url": url,
             "label_png": str(out_png.relative_to(DOCS))
         })
