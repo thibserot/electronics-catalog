@@ -1,13 +1,13 @@
 id,name,url,label_png
-AC001,AOD4184,https://thibserot.github.io/electronics-catalog/qr/AC001/,stickers/AC001.png
-PS201,TP4056,https://thibserot.github.io/electronics-catalog/qr/PS201/,stickers/PS201.png
-PS202,CN3065,https://thibserot.github.io/electronics-catalog/qr/PS202/,stickers/PS202.png
-PS200,Battery Charging,https://thibserot.github.io/electronics-catalog/qr/PS200/,stickers/PS200.png
-PS001,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS001/,stickers/PS001.png
-PS002,Step down,https://thibserot.github.io/electronics-catalog/qr/PS002/,stickers/PS002.png
-PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,stickers/PS003.png
-PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,stickers/PS000.png
-ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,stickers/ENV001.png
-PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PS101/,stickers/PS101.png
-RF001,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF001/,stickers/RF001.png
-TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,stickers/TS001.png
+AC001,AOD4184,https://thibserot.github.io/electronics-catalog/qr/AC001/,components/stickers/AC001.png
+PS201,TP4056,https://thibserot.github.io/electronics-catalog/qr/PS201/,components/stickers/PS201.png
+PS202,CN3065,https://thibserot.github.io/electronics-catalog/qr/PS202/,components/stickers/PS202.png
+PS200,Battery Charging,https://thibserot.github.io/electronics-catalog/qr/PS200/,components/stickers/PS200.png
+PS001,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS001/,components/stickers/PS001.png
+PS002,Step down,https://thibserot.github.io/electronics-catalog/qr/PS002/,components/stickers/PS002.png
+PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,components/stickers/PS003.png
+PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
+ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
+PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PS101/,components/stickers/PS101.png
+RF001,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF001/,components/stickers/RF001.png
+TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,components/stickers/TS001.png
