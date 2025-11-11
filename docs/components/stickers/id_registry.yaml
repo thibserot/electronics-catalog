@@ -1,0 +1,273 @@
+generated_at: '2025-11-11T23:29:45Z'
+ids:
+- id: AC001
+  name: AOD4184
+  category: AC
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC001/
+  source: components/AC001.md
+- id: ENV001
+  name: BME280 BMP280
+  category: ENV
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/ENV001/
+  source: components/ENV001.md
+- id: IO000
+  name: Magnetic Sensors
+  category: IO
+  number: 0
+  hundreds: 0
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/
+  source: components/Magnetic Sensors/index.md
+- id: IO001
+  name: GPS-14A
+  category: IO
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO001/
+  source: components/Magnetic Sensors/IO001.md
+- id: IO002
+  name: A3144E
+  category: IO
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO002/
+  source: components/Magnetic Sensors/IO002.md
+- id: PA001
+  name: 3296W Potentiometer
+  category: PA
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA001/
+  source: components/PA001.md
+- id: PS000
+  name: DC-DC Converter
+  category: PS
+  number: 0
+  hundreds: 0
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/
+  source: components/DC-DC Converter/index.md
+- id: PS001
+  name: TPS63020
+  category: PS
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/PS001/
+  source: components/DC-DC Converter/PS001.md
+- id: PS002
+  name: Step down
+  category: PS
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/PS002/
+  source: components/DC-DC Converter/PS002.md
+- id: PS003
+  name: LAOMAO 3R3
+  category: PS
+  number: 3
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/PS003/
+  source: components/DC-DC Converter/PS003.md
+- id: PS101
+  name: Schottky Diodes
+  category: PS
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PS101/
+  source: components/PS101.md
+- id: PS200
+  name: Battery Charging
+  category: PS
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/
+  source: components/Battery Charging/index.md
+- id: PS201
+  name: TP4056
+  category: PS
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/PS201/
+  source: components/Battery Charging/PS201.md
+- id: PS202
+  name: CN3065
+  category: PS
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/PS202/
+  source: components/Battery Charging/PS202.md
+- id: PS300
+  name: LDO
+  category: PS
+  number: 300
+  hundreds: 3
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/LDO/
+  source: components/LDO/index.md
+- id: PS301
+  name: MCP1700
+  category: PS
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/LDO/PS301/
+  source: components/LDO/PS301.md
+- id: PS302
+  name: HT7333
+  category: PS
+  number: 302
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/LDO/PS302/
+  source: components/LDO/PS302.md
+- id: RF001
+  name: MFRC522
+  category: RF
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RF001/
+  source: components/RF001.md
+- id: TS001
+  name: DS18B20
+  category: TS
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/TS001/
+  source: components/TS001.md
+categories:
+  TS:
+    title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
+    count: 1
+    used_numbers:
+    - 1
+    next_any: TS002
+    next_by_family: {}
+  ENV:
+    title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
+    count: 1
+    used_numbers:
+    - 1
+    next_any: ENV002
+    next_by_family: {}
+  PS:
+    title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
+    count: 11
+    used_numbers:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 101
+    - 200
+    - 201
+    - 202
+    - 300
+    - 301
+    - 302
+    next_any: PS004
+    next_by_family:
+      PS0xx: PS004
+      PS2xx: PS203
+      PS3xx: PS303
+  MC:
+    title: Microcontrollers / dev boards (ESP32, RP2040…)
+    count: 0
+    used_numbers: []
+    next_any: MC001
+    next_by_family: {}
+  RF:
+    title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
+    count: 1
+    used_numbers:
+    - 1
+    next_any: RF002
+    next_by_family: {}
+  IO:
+    title: I/O expanders / ADC / DAC / level shifting
+    count: 3
+    used_numbers:
+    - 0
+    - 1
+    - 2
+    next_any: IO003
+    next_by_family:
+      IO0xx: IO003
+  AC:
+    title: Actuators (fans, motors, servos, relays, MOSFET boards)
+    count: 1
+    used_numbers:
+    - 1
+    next_any: AC002
+    next_by_family: {}
+  CN:
+    title: Connectors / cables / adapters
+    count: 0
+    used_numbers: []
+    next_any: CN001
+    next_by_family: {}
+  PA:
+    title: Passive Components (resistors, capacitors, potentiometers, trim pots)
+    count: 1
+    used_numbers:
+    - 1
+    next_any: PA002
+    next_by_family: {}
+  OT:
+    title: Other / misc
+    count: 0
+    used_numbers: []
+    next_any: OT001
+    next_by_family: {}
+families:
+  PS2xx:
+    key: PS2xx
+    anchor: PS200
+    alias: Battery Charging
+    members:
+    - PS200
+    - PS201
+    - PS202
+  PS0xx:
+    key: PS0xx
+    anchor: PS000
+    alias: DC-DC Converter
+    members:
+    - PS000
+    - PS001
+    - PS002
+    - PS003
+  PS3xx:
+    key: PS3xx
+    anchor: PS300
+    alias: LDO
+    members:
+    - PS300
+    - PS301
+    - PS302
+  IO0xx:
+    key: IO0xx
+    anchor: IO000
+    alias: Magnetic Sensors
+    members:
+    - IO000
+    - IO001
+    - IO002
+warnings: []

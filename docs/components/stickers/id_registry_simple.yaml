@@ -1,0 +1,86 @@
+generated_at: '2025-11-11T23:29:45Z'
+categories:
+  TS:
+    title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
+    count: 1
+    next_any: TS002
+    next_by_family: {}
+  ENV:
+    title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
+    count: 1
+    next_any: ENV002
+    next_by_family: {}
+  PS:
+    title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
+    count: 11
+    next_any: PS004
+    next_by_family:
+      PS0xx: PS004
+      PS2xx: PS203
+      PS3xx: PS303
+  MC:
+    title: Microcontrollers / dev boards (ESP32, RP2040…)
+    count: 0
+    next_any: MC001
+    next_by_family: {}
+  RF:
+    title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
+    count: 1
+    next_any: RF002
+    next_by_family: {}
+  IO:
+    title: I/O expanders / ADC / DAC / level shifting
+    count: 3
+    next_any: IO003
+    next_by_family:
+      IO0xx: IO003
+  AC:
+    title: Actuators (fans, motors, servos, relays, MOSFET boards)
+    count: 1
+    next_any: AC002
+    next_by_family: {}
+  CN:
+    title: Connectors / cables / adapters
+    count: 0
+    next_any: CN001
+    next_by_family: {}
+  PA:
+    title: Passive Components (resistors, capacitors, potentiometers, trim pots)
+    count: 1
+    next_any: PA002
+    next_by_family: {}
+  OT:
+    title: Other / misc
+    count: 0
+    next_any: OT001
+    next_by_family: {}
+families:
+  PS2xx:
+    anchor: PS200
+    alias: Battery Charging
+    members:
+    - PS200
+    - PS201
+    - PS202
+  PS0xx:
+    anchor: PS000
+    alias: DC-DC Converter
+    members:
+    - PS000
+    - PS001
+    - PS002
+    - PS003
+  PS3xx:
+    anchor: PS300
+    alias: LDO
+    members:
+    - PS300
+    - PS301
+    - PS302
+  IO0xx:
+    anchor: IO000
+    alias: Magnetic Sensors
+    members:
+    - IO000
+    - IO001
+    - IO002
