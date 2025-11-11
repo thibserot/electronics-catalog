@@ -1,15 +1,16 @@
 ---
 id: PS000
-name: Step Down
-title: DC-DC Step Down
+name: DC-DC Converter
+title: DC-DC Converter
 category: PS
 tags:
   - step-down
+  - step-up
 short: "3.3V or 5V"
 ---
 
 
-# DC – DC Step down
+# DC – DC Converter
 
 {{ children() }}
 
