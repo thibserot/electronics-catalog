@@ -1,0 +1,90 @@
+I'm working on documenting all the different electronic components i've got and properly indexing all of them in their drawers.
+The idea is to print a QR code and a short 1-2 lines description of what the component is or can be used for. The QR code will take me to a more extensive documentation online while the 1-2 lines help me quickly identify what is in that drawer
+
+In some cases, I've grouped similar components in a single drawer (e.g: LDO, battery charger) and put each type of components in that drawer into different zip bag. As an example, I've got an LDO drawer (ID: PS300) and in that drawer i have 2 zip bags: the MCP1700 (PS301) and HT7333 (PS302)
+
+You can find attached all the different ID that are being used and what is the next available ID as a whole or per family. You can also see all the categories that I've defined so far. Those categories aren't fixed and i'm happy to add more when it makes sense.
+
+For each component, I need to generate a md file with the following structure;
+
+---
+id: <get the next ID available for that category. e.g: PS303)
+name: <component name: will be printed on the sticker>
+title: <component name that will show up in the mkdocs nav>
+category: <the category of the component>
+tags: <list of meaningful tags>
+short: <first line on the sticker. Can be properties like input voltage or what it is (reed switch)
+use: <very short description (<5 words)>
+---
+
+Here is an example for the HT7333:
+
+---
+id: PS302
+name: HT7333
+title: HT7333 (3.3 V Low Power LDO)
+category: PS
+tags:
+  - ldo
+  - regulator
+  - 3v3
+  - low-iq
+  - sot-89
+short: "3.3V • up to 250 mA • 12V max VIN"
+use: "works well with esp32 deep sleep"
+---
+
+After that, we should have the following content:
+
+# <component name> - <component ID>
+
+<High level description of the component and what to use it for. After reading that section i should be able at a glance with 90% accuracy to know whether it's what i need or not>
+
+## Links
+
+- **Where to buy:** [AliExpress](<insert the link I gave you>)
+- **Datasheet:** [PDF](<retrieve the link for the given component if possible>) 
+- **Tutorial:** [Random Nerd Tutorial](<insert the link i gave you>)
+
+## Specifications
+
+<Extract them from the aliexpress description i'm attaching. If there is no description and the component is defined enough, retrieve those details from the datasheet>
+
+## Pinout & Addresses (common breakout labels)
+
+<when it makes sense, explain what each pin is for>
+
+## Wiring
+
+<when it makes sense, explain how to connect it to. You can assume it's going to be used with an esp32>
+
+## Gotchas
+<Mention any gotchas. Keep it short and simple. don't overthink it>
+
+## How to use
+
+<when it makes sense. provide a very simple code example on how to use it. Mention which libraries are needed. You can assume it's for an esp32>
+
+Add this at the end of the page:
+
+
+---
+
+
+*QR for printing will appear here after you run the script:*
+
+![QR sticker](stickers/<ID>.png)
+
+
+
+Remember, the idea is not to re-invent what exist on internet but to give me a quick access to what the component is for and whether i can connect it to my esp32 or if i need extra components to interface it first. I want to get some generic ideas of what the component can be used for (e.d: DS18b20 is a temperature probe with 0.5 degrees accuracy. That's it! i don't need to know it could be used in my heating hive project)
+
+Let me know if you need more details. I don't want you to invent things or extrapolate when you do not know. if you can find the information accurately, just skip the section or mention that there is ambiguity.
+
+Based on the above template and the registry.yaml that i've attached, I want you to generate a downloadable file for the following component:
+
+component name:
+is the component by itself or in a board:
+aliexpress link:
+tutorial link:
+description extracted from aliexpress:
