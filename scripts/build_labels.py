@@ -11,8 +11,9 @@ PRESET = "large"   # "compact" or "large"
 
 # --------------- Paths --------------------
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / "docs" / "components"
-OUT  = DOCS / "stickers"
+DOCS = ROOT / "docs"
+COMPONENTS = DOCS / "components"
+OUT  = COMPONENTS / "stickers"
 FONTS_DIR = ROOT / "fonts"
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -363,12 +364,14 @@ def pack_sheets_stable(id_to_img, order):
     return sheets_meta
 
 # ----------------- URL helpers -----------------
+
 def build_page_url(md: Path) -> str:
+    # Build URL path directly from /docs-relative path (prevents double "components/").
     rel = md.relative_to(DOCS).with_suffix('')
     if md.name.lower() == "index.md":
-        rel_url = f"components/{rel.parent.as_posix()}/"
+        rel_url = f"{rel.parent.as_posix()}/"
     else:
-        rel_url = f"components/{rel.as_posix()}/"
+        rel_url = f"{rel.as_posix()}/"
     return "https://thibserot.github.io/electronics-catalog/" + quote(rel_url, safe="/")
 
 def fallback_id_for(md: Path, fm: dict) -> str:
@@ -386,7 +389,7 @@ def main():
     rows = []
     id_to_path = {}
 
-    all_md_files = sorted(DOCS.rglob("*.md"))
+    all_md_files = sorted(COMPONENTS.rglob("*.md"))
 
     for md in all_md_files:
         text = md.read_text(encoding="utf-8")
