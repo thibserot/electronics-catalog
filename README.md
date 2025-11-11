@@ -86,6 +86,7 @@ Use the two-letter **category** + 3-digit counter:
 * **IO** – I/O expanders / ADC / DAC / level shifting
 * **AC** – Actuators (fans, motors, servos, relays, MOSFET boards)
 * **CN** – Connectors / cables / adapters
+* **PA** – Passive Components (resistors, capacitors, potentiometers, trim pots)
 * **OT** – Other / misc
 
 > IDs are human-typeable, unique, and stable. Example: `ENV003` for BME280.
