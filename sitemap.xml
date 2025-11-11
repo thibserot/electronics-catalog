@@ -2,30 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/tags/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/AC001/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/ENV001/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/PS101/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/RF001/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/TS001/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC%20Step%20Down/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC%20Step%20Down/PS001/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC%20Step%20Down/PS002/</loc>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC%20Step%20Down/PS003/</loc>
+         <lastmod>2025-11-11</lastmod>
     </url>
 </urlset>
