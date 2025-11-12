@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T02:33:02Z'
+generated_at: '2025-11-12T03:12:25Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -32,6 +32,30 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC004/
   source: components/AC004.md
+- id: AC005
+  name: Electromagnetic lock
+  category: AC
+  number: 5
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC005/
+  source: components/AC005.md
+- id: AC006
+  name: WS2812B
+  category: AC
+  number: 6
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC006/
+  source: components/AC006.md
+- id: AC007
+  name: Ultrasonic Nebulizer Driver
+  category: AC
+  number: 7
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC007/
+  source: components/AC007.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -112,6 +136,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/OT001/
   source: components/OT001.md
+- id: OT002
+  name: Key lock switch
+  category: OT
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/OT002/
+  source: components/OT002.md
 - id: PA001
   name: 3296W Potentiometer
   category: PA
@@ -286,13 +318,16 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 4
+    count: 7
     used_numbers:
     - 1
     - 2
     - 3
     - 4
-    next_any: AC005
+    - 5
+    - 6
+    - 7
+    next_any: AC008
     next_by_family: {}
   CN:
     title: Connectors / cables / adapters
@@ -312,10 +347,11 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 1
+    count: 2
     used_numbers:
     - 1
-    next_any: OT002
+    - 2
+    next_any: OT003
     next_by_family: {}
 families:
   PS2xx:

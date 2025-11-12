@@ -7,17 +7,17 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-12T02:33:02Z
+**Generated:** 2025-11-12T03:12:25Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
 |---|---|---:|---|---|
-| `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 4 | `AC005` |  |
+| `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 7 | `AC008` |  |
 | `CN` | Connectors / cables / adapters | 3 | `CN004` |  |
 | `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 1 | `ENV002` |  |
 | `IO` | I/O expanders / ADC / DAC / level shifting | 5 | `IO002` | IO1xx → `IO103` |
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 0 | `MC001` |  |
-| `OT` | Other / misc | 1 | `OT002` |  |
+| `OT` | Other / misc | 2 | `OT003` |  |
 | `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 1 | `PA002` |  |
 | `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 11 | `PS004` | PS0xx → `PS004`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
 | `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 1 | `RF002` |  |

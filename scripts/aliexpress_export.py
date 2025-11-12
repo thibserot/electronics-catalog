@@ -228,6 +228,11 @@ async def fetch_once(url: str, outdir: str = "exports"):
         out_path.write_text(header + full_md, encoding="utf-8")
 
         print(f"Saved: {out_path}")
+
+
+        print("-" * 10)
+
+        print(full_md)
         await browser.close()
 
 if __name__ == "__main__":
