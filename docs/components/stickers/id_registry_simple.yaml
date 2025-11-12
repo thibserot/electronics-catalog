@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T03:12:25Z'
+generated_at: '2025-11-12T05:53:16Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -12,7 +12,7 @@ categories:
     next_by_family: {}
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
-    count: 11
+    count: 12
     next_any: PS004
     next_by_family:
       PS0xx: PS004
@@ -53,6 +53,11 @@ categories:
     title: Other / misc
     count: 2
     next_any: OT003
+    next_by_family: {}
+  SW:
+    title: Switches & Buttons
+    count: 5
+    next_any: SW006
     next_by_family: {}
 families:
   PS2xx:

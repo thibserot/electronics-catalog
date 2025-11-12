@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T03:12:25Z'
+generated_at: '2025-11-12T05:53:16Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -240,6 +240,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/LDO/PS302/
   source: components/LDO/PS302.md
+- id: PS401
+  name: Multi-output linear power board
+  category: PS
+  number: 401
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PS401/
+  source: components/PS401.md
 - id: RF001
   name: MFRC522
   category: RF
@@ -248,6 +256,46 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF001/
   source: components/RF001.md
+- id: SW001
+  name: 3‑pin MX mechanical switch (10pcs)
+  category: SW
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW001/
+  source: components/SW001.md
+- id: SW002
+  name: Tact switch kit
+  category: SW
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW002/
+  source: components/SW002.md
+- id: SW003
+  name: MTS‑102/103
+  category: SW
+  number: 3
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW003/
+  source: components/SW003.md
+- id: SW004
+  name: Momentary push
+  category: SW
+  number: 4
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW004/
+  source: components/SW004.md
+- id: SW005
+  name: Pushbutton
+  category: SW
+  number: 5
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW005/
+  source: components/SW005.md
 - id: TS001
   name: DS18B20
   category: TS
@@ -273,7 +321,7 @@ categories:
     next_by_family: {}
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
-    count: 11
+    count: 12
     used_numbers:
     - 0
     - 1
@@ -286,6 +334,7 @@ categories:
     - 300
     - 301
     - 302
+    - 401
     next_any: PS004
     next_by_family:
       PS0xx: PS004
@@ -352,6 +401,17 @@ categories:
     - 1
     - 2
     next_any: OT003
+    next_by_family: {}
+  SW:
+    title: Switches & Buttons
+    count: 5
+    used_numbers:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    next_any: SW006
     next_by_family: {}
 families:
   PS2xx:

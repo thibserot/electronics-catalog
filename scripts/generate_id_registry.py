@@ -20,6 +20,7 @@ CATEGORY_TITLES = {
     "CN":  "Connectors / cables / adapters",
     "PA":  "Passive Components (resistors, capacitors, potentiometers, trim pots)",
     "OT":  "Other / misc",
+    "SW":  "Switches & Buttons"
 }
 
 ID_RE = re.compile(r"^([A-Z]{2,3})(\d{3})$")
