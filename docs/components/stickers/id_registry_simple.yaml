@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T00:03:17Z'
+generated_at: '2025-11-12T01:59:20Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -30,10 +30,10 @@ categories:
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 3
-    next_any: IO003
+    count: 5
+    next_any: IO002
     next_by_family:
-      IO0xx: IO003
+      IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
     count: 1
@@ -41,8 +41,8 @@ categories:
     next_by_family: {}
   CN:
     title: Connectors / cables / adapters
-    count: 0
-    next_any: CN001
+    count: 3
+    next_any: CN004
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
@@ -51,8 +51,8 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 0
-    next_any: OT001
+    count: 1
+    next_any: OT002
     next_by_family: {}
 families:
   PS2xx:
@@ -77,10 +77,10 @@ families:
     - PS300
     - PS301
     - PS302
-  IO0xx:
-    anchor: IO000
+  IO1xx:
+    anchor: IO100
     alias: Magnetic Sensors
     members:
-    - IO000
-    - IO001
-    - IO002
+    - IO100
+    - IO101
+    - IO102

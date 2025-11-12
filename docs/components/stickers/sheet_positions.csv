@@ -14,7 +14,13 @@ sheet_003.png,4,PS202
 sheet_004.png,1,PS300
 sheet_004.png,2,PS301
 sheet_004.png,3,PS302
-sheet_004.png,4,IO000
-sheet_005.png,1,IO001
-sheet_005.png,2,IO002
-sheet_005.png,3,PA001
+sheet_004.png,4,IO100
+sheet_005.png,1,IO003
+sheet_005.png,2,IO101
+sheet_005.png,3,IO102
+sheet_005.png,4,PA001
+sheet_006.png,1,OT001
+sheet_006.png,2,IO001
+sheet_006.png,3,CN001
+sheet_006.png,4,CN002
+sheet_007.png,1,CN003

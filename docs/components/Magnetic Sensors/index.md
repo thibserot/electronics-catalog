@@ -1,5 +1,5 @@
 ---
-id: IO000
+id: IO100
 name: Magnetic Sensors
 title: Magnetic Sensors
 category: IO
@@ -37,4 +37,4 @@ tags:
 
 *QR for printing will appear here after you run the script:*
 
-![QR sticker](../stickers/IO000.png)
+![QR sticker](../stickers/IO100.png)
