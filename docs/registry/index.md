@@ -7,12 +7,12 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-12T01:59:20Z
+**Generated:** 2025-11-12T02:33:02Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
 |---|---|---:|---|---|
-| `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 1 | `AC002` |  |
+| `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 4 | `AC005` |  |
 | `CN` | Connectors / cables / adapters | 3 | `CN004` |  |
 | `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 1 | `ENV002` |  |
 | `IO` | I/O expanders / ADC / DAC / level shifting | 5 | `IO002` | IO1xx → `IO103` |
