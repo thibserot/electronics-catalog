@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T01:59:28Z'
+generated_at: '2025-11-12T02:33:13Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -8,6 +8,30 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC001/
   source: components/AC001.md
+- id: AC002
+  name: Ultra-thin Horn Speaker
+  category: AC
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC002/
+  source: components/AC002.md
+- id: AC003
+  name: Piezo Ceramic Elements
+  category: AC
+  number: 3
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC003/
+  source: components/AC003.md
+- id: AC004
+  name: Passive buzzer
+  category: AC
+  number: 4
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC004/
+  source: components/AC004.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -262,10 +286,13 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 1
+    count: 4
     used_numbers:
     - 1
-    next_any: AC002
+    - 2
+    - 3
+    - 4
+    next_any: AC005
     next_by_family: {}
   CN:
     title: Connectors / cables / adapters
