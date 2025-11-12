@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T00:03:38Z'
+generated_at: '2025-11-12T01:59:28Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -8,6 +8,30 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC001/
   source: components/AC001.md
+- id: CN001
+  name: Male Pin Header
+  category: CN
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/CN001/
+  source: components/CN001.md
+- id: CN002
+  name: Female Pin Header
+  category: CN
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/CN002/
+  source: components/CN002.md
+- id: CN003
+  name: Battery Spring Contacts Set
+  category: CN
+  number: 3
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/CN003/
+  source: components/CN003.md
 - id: ENV001
   name: BME280 BMP280
   category: ENV
@@ -16,30 +40,54 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/ENV001/
   source: components/ENV001.md
-- id: IO000
-  name: Magnetic Sensors
-  category: IO
-  number: 0
-  hundreds: 0
-  is_family_anchor: true
-  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/
-  source: components/Magnetic Sensors/index.md
 - id: IO001
-  name: GPS-14A
+  name: TTP223
   category: IO
   number: 1
   hundreds: 0
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO001/
-  source: components/Magnetic Sensors/IO001.md
-- id: IO002
-  name: A3144E
+  url: https://thibserot.github.io/electronics-catalog/components/IO001/
+  source: components/IO001.md
+- id: IO003
+  name: KY-040
   category: IO
-  number: 2
+  number: 3
   hundreds: 0
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO002/
-  source: components/Magnetic Sensors/IO002.md
+  url: https://thibserot.github.io/electronics-catalog/components/IO003/
+  source: components/IO003.md
+- id: IO100
+  name: Magnetic Sensors
+  category: IO
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/
+  source: components/Magnetic Sensors/index.md
+- id: IO101
+  name: GPS-14A
+  category: IO
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO101/
+  source: components/Magnetic Sensors/IO101.md
+- id: IO102
+  name: A3144E
+  category: IO
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
+  source: components/Magnetic Sensors/IO102.md
+- id: OT001
+  name: LM386
+  category: OT
+  number: 1
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/OT001/
+  source: components/OT001.md
 - id: PA001
   name: 3296W Potentiometer
   category: PA
@@ -202,14 +250,16 @@ categories:
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 3
+    count: 5
     used_numbers:
-    - 0
     - 1
-    - 2
-    next_any: IO003
+    - 3
+    - 100
+    - 101
+    - 102
+    next_any: IO002
     next_by_family:
-      IO0xx: IO003
+      IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
     count: 1
@@ -219,9 +269,12 @@ categories:
     next_by_family: {}
   CN:
     title: Connectors / cables / adapters
-    count: 0
-    used_numbers: []
-    next_any: CN001
+    count: 3
+    used_numbers:
+    - 1
+    - 2
+    - 3
+    next_any: CN004
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
@@ -232,9 +285,10 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 0
-    used_numbers: []
-    next_any: OT001
+    count: 1
+    used_numbers:
+    - 1
+    next_any: OT002
     next_by_family: {}
 families:
   PS2xx:
@@ -262,12 +316,12 @@ families:
     - PS300
     - PS301
     - PS302
-  IO0xx:
-    key: IO0xx
-    anchor: IO000
+  IO1xx:
+    key: IO1xx
+    anchor: IO100
     alias: Magnetic Sensors
     members:
-    - IO000
-    - IO001
-    - IO002
+    - IO100
+    - IO101
+    - IO102
 warnings: []
