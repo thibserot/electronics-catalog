@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T05:53:16Z'
+generated_at: '2025-11-19T04:49:39Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -56,6 +56,118 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC007/
   source: components/AC007.md
+- id: AC008
+  name: 1-Channel Relay Module
+  category: AC
+  number: 8
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC008/
+  source: components/AC008.md
+- id: AC009
+  name: SG92R
+  category: AC
+  number: 9
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC009/
+  source: components/AC009.md
+- id: AC010
+  name: 25mm Fan 12V
+  category: AC
+  number: 10
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC010/
+  source: components/AC010.md
+- id: AC200
+  name: Transistor
+  category: AC
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/
+  source: components/Bipolar Junction Transistor/index.md
+- id: AC201
+  name: BC337
+  category: AC
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC201/
+  source: components/Bipolar Junction Transistor/AC201.md
+- id: AC202
+  name: BC327
+  category: AC
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC202/
+  source: components/Bipolar Junction Transistor/AC202.md
+- id: AC203
+  name: 2N2222
+  category: AC
+  number: 203
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC203/
+  source: components/Bipolar Junction Transistor/AC203.md
+- id: AC204
+  name: 2N2907
+  category: AC
+  number: 204
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC204/
+  source: components/Bipolar Junction Transistor/AC204.md
+- id: AC205
+  name: 2N3904
+  category: AC
+  number: 205
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC205/
+  source: components/Bipolar Junction Transistor/AC205.md
+- id: AC206
+  name: 2N3906
+  category: AC
+  number: 206
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC206/
+  source: components/Bipolar Junction Transistor/AC206.md
+- id: AC207
+  name: S8050
+  category: AC
+  number: 207
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC207/
+  source: components/Bipolar Junction Transistor/AC207.md
+- id: AC208
+  name: S8550
+  category: AC
+  number: 208
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC208/
+  source: components/Bipolar Junction Transistor/AC208.md
+- id: AC209
+  name: A1015
+  category: AC
+  number: 209
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC209/
+  source: components/Bipolar Junction Transistor/AC209.md
+- id: AC210
+  name: C1815
+  category: AC
+  number: 210
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC210/
+  source: components/Bipolar Junction Transistor/AC210.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -80,6 +192,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/CN003/
   source: components/CN003.md
+- id: CN004
+  name: 8-pin DIP IC socket
+  category: CN
+  number: 4
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/CN004/
+  source: components/CN004.md
 - id: ENV001
   name: BME280 BMP280
   category: ENV
@@ -88,6 +208,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/ENV001/
   source: components/ENV001.md
+- id: ENV002
+  name: LDR 5528
+  category: ENV
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/ENV002/
+  source: components/ENV002.md
 - id: IO001
   name: TTP223
   category: IO
@@ -152,6 +280,22 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/PA001/
   source: components/PA001.md
+- id: PA002
+  name: Axial ferrite beads
+  category: PA
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA002/
+  source: components/PA002.md
+- id: PA003
+  name: Electrolytic Capacitor
+  category: PA
+  number: 3
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA003/
+  source: components/PA003.md
 - id: PS000
   name: DC-DC Converter
   category: PS
@@ -256,6 +400,22 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF001/
   source: components/RF001.md
+- id: RF002
+  name: WiFi antenna
+  category: RF
+  number: 2
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RF002/
+  source: components/RF002.md
+- id: RF003
+  name: USR-ES1 W5500
+  category: RF
+  number: 3
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RF003/
+  source: components/RF003.md
 - id: SW001
   name: 3‑pin MX mechanical switch (10pcs)
   category: SW
@@ -296,6 +456,22 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/SW005/
   source: components/SW005.md
+- id: SW006
+  name: Mini rocker switch
+  category: SW
+  number: 6
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW006/
+  source: components/SW006.md
+- id: SW007
+  name: Mini rocker switch
+  category: SW
+  number: 7
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW007/
+  source: components/SW007.md
 - id: TS001
   name: DS18B20
   category: TS
@@ -314,10 +490,11 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 1
+    count: 2
     used_numbers:
     - 1
-    next_any: ENV002
+    - 2
+    next_any: ENV003
     next_by_family: {}
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
@@ -348,10 +525,12 @@ categories:
     next_by_family: {}
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 1
+    count: 3
     used_numbers:
     - 1
-    next_any: RF002
+    - 2
+    - 3
+    next_any: RF004
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
@@ -367,7 +546,7 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 7
+    count: 21
     used_numbers:
     - 1
     - 2
@@ -376,23 +555,41 @@ categories:
     - 5
     - 6
     - 7
-    next_any: AC008
-    next_by_family: {}
+    - 8
+    - 9
+    - 10
+    - 200
+    - 201
+    - 202
+    - 203
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 210
+    next_any: AC011
+    next_by_family:
+      AC2xx: AC211
   CN:
     title: Connectors / cables / adapters
+    count: 4
+    used_numbers:
+    - 1
+    - 2
+    - 3
+    - 4
+    next_any: CN005
+    next_by_family: {}
+  PA:
+    title: Passive Components (resistors, capacitors, potentiometers, trim pots)
     count: 3
     used_numbers:
     - 1
     - 2
     - 3
-    next_any: CN004
-    next_by_family: {}
-  PA:
-    title: Passive Components (resistors, capacitors, potentiometers, trim pots)
-    count: 1
-    used_numbers:
-    - 1
-    next_any: PA002
+    next_any: PA004
     next_by_family: {}
   OT:
     title: Other / misc
@@ -404,14 +601,16 @@ categories:
     next_by_family: {}
   SW:
     title: Switches & Buttons
-    count: 5
+    count: 7
     used_numbers:
     - 1
     - 2
     - 3
     - 4
     - 5
-    next_any: SW006
+    - 6
+    - 7
+    next_any: SW008
     next_by_family: {}
 families:
   PS2xx:
@@ -422,6 +621,22 @@ families:
     - PS200
     - PS201
     - PS202
+  AC2xx:
+    key: AC2xx
+    anchor: AC200
+    alias: Transistor
+    members:
+    - AC200
+    - AC201
+    - AC202
+    - AC203
+    - AC204
+    - AC205
+    - AC206
+    - AC207
+    - AC208
+    - AC209
+    - AC210
   PS0xx:
     key: PS0xx
     anchor: PS000

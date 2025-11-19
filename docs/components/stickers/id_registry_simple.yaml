@@ -1,4 +1,4 @@
-generated_at: '2025-11-12T05:53:16Z'
+generated_at: '2025-11-19T04:49:39Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -7,8 +7,8 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 1
-    next_any: ENV002
+    count: 2
+    next_any: ENV003
     next_by_family: {}
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
@@ -25,8 +25,8 @@ categories:
     next_by_family: {}
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 1
-    next_any: RF002
+    count: 3
+    next_any: RF004
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
@@ -36,18 +36,19 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 7
-    next_any: AC008
-    next_by_family: {}
+    count: 21
+    next_any: AC011
+    next_by_family:
+      AC2xx: AC211
   CN:
     title: Connectors / cables / adapters
-    count: 3
-    next_any: CN004
+    count: 4
+    next_any: CN005
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
-    count: 1
-    next_any: PA002
+    count: 3
+    next_any: PA004
     next_by_family: {}
   OT:
     title: Other / misc
@@ -56,8 +57,8 @@ categories:
     next_by_family: {}
   SW:
     title: Switches & Buttons
-    count: 5
-    next_any: SW006
+    count: 7
+    next_any: SW008
     next_by_family: {}
 families:
   PS2xx:
@@ -67,6 +68,21 @@ families:
     - PS200
     - PS201
     - PS202
+  AC2xx:
+    anchor: AC200
+    alias: Transistor
+    members:
+    - AC200
+    - AC201
+    - AC202
+    - AC203
+    - AC204
+    - AC205
+    - AC206
+    - AC207
+    - AC208
+    - AC209
+    - AC210
   PS0xx:
     anchor: PS000
     alias: DC-DC Converter

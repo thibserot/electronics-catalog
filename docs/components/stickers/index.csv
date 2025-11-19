@@ -6,17 +6,33 @@ AC004,Passive buzzer,https://thibserot.github.io/electronics-catalog/qr/AC004/,c
 AC005,Electromagnetic lock,https://thibserot.github.io/electronics-catalog/qr/AC005/,components/stickers/AC005.png
 AC006,WS2812B,https://thibserot.github.io/electronics-catalog/qr/AC006/,components/stickers/AC006.png
 AC007,Ultrasonic Nebulizer Driver,https://thibserot.github.io/electronics-catalog/qr/AC007/,components/stickers/AC007.png
+AC008,1-Channel Relay Module,https://thibserot.github.io/electronics-catalog/qr/AC008/,components/stickers/AC008.png
+AC009,SG92R,https://thibserot.github.io/electronics-catalog/qr/AC009/,components/stickers/AC009.png
+AC010,25mm Fan 12V,https://thibserot.github.io/electronics-catalog/qr/AC010/,components/stickers/AC010.png
 PS201,TP4056,https://thibserot.github.io/electronics-catalog/qr/PS201/,components/stickers/PS201.png
 PS202,CN3065,https://thibserot.github.io/electronics-catalog/qr/PS202/,components/stickers/PS202.png
 PS200,Battery Charging,https://thibserot.github.io/electronics-catalog/qr/PS200/,components/stickers/PS200.png
+AC201,BC337,https://thibserot.github.io/electronics-catalog/qr/AC201/,components/stickers/AC201.png
+AC202,BC327,https://thibserot.github.io/electronics-catalog/qr/AC202/,components/stickers/AC202.png
+AC203,2N2222,https://thibserot.github.io/electronics-catalog/qr/AC203/,components/stickers/AC203.png
+AC204,2N2907,https://thibserot.github.io/electronics-catalog/qr/AC204/,components/stickers/AC204.png
+AC205,2N3904,https://thibserot.github.io/electronics-catalog/qr/AC205/,components/stickers/AC205.png
+AC206,2N3906,https://thibserot.github.io/electronics-catalog/qr/AC206/,components/stickers/AC206.png
+AC207,S8050,https://thibserot.github.io/electronics-catalog/qr/AC207/,components/stickers/AC207.png
+AC208,S8550,https://thibserot.github.io/electronics-catalog/qr/AC208/,components/stickers/AC208.png
+AC209,A1015,https://thibserot.github.io/electronics-catalog/qr/AC209/,components/stickers/AC209.png
+AC210,C1815,https://thibserot.github.io/electronics-catalog/qr/AC210/,components/stickers/AC210.png
+AC200,Transistor,https://thibserot.github.io/electronics-catalog/qr/AC200/,components/stickers/AC200.png
 CN001,Male Pin Header,https://thibserot.github.io/electronics-catalog/qr/CN001/,components/stickers/CN001.png
 CN002,Female Pin Header,https://thibserot.github.io/electronics-catalog/qr/CN002/,components/stickers/CN002.png
 CN003,Battery Spring Contacts Set,https://thibserot.github.io/electronics-catalog/qr/CN003/,components/stickers/CN003.png
+CN004,8-pin DIP IC socket,https://thibserot.github.io/electronics-catalog/qr/CN004/,components/stickers/CN004.png
 PS001,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS001/,components/stickers/PS001.png
 PS002,Step down,https://thibserot.github.io/electronics-catalog/qr/PS002/,components/stickers/PS002.png
 PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,components/stickers/PS003.png
 PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
 ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
+ENV002,LDR 5528,https://thibserot.github.io/electronics-catalog/qr/ENV002/,components/stickers/ENV002.png
 IO001,TTP223,https://thibserot.github.io/electronics-catalog/qr/IO001/,components/stickers/IO001.png
 IO003,KY-040,https://thibserot.github.io/electronics-catalog/qr/IO003/,components/stickers/IO003.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
@@ -28,12 +44,18 @@ IO100,Magnetic Sensors,https://thibserot.github.io/electronics-catalog/qr/IO100/
 OT001,LM386,https://thibserot.github.io/electronics-catalog/qr/OT001/,components/stickers/OT001.png
 OT002,Key lock switch,https://thibserot.github.io/electronics-catalog/qr/OT002/,components/stickers/OT002.png
 PA001,3296W Potentiometer,https://thibserot.github.io/electronics-catalog/qr/PA001/,components/stickers/PA001.png
+PA002,Axial ferrite beads,https://thibserot.github.io/electronics-catalog/qr/PA002/,components/stickers/PA002.png
+PA003,Electrolytic Capacitor,https://thibserot.github.io/electronics-catalog/qr/PA003/,components/stickers/PA003.png
 PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PS101/,components/stickers/PS101.png
 PS401,Multi-output linear power board,https://thibserot.github.io/electronics-catalog/qr/PS401/,components/stickers/PS401.png
 RF001,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF001/,components/stickers/RF001.png
+RF002,WiFi antenna,https://thibserot.github.io/electronics-catalog/qr/RF002/,components/stickers/RF002.png
+RF003,USR-ES1 W5500,https://thibserot.github.io/electronics-catalog/qr/RF003/,components/stickers/RF003.png
 SW001,3‑pin MX mechanical switch (10pcs),https://thibserot.github.io/electronics-catalog/qr/SW001/,components/stickers/SW001.png
 SW002,Tact switch kit,https://thibserot.github.io/electronics-catalog/qr/SW002/,components/stickers/SW002.png
 SW003,MTS‑102/103,https://thibserot.github.io/electronics-catalog/qr/SW003/,components/stickers/SW003.png
 SW004,Momentary push,https://thibserot.github.io/electronics-catalog/qr/SW004/,components/stickers/SW004.png
 SW005,Pushbutton,https://thibserot.github.io/electronics-catalog/qr/SW005/,components/stickers/SW005.png
+SW006,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW006/,components/stickers/SW006.png
+SW007,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW007/,components/stickers/SW007.png
 TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,components/stickers/TS001.png
