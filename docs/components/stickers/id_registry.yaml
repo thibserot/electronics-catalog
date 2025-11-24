@@ -1,4 +1,4 @@
-generated_at: '2025-11-19T04:49:39Z'
+generated_at: '2025-11-24T03:07:58Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -256,6 +256,70 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
   source: components/Magnetic Sensors/IO102.md
+- id: MC100
+  name: ESP32
+  category: MC
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/
+  source: components/esp32/index.md
+- id: MC101
+  name: ESP32-C3 SuperMini
+  category: MC
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC101/
+  source: components/esp32/MC101.md
+- id: MC102
+  name: ESP32-S3 SuperMini
+  category: MC
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC102/
+  source: components/esp32/MC102.md
+- id: MC103
+  name: ESP32 CAM OV5640
+  category: MC
+  number: 103
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC103/
+  source: components/esp32/MC103.md
+- id: MC104
+  name: ESP32 WROOM-32D DevKit
+  category: MC
+  number: 104
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC104/
+  source: components/esp32/MC104.md
+- id: MC105
+  name: T-Display ESP32
+  category: MC
+  number: 105
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC105/
+  source: components/esp32/Other/MC105.md
+- id: MC106
+  name: ESP32 LoRa OLED
+  category: MC
+  number: 106
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC106/
+  source: components/esp32/Other/MC106.md
+- id: MC107
+  name: ESP32-CYD
+  category: MC
+  number: 107
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC107/
+  source: components/esp32/Other/MC107.md
 - id: OT001
   name: LM386
   category: OT
@@ -519,10 +583,19 @@ categories:
       PS3xx: PS303
   MC:
     title: Microcontrollers / dev boards (ESP32, RP2040…)
-    count: 0
-    used_numbers: []
+    count: 8
+    used_numbers:
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
     next_any: MC001
-    next_by_family: {}
+    next_by_family:
+      MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
     count: 3
@@ -662,4 +735,17 @@ families:
     - IO100
     - IO101
     - IO102
+  MC1xx:
+    key: MC1xx
+    anchor: MC100
+    alias: ESP32
+    members:
+    - MC100
+    - MC101
+    - MC102
+    - MC103
+    - MC104
+    - MC105
+    - MC106
+    - MC107
 warnings: []
