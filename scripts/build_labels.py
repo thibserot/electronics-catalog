@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import re, csv, json
+import re, csv, json, argparse
 import yaml
 from PIL import Image, ImageDraw, ImageFont
 import qrcode
@@ -385,7 +385,35 @@ def fallback_id_for(md: Path, fm: dict) -> str:
         return f"{folder}__{unique}"
     return md.stem
 
+def matches_filter(comp_id: str, family_filter: str = None, ids_filter: list = None) -> bool:
+    """Check if component ID matches the specified filters."""
+    if ids_filter:
+        return comp_id in ids_filter
+    if family_filter:
+        # Family format: ENV1xx, AC2xx, etc.
+        # Extract prefix (e.g., ENV, AC) and family digit (e.g., 1, 2)
+        family_match = re.match(r'^([A-Z]+)(\d)xx$', family_filter)
+        if family_match:
+            prefix, family_digit = family_match.groups()
+            # Match IDs like ENV100-ENV199, AC200-AC299, etc.
+            pattern = f"^{prefix}{family_digit}\\d{{2}}$"
+            return bool(re.match(pattern, comp_id))
+    return True  # No filter = include all
+
 def main():
+    parser = argparse.ArgumentParser(description="Generate QR code stickers for components")
+    parser.add_argument('--family', type=str, help='Generate stickers for specific family (e.g., ENV1xx, AC2xx)')
+    parser.add_argument('--ids', type=str, help='Generate stickers for specific IDs (comma-separated, e.g., ENV101,ENV102)')
+    args = parser.parse_args()
+
+    family_filter = args.family
+    ids_filter = [x.strip() for x in args.ids.split(',')] if args.ids else None
+
+    if family_filter:
+        print(f"Filtering by family: {family_filter}")
+    if ids_filter:
+        print(f"Filtering by IDs: {', '.join(ids_filter)}")
+
     rows = []
     id_to_path = {}
 
@@ -400,9 +428,15 @@ def main():
             continue
 
         comp_id   = fallback_id_for(md, fm)
+
+        # Apply filters
+        if not matches_filter(comp_id, family_filter, ids_filter):
+            continue
+
         comp_name = (fm.get("name") or "").strip() if isinstance(fm, dict) else ""
-        short     = (fm.get("short") or "").strip() if isinstance(fm, dict) else ""
-        use       = (fm.get("use")   or "").strip() if isinstance(fm, dict) else ""
+        # Support both old (short/use) and new (sticker_line1/sticker_line2) field names
+        line1 = (fm.get("sticker_line1") or fm.get("short") or "").strip() if isinstance(fm, dict) else ""
+        line2 = (fm.get("sticker_line2") or fm.get("use") or "").strip() if isinstance(fm, dict) else ""
 
         full_url = (meta.get("qr_url") if meta else None) or (fm.get("qr_url") if isinstance(fm, dict) else None) or build_page_url(md)
         url = full_url
@@ -414,8 +448,8 @@ def main():
         lines = (meta.get("lines") if meta else None)
         if not lines:
             lines = []
-            if short: lines.append(short)
-            if use:   lines.append(use)
+            if line1: lines.append(line1)
+            if line2: lines.append(line2)
 
         out_png = OUT / f"{comp_id}.png"
         make_label_png(title, lines, url, code=comp_id, out_path=out_png)
@@ -433,6 +467,12 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
+    if not rows:
+        print("No components matched the specified filters.")
+        return
+
+    print(f"Generated {len(rows)} sticker(s)")
+
     order = build_order(sorted(id_to_path.keys()))
     sheets_meta = pack_sheets_stable(id_to_path, order)
     if sheets_meta:
@@ -440,6 +480,7 @@ def main():
             w = csv.DictWriter(f, fieldnames=["sheet","height_px","labels"])
             w.writeheader()
             w.writerows(sheets_meta)
+        print(f"Generated {len(sheets_meta)} sheet(s)")
 
 if __name__ == "__main__":
     main()
