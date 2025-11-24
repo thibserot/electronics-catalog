@@ -1,4 +1,4 @@
-generated_at: '2025-11-24T23:03:59Z'
+generated_at: '2025-11-24T23:46:10Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -448,14 +448,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/PS401/
   source: components/PS401.md
-- id: RF001
-  name: MFRC522
-  category: RF
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/RF001/
-  source: components/RF001.md
 - id: RF002
   name: WiFi antenna
   category: RF
@@ -472,6 +464,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF003/
   source: components/RF003.md
+- id: RF101
+  name: MFRC522
+  category: RF
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RF101/
+  source: components/RF101.md
 - id: SW001
   name: 3‑pin MX mechanical switch (10pcs)
   category: SW
@@ -600,10 +600,10 @@ categories:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
     count: 3
     used_numbers:
-    - 1
     - 2
     - 3
-    next_any: RF004
+    - 101
+    next_any: RF001
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
