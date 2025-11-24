@@ -1,4 +1,4 @@
-generated_at: '2025-11-24T09:19:08Z'
+generated_at: '2025-11-24T23:03:59Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -31,8 +31,8 @@ categories:
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 5
-    next_any: IO002
+    count: 4
+    next_any: IO001
     next_by_family:
       IO1xx: IO103
   AC:
@@ -58,7 +58,7 @@ categories:
     next_by_family: {}
   SW:
     title: Switches & Buttons
-    count: 7
+    count: 8
     next_any: SW008
     next_by_family: {}
 families:

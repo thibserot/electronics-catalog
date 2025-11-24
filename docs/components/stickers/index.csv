@@ -33,7 +33,6 @@ PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,compo
 PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
 ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
 ENV002,LDR 5528,https://thibserot.github.io/electronics-catalog/qr/ENV002/,components/stickers/ENV002.png
-IO001,TTP223,https://thibserot.github.io/electronics-catalog/qr/IO001/,components/stickers/IO001.png
 IO003,KY-040,https://thibserot.github.io/electronics-catalog/qr/IO003/,components/stickers/IO003.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
 PS302,HT7333,https://thibserot.github.io/electronics-catalog/qr/PS302/,components/stickers/PS302.png
@@ -58,6 +57,7 @@ SW004,Momentary push,https://thibserot.github.io/electronics-catalog/qr/SW004/,c
 SW005,Pushbutton,https://thibserot.github.io/electronics-catalog/qr/SW005/,components/stickers/SW005.png
 SW006,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW006/,components/stickers/SW006.png
 SW007,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW007/,components/stickers/SW007.png
+SW201,TTP223,https://thibserot.github.io/electronics-catalog/qr/SW201/,components/stickers/SW201.png
 TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,components/stickers/TS001.png
 MC101,ESP32-C3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC101/,components/stickers/MC101.png
 MC102,ESP32-S3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC102/,components/stickers/MC102.png

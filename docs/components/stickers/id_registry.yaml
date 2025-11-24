@@ -1,4 +1,4 @@
-generated_at: '2025-11-24T09:19:08Z'
+generated_at: '2025-11-24T23:03:59Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -216,14 +216,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/ENV002/
   source: components/ENV002.md
-- id: IO001
-  name: TTP223
-  category: IO
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/IO001/
-  source: components/IO001.md
 - id: IO003
   name: KY-040
   category: IO
@@ -536,6 +528,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/SW007/
   source: components/SW007.md
+- id: SW201
+  name: TTP223
+  category: SW
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW201/
+  source: components/SW201.md
 - id: TS001
   name: DS18B20
   category: TS
@@ -607,14 +607,13 @@ categories:
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 5
+    count: 4
     used_numbers:
-    - 1
     - 3
     - 100
     - 101
     - 102
-    next_any: IO002
+    next_any: IO001
     next_by_family:
       IO1xx: IO103
   AC:
@@ -674,7 +673,7 @@ categories:
     next_by_family: {}
   SW:
     title: Switches & Buttons
-    count: 7
+    count: 8
     used_numbers:
     - 1
     - 2
@@ -683,6 +682,7 @@ categories:
     - 5
     - 6
     - 7
+    - 201
     next_any: SW008
     next_by_family: {}
 families:
