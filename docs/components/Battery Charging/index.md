@@ -14,6 +14,8 @@ short: "Solar or USB"
 
 # Battery Charging
 
+## Components in This Family
+
 {{ children() }}
 
 

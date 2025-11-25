@@ -3,8 +3,8 @@ id: ENV200
 name: Air Quality & Gas Sensors
 category: ENV
 tags: [family, sensor, air-quality, gas]
-sticker_line1: "Air Quality & Gas Sensors"
-sticker_line2: "Family anchor"
+short: "Air Quality & Gas Sensors"
+use: "CO2 • Gas leak detection"
 ---
 
 # Air Quality & Gas Sensors
@@ -34,13 +34,15 @@ Sensors for detecting CO2 concentration, combustible gases, smoke, and other air
 - Simple analog threshold detection sufficient
 - Don't need precise ppm readings (qualitative detection)
 
-## Projects Using This Family
+## Common Applications
 
-- Smart ventilation (ENV201: auto-open windows when CO2 >1000ppm)
-- Kitchen gas leak alarm (ENV202: LPG detection)
-- Indoor air quality monitor (ENV201: log CO2 + temp/humidity)
-- RV/camper safety (ENV201: CO2, ENV202: propane detection)
+- **Smart ventilation** (ENV201): Auto-open windows when CO2 >1000ppm
+- **Kitchen gas leak alarm** (ENV202): LPG/propane detection
+- **Indoor air quality monitor** (ENV201): Log CO2 + temp/humidity
+- **RV/camper safety**: CO2 monitoring (ENV201), propane detection (ENV202)
 
 ---
+
+## Components in This Family
 
 {{ children() }}

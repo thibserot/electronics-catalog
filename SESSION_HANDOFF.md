@@ -77,9 +77,9 @@ Every component page must have:
 id: ENV101                      # Component ID (required)
 name: DS18B20                   # Display name (required)
 category: ENV                   # Category code (required)
-tags: [temperature, sensor, waterproof, 1-wire, esp32-safe]  # Searchable tags (required)
-sticker_line1: "Temp sensor • ±0.5°C • Waterproof"  # What it is + key specs (required)
-sticker_line2: "Outdoor temp sensing"                # Primary use case (required)
+tags: [temperature, sensor, waterproof, 1-wire, esp32-compatible, arduino-compatible]  # Searchable tags (required)
+short: "Temp sensor • ±0.5°C • Waterproof"  # What it is + key specs (required)
+use: "Outdoor temp sensing"                  # Primary use case (required)
 # Optional fields:
 title: DS18B20                  # Override page title (defaults to name)
 qr_url: https://...             # Override QR URL
@@ -89,7 +89,7 @@ no_label: false                 # Set true to skip sticker generation
 
 **Sticker Field Guidelines:**
 
-`sticker_line1` - **What it is + key differentiator**
+`short` - **What it is + key differentiator**
 - Start with what it IS in plain language
 - Add 1-2 key specs that differentiate it from similar components
 - Example: "Temp sensor • ±0.5°C • Waterproof" (DS18B20)
@@ -97,7 +97,7 @@ no_label: false                 # Set true to skip sticker generation
 - Example: "CO2 sensor • NDIR • 0-5000ppm" (MH-Z19C)
 - Keep under ~35 characters
 
-`sticker_line2` - **Best use case or key compatibility**
+`use` - **Best use case or key compatibility**
 - When would you grab THIS one over alternatives?
 - OR what platform is it compatible with?
 - Example: "Outdoor temp sensing" (DS18B20)
@@ -283,11 +283,24 @@ void loop() {
   - ❌ Wrong: `**Sources:**\n- [Link](url)` (doesn't render)
   - ✅ Correct: `**Sources:**\n\n- [Link](url)` (blank line)
 
+**Folder Structure:**
+
+- **Family folders at root:** `docs/components/Logic-ICs/`, `docs/components/Environmental/`, etc.
+- **NO "Other" category:** Avoid generic "Other" folders that group unrelated components
+- **Single components at root:** `docs/components/RF101.md`, `docs/components/SW201.md` (no family folder needed)
+- **Sticker path depth matters:**
+  - Root components (1 level): `docs/components/RF101.md` → `![QR sticker](stickers/RF101.png)`
+  - Family components (2 levels): `docs/components/Logic-ICs/OT101.md` → `![QR sticker](../stickers/OT101.png)`
+  - Nested family (3 levels): `docs/components/Environmental/Air-Quality/ENV201.md` → `![QR sticker](../../stickers/ENV201.png)`
+
 **Nested Component Paths:**
+
 - Components in nested folders must use **relative paths** for sticker images
-- **Wrong:** `![QR sticker](stickers/ENV201.png)` (looks in current folder)
-- **Correct:** `![QR sticker](../../stickers/ENV201.png)` (goes up to docs/components/)
-- Path calculation: `docs/components/Environmental/Air-Quality/ENV201.md` → `../../stickers/ENV201.png`
+- Path calculation: Count levels from component file to `docs/components/`, then add `stickers/`
+- **Examples:**
+  - 1 level deep: `stickers/OT001.png`
+  - 2 levels deep: `../stickers/OT101.png`
+  - 3 levels deep: `../../stickers/ENV201.png`
 
 **Platform Compatibility Tags:**
 
@@ -323,13 +336,21 @@ Tag `arduino-compatible` if:
 Each family `index.md` should have:
 
 **IMPORTANT: Avoid duplication!**
+
 - Don't repeat wiring details (those belong in component pages)
 - Don't repeat technical notes (those belong in component pages)
+- Don't repeat "Projects Using This Family" as separate section (merge into "Common Applications" if needed)
 - Focus on comparison and selection guidance only
 
 **Make comparison table links clickable:**
+
 - Component names in table should link to component pages
 - Example: `| [ENV201](ENV201.md) (MH-Z19C) |` (clickable link)
+
+**Consistent separator before {{children()}}:**
+
+- Always use `---` followed by `## Components in This Family` header
+- This creates clear visual separation between family content and component list
 
 ```markdown
 ---
@@ -381,26 +402,16 @@ Sensors for measuring ambient temperature and/or relative humidity in various en
 - Calibration acceptable
 - Lowest cost option
 
-## Common Wiring
+## Common Applications
 
-**3-pin sensors** (ENV101, ENV103):
-- VCC, GND, Data line
-- Check voltage: 3.3V or 5V (see individual component pages)
+- **Weather station**: ENV102 for outdoor, ENV104 for indoor precision
+- **Aquarium/terrarium monitoring**: ENV101 waterproof probes
+- **Smart home HVAC control**: ENV104 for accuracy
+- **Greenhouse automation**: ENV102 or ENV104
 
-**I2C sensors** (ENV102, ENV104):
-- VCC, GND, SDA, SCL
-- Require 4.7kΩ pull-ups on SDA/SCL (check if onboard)
+---
 
-**Analog sensors** (ENV105):
-- VCC, GND, Analog output
-- Connect to ADC pin (ESP32: GPIO 32-39)
-
-## Projects Using This Family
-
-- Weather station (ENV102 for outdoor, ENV104 for indoor precision)
-- Aquarium/terrarium monitoring (ENV101 waterproof probes)
-- Smart home HVAC control (ENV104 for accuracy)
-- Greenhouse automation (ENV102 or ENV104)
+## Components in This Family
 
 {{ children() }}
 ```

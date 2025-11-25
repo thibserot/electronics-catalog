@@ -20,6 +20,8 @@ This family groups together **common small‑signal BJTs** (both NPN and PNP) th
 need a simple transistor for switching or low‑power amplification. The idea is that you can land on this page, scan the
 table, and then jump to the specific device page that best matches your required **voltage**, **current** and **role**.
 
+## Components in This Family
+
 {{ children() }}
 
 ## Quick comparison

@@ -15,6 +15,8 @@ tags:
 
 # Magnetic Sensors
 
+## Components in This Family
+
 {{ children() }}
 
 ---
