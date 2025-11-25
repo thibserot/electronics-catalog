@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T05:02:30Z'
+generated_at: '2025-11-25T23:01:22Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -232,14 +232,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/ENV001/
   source: components/ENV001.md
-- id: ENV002
-  name: LDR 5528
-  category: ENV
-  number: 2
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/ENV002/
-  source: components/ENV002.md
 - id: ENV200
   name: Air Quality & Gas Sensors
   category: ENV
@@ -264,6 +256,46 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV202/
   source: components/Environmental/Air-Quality/ENV202.md
+- id: ENV300
+  name: Light Sensors
+  category: ENV
+  number: 300
+  hundreds: 3
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/
+  source: components/Environmental/Light/index.md
+- id: ENV301
+  name: TSL2561
+  category: ENV
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV301/
+  source: components/Environmental/Light/ENV301.md
+- id: ENV302
+  name: TSL2591
+  category: ENV
+  number: 302
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV302/
+  source: components/Environmental/Light/ENV302.md
+- id: ENV303
+  name: BH1750
+  category: ENV
+  number: 303
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV303/
+  source: components/Environmental/Light/ENV303.md
+- id: ENV304
+  name: Photoresistor
+  category: ENV
+  number: 304
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV304/
+  source: components/Environmental/Light/ENV304.md
 - id: IO003
   name: KY-040
   category: IO
@@ -297,7 +329,7 @@ ids:
   url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
   source: components/Magnetic Sensors/IO102.md
 - id: MC100
-  name: ESP32
+  name: ESP32 Boards
   category: MC
   number: 100
   hundreds: 1
@@ -448,46 +480,46 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/PA003/
   source: components/PA003.md
-- id: PS000
-  name: DC-DC Converter
-  category: PS
-  number: 0
-  hundreds: 0
-  is_family_anchor: true
-  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/
-  source: components/DC-DC Converter/index.md
-- id: PS001
-  name: TPS63020
-  category: PS
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/PS001/
-  source: components/DC-DC Converter/PS001.md
-- id: PS002
-  name: Step down
-  category: PS
-  number: 2
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/PS002/
-  source: components/DC-DC Converter/PS002.md
-- id: PS003
-  name: LAOMAO 3R3
-  category: PS
-  number: 3
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/DC-DC%20Converter/PS003/
-  source: components/DC-DC Converter/PS003.md
-- id: PS101
+- id: PA004
   name: Schottky Diodes
+  category: PA
+  number: 4
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA004/
+  source: components/PA004.md
+- id: PS100
+  name: DC-DC Converters
+  category: PS
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/
+  source: components/DC-DC-Converters/index.md
+- id: PS101
+  name: TPS63020
   category: PS
   number: 101
   hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/PS101/
-  source: components/PS101.md
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS101/
+  source: components/DC-DC-Converters/PS101.md
+- id: PS102
+  name: 5V Buck Converter
+  category: PS
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS102/
+  source: components/DC-DC-Converters/PS102.md
+- id: PS103
+  name: Boost Converter
+  category: PS
+  number: 103
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS103/
+  source: components/DC-DC-Converters/PS103.md
 - id: PS200
   name: Battery Charging
   category: PS
@@ -513,7 +545,7 @@ ids:
   url: https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/PS202/
   source: components/Battery Charging/PS202.md
 - id: PS300
-  name: LDO
+  name: LDO Regulators
   category: PS
   number: 300
   hundreds: 3
@@ -650,25 +682,29 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 5
+    count: 9
     used_numbers:
     - 1
-    - 2
     - 200
     - 201
     - 202
-    next_any: ENV003
+    - 300
+    - 301
+    - 302
+    - 303
+    - 304
+    next_any: ENV002
     next_by_family:
       ENV2xx: ENV203
+      ENV3xx: ENV305
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
-    count: 12
+    count: 11
     used_numbers:
-    - 0
-    - 1
-    - 2
-    - 3
+    - 100
     - 101
+    - 102
+    - 103
     - 200
     - 201
     - 202
@@ -676,9 +712,9 @@ categories:
     - 301
     - 302
     - 401
-    next_any: PS004
+    next_any: PS001
     next_by_family:
-      PS0xx: PS004
+      PS1xx: PS104
       PS2xx: PS203
       PS3xx: PS303
   MC:
@@ -760,12 +796,13 @@ categories:
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
-    count: 3
+    count: 4
     used_numbers:
     - 1
     - 2
     - 3
-    next_any: PA004
+    - 4
+    next_any: PA005
     next_by_family: {}
   OT:
     title: Other / misc
@@ -822,15 +859,15 @@ families:
     - AC208
     - AC209
     - AC210
-  PS0xx:
-    key: PS0xx
-    anchor: PS000
-    alias: DC-DC Converter
+  PS1xx:
+    key: PS1xx
+    anchor: PS100
+    alias: DC-DC Converters
     members:
-    - PS000
-    - PS001
-    - PS002
-    - PS003
+    - PS100
+    - PS101
+    - PS102
+    - PS103
   ENV2xx:
     key: ENV2xx
     anchor: ENV200
@@ -839,10 +876,20 @@ families:
     - ENV200
     - ENV201
     - ENV202
+  ENV3xx:
+    key: ENV3xx
+    anchor: ENV300
+    alias: Light Sensors
+    members:
+    - ENV300
+    - ENV301
+    - ENV302
+    - ENV303
+    - ENV304
   PS3xx:
     key: PS3xx
     anchor: PS300
-    alias: LDO
+    alias: LDO Regulators
     members:
     - PS300
     - PS301
@@ -883,7 +930,7 @@ families:
   MC1xx:
     key: MC1xx
     anchor: MC100
-    alias: ESP32
+    alias: ESP32 Boards
     members:
     - MC100
     - MC101

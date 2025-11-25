@@ -26,19 +26,23 @@ CN001,Male Pin Header,https://thibserot.github.io/electronics-catalog/qr/CN001/,
 CN002,Female Pin Header,https://thibserot.github.io/electronics-catalog/qr/CN002/,components/stickers/CN002.png
 CN003,Battery Spring Contacts Set,https://thibserot.github.io/electronics-catalog/qr/CN003/,components/stickers/CN003.png
 CN004,8-pin DIP IC socket,https://thibserot.github.io/electronics-catalog/qr/CN004/,components/stickers/CN004.png
-PS001,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS001/,components/stickers/PS001.png
-PS002,Step down,https://thibserot.github.io/electronics-catalog/qr/PS002/,components/stickers/PS002.png
-PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,components/stickers/PS003.png
-PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
+PS101,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS101/,components/stickers/PS101.png
+PS102,5V Buck Converter,https://thibserot.github.io/electronics-catalog/qr/PS102/,components/stickers/PS102.png
+PS103,Boost Converter,https://thibserot.github.io/electronics-catalog/qr/PS103/,components/stickers/PS103.png
+PS100,DC-DC Converters,https://thibserot.github.io/electronics-catalog/qr/PS100/,components/stickers/PS100.png
 ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
-ENV002,LDR 5528,https://thibserot.github.io/electronics-catalog/qr/ENV002/,components/stickers/ENV002.png
 ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
 ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png
 ENV200,Air Quality & Gas Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV200/,components/stickers/ENV200.png
+ENV301,TSL2561,https://thibserot.github.io/electronics-catalog/qr/ENV301/,components/stickers/ENV301.png
+ENV302,TSL2591,https://thibserot.github.io/electronics-catalog/qr/ENV302/,components/stickers/ENV302.png
+ENV303,BH1750,https://thibserot.github.io/electronics-catalog/qr/ENV303/,components/stickers/ENV303.png
+ENV304,Photoresistor,https://thibserot.github.io/electronics-catalog/qr/ENV304/,components/stickers/ENV304.png
+ENV300,Light Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV300/,components/stickers/ENV300.png
 IO003,KY-040,https://thibserot.github.io/electronics-catalog/qr/IO003/,components/stickers/IO003.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
 PS302,HT7333,https://thibserot.github.io/electronics-catalog/qr/PS302/,components/stickers/PS302.png
-PS300,LDO,https://thibserot.github.io/electronics-catalog/qr/PS300/,components/stickers/PS300.png
+PS300,LDO Regulators,https://thibserot.github.io/electronics-catalog/qr/PS300/,components/stickers/PS300.png
 OT101,74HC595,https://thibserot.github.io/electronics-catalog/qr/OT101/,components/stickers/OT101.png
 OT102,LMC555,https://thibserot.github.io/electronics-catalog/qr/OT102/,components/stickers/OT102.png
 OT100,Logic ICs,https://thibserot.github.io/electronics-catalog/qr/OT100/,components/stickers/OT100.png
@@ -50,7 +54,7 @@ OT002,Key lock switch,https://thibserot.github.io/electronics-catalog/qr/OT002/,
 PA001,3296W Potentiometer,https://thibserot.github.io/electronics-catalog/qr/PA001/,components/stickers/PA001.png
 PA002,Axial ferrite beads,https://thibserot.github.io/electronics-catalog/qr/PA002/,components/stickers/PA002.png
 PA003,Electrolytic Capacitor,https://thibserot.github.io/electronics-catalog/qr/PA003/,components/stickers/PA003.png
-PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PS101/,components/stickers/PS101.png
+PA004,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PA004/,components/stickers/PA004.png
 PS401,Multi-output linear power board,https://thibserot.github.io/electronics-catalog/qr/PS401/,components/stickers/PS401.png
 RF002,WiFi antenna,https://thibserot.github.io/electronics-catalog/qr/RF002/,components/stickers/RF002.png
 RF003,USR-ES1 W5500,https://thibserot.github.io/electronics-catalog/qr/RF003/,components/stickers/RF003.png
@@ -78,4 +82,4 @@ MC104,ESP32 WROOM-32D DevKit,https://thibserot.github.io/electronics-catalog/qr/
 MC105,T-Display ESP32,https://thibserot.github.io/electronics-catalog/qr/MC105/,components/stickers/MC105.png
 MC106,ESP32 LoRa OLED,https://thibserot.github.io/electronics-catalog/qr/MC106/,components/stickers/MC106.png
 MC107,ESP32-CYD,https://thibserot.github.io/electronics-catalog/qr/MC107/,components/stickers/MC107.png
-MC100,ESP32,https://thibserot.github.io/electronics-catalog/qr/MC100/,components/stickers/MC100.png
+MC100,ESP32 Boards,https://thibserot.github.io/electronics-catalog/qr/MC100/,components/stickers/MC100.png
