@@ -39,11 +39,27 @@ table, and then jump to the specific device page that best matches your required
 | AC209 | A1015 | PNP | ~50 V | ~150 mA | TO-92 / SOT‑23 | audio PNP / small‑signal switch |
 | AC210 | C1815 | NPN | ~50 V | ~150 mA | TO-92 / SOT‑23 | audio NPN / small‑signal switch |
 
-Very hand‑wavy guidance:
+## Selection Guide
 
-- Use the **2N3904 / 2N3906 / A1015 / C1815** parts for **signal‑level** and **audio** work up to ~100–150 mA.
-- Use **BC337 / BC327** when you want **more current** capability in a very common through‑hole TO‑92 package.
-- Use **S8050 / S8550** when you want a cheap **low‑voltage, up‑to‑~1.5 A** discrete transistor instead of a MOSFET module.
+**Low-current general purpose (≤200mA):** Use [AC205 - 2N3904](AC205.md) (NPN) or [AC206 - 2N3906](AC206.md) (PNP) for signal-level work, LED driving, or small loads.
+
+**Medium-current switching (≤800mA):** Use [AC201 - BC337](AC201.md) (NPN) or [AC202 - BC327](AC202.md) (PNP) when you need more current in standard TO-92 package.
+
+**High-current switching (≤1.5A):** Use [AC207 - S8050](AC207.md) (NPN) or [AC208 - S8550](AC208.md) (PNP) for higher current at lower voltage (25V max).
+
+**Audio/small-signal:** Use [AC209 - A1015](AC209.md) (PNP) or [AC210 - C1815](AC210.md) (NPN) for audio amplification and small-signal applications.
+
+**Robust general use:** Use [AC203 - 2N2222](AC203.md) (NPN) or [AC204 - 2N2907](AC204.md) (PNP) for reliable switching up to 600mA.
+
+## Common Applications
+
+**LED driving:** BC337/BC327 or 2N3904/2N3906 work great for switching LED strips or multiple LEDs from MCU pins.
+
+**Relay/solenoid driving:** Use BC337 (NPN) for loads up to 800mA, or S8050 for higher current relays (up to 1.5A).
+
+**Logic level shifting:** 2N3904/2N3906 pair makes simple bidirectional level shifters for 3.3V ↔ 5V conversion.
+
+**Motor control:** S8050/S8550 can drive small DC motors directly, or use as pre-drivers for larger MOSFETs.
 
 From here, jump into the individual part pages (AC201–AC210) for more detail on each device.
 
