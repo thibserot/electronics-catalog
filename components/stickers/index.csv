@@ -33,7 +33,9 @@ PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,compo
 PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
 ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
 ENV002,LDR 5528,https://thibserot.github.io/electronics-catalog/qr/ENV002/,components/stickers/ENV002.png
-IO001,TTP223,https://thibserot.github.io/electronics-catalog/qr/IO001/,components/stickers/IO001.png
+ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
+ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png
+ENV200,Air Quality & Gas Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV200/,components/stickers/ENV200.png
 IO003,KY-040,https://thibserot.github.io/electronics-catalog/qr/IO003/,components/stickers/IO003.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
 PS302,HT7333,https://thibserot.github.io/electronics-catalog/qr/PS302/,components/stickers/PS302.png
@@ -48,9 +50,9 @@ PA002,Axial ferrite beads,https://thibserot.github.io/electronics-catalog/qr/PA0
 PA003,Electrolytic Capacitor,https://thibserot.github.io/electronics-catalog/qr/PA003/,components/stickers/PA003.png
 PS101,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PS101/,components/stickers/PS101.png
 PS401,Multi-output linear power board,https://thibserot.github.io/electronics-catalog/qr/PS401/,components/stickers/PS401.png
-RF001,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF001/,components/stickers/RF001.png
 RF002,WiFi antenna,https://thibserot.github.io/electronics-catalog/qr/RF002/,components/stickers/RF002.png
 RF003,USR-ES1 W5500,https://thibserot.github.io/electronics-catalog/qr/RF003/,components/stickers/RF003.png
+RF101,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF101/,components/stickers/RF101.png
 SW001,3‑pin MX mechanical switch (10pcs),https://thibserot.github.io/electronics-catalog/qr/SW001/,components/stickers/SW001.png
 SW002,Tact switch kit,https://thibserot.github.io/electronics-catalog/qr/SW002/,components/stickers/SW002.png
 SW003,MTS‑102/103,https://thibserot.github.io/electronics-catalog/qr/SW003/,components/stickers/SW003.png
@@ -58,4 +60,13 @@ SW004,Momentary push,https://thibserot.github.io/electronics-catalog/qr/SW004/,c
 SW005,Pushbutton,https://thibserot.github.io/electronics-catalog/qr/SW005/,components/stickers/SW005.png
 SW006,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW006/,components/stickers/SW006.png
 SW007,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW007/,components/stickers/SW007.png
+SW201,TTP223,https://thibserot.github.io/electronics-catalog/qr/SW201/,components/stickers/SW201.png
 TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,components/stickers/TS001.png
+MC101,ESP32-C3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC101/,components/stickers/MC101.png
+MC102,ESP32-S3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC102/,components/stickers/MC102.png
+MC103,ESP32 CAM OV5640,https://thibserot.github.io/electronics-catalog/qr/MC103/,components/stickers/MC103.png
+MC104,ESP32 WROOM-32D DevKit,https://thibserot.github.io/electronics-catalog/qr/MC104/,components/stickers/MC104.png
+MC105,T-Display ESP32,https://thibserot.github.io/electronics-catalog/qr/MC105/,components/stickers/MC105.png
+MC106,ESP32 LoRa OLED,https://thibserot.github.io/electronics-catalog/qr/MC106/,components/stickers/MC106.png
+MC107,ESP32-CYD,https://thibserot.github.io/electronics-catalog/qr/MC107/,components/stickers/MC107.png
+MC100,ESP32,https://thibserot.github.io/electronics-catalog/qr/MC100/,components/stickers/MC100.png

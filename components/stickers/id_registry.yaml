@@ -1,4 +1,4 @@
-generated_at: '2025-11-19T04:49:39Z'
+generated_at: '2025-11-25T00:45:58Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -216,14 +216,30 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/ENV002/
   source: components/ENV002.md
-- id: IO001
-  name: TTP223
-  category: IO
-  number: 1
-  hundreds: 0
+- id: ENV200
+  name: Air Quality & Gas Sensors
+  category: ENV
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/
+  source: components/Environmental/Air-Quality/index.md
+- id: ENV201
+  name: MH-Z19C
+  category: ENV
+  number: 201
+  hundreds: 2
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/IO001/
-  source: components/IO001.md
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV201/
+  source: components/Environmental/Air-Quality/ENV201.md
+- id: ENV202
+  name: MQ-2
+  category: ENV
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV202/
+  source: components/Environmental/Air-Quality/ENV202.md
 - id: IO003
   name: KY-040
   category: IO
@@ -256,6 +272,70 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
   source: components/Magnetic Sensors/IO102.md
+- id: MC100
+  name: ESP32
+  category: MC
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/
+  source: components/esp32/index.md
+- id: MC101
+  name: ESP32-C3 SuperMini
+  category: MC
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC101/
+  source: components/esp32/MC101.md
+- id: MC102
+  name: ESP32-S3 SuperMini
+  category: MC
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC102/
+  source: components/esp32/MC102.md
+- id: MC103
+  name: ESP32 CAM OV5640
+  category: MC
+  number: 103
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC103/
+  source: components/esp32/MC103.md
+- id: MC104
+  name: ESP32 WROOM-32D DevKit
+  category: MC
+  number: 104
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/MC104/
+  source: components/esp32/MC104.md
+- id: MC105
+  name: T-Display ESP32
+  category: MC
+  number: 105
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC105/
+  source: components/esp32/Other/MC105.md
+- id: MC106
+  name: ESP32 LoRa OLED
+  category: MC
+  number: 106
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC106/
+  source: components/esp32/Other/MC106.md
+- id: MC107
+  name: ESP32-CYD
+  category: MC
+  number: 107
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC107/
+  source: components/esp32/Other/MC107.md
 - id: OT001
   name: LM386
   category: OT
@@ -392,14 +472,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/PS401/
   source: components/PS401.md
-- id: RF001
-  name: MFRC522
-  category: RF
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/RF001/
-  source: components/RF001.md
 - id: RF002
   name: WiFi antenna
   category: RF
@@ -416,6 +488,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF003/
   source: components/RF003.md
+- id: RF101
+  name: MFRC522
+  category: RF
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RF101/
+  source: components/RF101.md
 - id: SW001
   name: 3‑pin MX mechanical switch (10pcs)
   category: SW
@@ -472,6 +552,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/SW007/
   source: components/SW007.md
+- id: SW201
+  name: TTP223
+  category: SW
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/SW201/
+  source: components/SW201.md
 - id: TS001
   name: DS18B20
   category: TS
@@ -490,12 +578,16 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 2
+    count: 5
     used_numbers:
     - 1
     - 2
+    - 200
+    - 201
+    - 202
     next_any: ENV003
-    next_by_family: {}
+    next_by_family:
+      ENV2xx: ENV203
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 12
@@ -519,29 +611,37 @@ categories:
       PS3xx: PS303
   MC:
     title: Microcontrollers / dev boards (ESP32, RP2040…)
-    count: 0
-    used_numbers: []
+    count: 8
+    used_numbers:
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
     next_any: MC001
-    next_by_family: {}
+    next_by_family:
+      MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
     count: 3
     used_numbers:
-    - 1
     - 2
     - 3
-    next_any: RF004
+    - 101
+    next_any: RF001
     next_by_family: {}
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 5
+    count: 4
     used_numbers:
-    - 1
     - 3
     - 100
     - 101
     - 102
-    next_any: IO002
+    next_any: IO001
     next_by_family:
       IO1xx: IO103
   AC:
@@ -601,7 +701,7 @@ categories:
     next_by_family: {}
   SW:
     title: Switches & Buttons
-    count: 7
+    count: 8
     used_numbers:
     - 1
     - 2
@@ -610,6 +710,7 @@ categories:
     - 5
     - 6
     - 7
+    - 201
     next_any: SW008
     next_by_family: {}
 families:
@@ -646,6 +747,14 @@ families:
     - PS001
     - PS002
     - PS003
+  ENV2xx:
+    key: ENV2xx
+    anchor: ENV200
+    alias: Air Quality & Gas Sensors
+    members:
+    - ENV200
+    - ENV201
+    - ENV202
   PS3xx:
     key: PS3xx
     anchor: PS300
@@ -662,4 +771,17 @@ families:
     - IO100
     - IO101
     - IO102
+  MC1xx:
+    key: MC1xx
+    anchor: MC100
+    alias: ESP32
+    members:
+    - MC100
+    - MC101
+    - MC102
+    - MC103
+    - MC104
+    - MC105
+    - MC106
+    - MC107
 warnings: []
