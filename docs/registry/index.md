@@ -7,14 +7,14 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-25T04:41:13Z
+**Generated:** 2025-11-25T08:19:53Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
 |---|---|---:|---|---|
 | `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 24 | `AC009` | AC2xx → `AC211`<br/>AC5xx → `AC504` |
 | `CN` | Connectors / cables / adapters | 4 | `CN005` |  |
-| `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 5 | `ENV003` | ENV2xx → `ENV203` |
+| `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 9 | `ENV002` | ENV2xx → `ENV203`<br/>ENV3xx → `ENV305` |
 | `IO` | I/O expanders / ADC / DAC / level shifting | 4 | `IO001` | IO1xx → `IO103` |
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 8 | `MC001` | MC1xx → `MC108` |
 | `OT` | Other / misc | 8 | `OT003` | OT1xx → `OT103`<br/>OT2xx → `OT203` |
@@ -30,6 +30,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `AC2xx` | Transistor | `AC200` | `AC200`, `AC201`, `AC202`, `AC203`, `AC204`, `AC205`, `AC206`, `AC207`, `AC208`, `AC209`, `AC210` |
 | `AC5xx` | Servos | `AC500` | `AC500`, `AC501`, `AC502`, `AC503` |
 | `ENV2xx` | Air Quality & Gas Sensors | `ENV200` | `ENV200`, `ENV201`, `ENV202` |
+| `ENV3xx` | Light Sensors | `ENV300` | `ENV300`, `ENV301`, `ENV302`, `ENV303`, `ENV304` |
 | `IO1xx` | Magnetic Sensors | `IO100` | `IO100`, `IO101`, `IO102` |
 | `MC1xx` | ESP32 | `MC100` | `MC100`, `MC101`, `MC102`, `MC103`, `MC104`, `MC105`, `MC106`, `MC107` |
 | `OT1xx` | Logic ICs | `OT100` | `OT100`, `OT101`, `OT102` |

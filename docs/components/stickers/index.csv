@@ -31,10 +31,14 @@ PS002,Step down,https://thibserot.github.io/electronics-catalog/qr/PS002/,compon
 PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,components/stickers/PS003.png
 PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
 ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
-ENV002,LDR 5528,https://thibserot.github.io/electronics-catalog/qr/ENV002/,components/stickers/ENV002.png
 ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
 ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png
 ENV200,Air Quality & Gas Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV200/,components/stickers/ENV200.png
+ENV301,TSL2561,https://thibserot.github.io/electronics-catalog/qr/ENV301/,components/stickers/ENV301.png
+ENV302,TSL2591,https://thibserot.github.io/electronics-catalog/qr/ENV302/,components/stickers/ENV302.png
+ENV303,BH1750,https://thibserot.github.io/electronics-catalog/qr/ENV303/,components/stickers/ENV303.png
+ENV304,Photoresistor,https://thibserot.github.io/electronics-catalog/qr/ENV304/,components/stickers/ENV304.png
+ENV300,Light Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV300/,components/stickers/ENV300.png
 IO003,KY-040,https://thibserot.github.io/electronics-catalog/qr/IO003/,components/stickers/IO003.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
 PS302,HT7333,https://thibserot.github.io/electronics-catalog/qr/PS302/,components/stickers/PS302.png

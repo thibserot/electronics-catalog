@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T04:41:13Z'
+generated_at: '2025-11-25T08:19:53Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -7,10 +7,11 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 5
-    next_any: ENV003
+    count: 9
+    next_any: ENV002
     next_by_family:
       ENV2xx: ENV203
+      ENV3xx: ENV305
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 12
@@ -103,6 +104,15 @@ families:
     - ENV200
     - ENV201
     - ENV202
+  ENV3xx:
+    anchor: ENV300
+    alias: Light Sensors
+    members:
+    - ENV300
+    - ENV301
+    - ENV302
+    - ENV303
+    - ENV304
   PS3xx:
     anchor: PS300
     alias: LDO
