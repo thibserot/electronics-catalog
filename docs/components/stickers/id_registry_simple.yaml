@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T01:38:32Z'
+generated_at: '2025-11-25T03:03:44Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -54,10 +54,11 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 5
+    count: 8
     next_any: OT003
     next_by_family:
       OT1xx: OT103
+      OT2xx: OT203
   SW:
     title: Switches & Buttons
     count: 8
@@ -122,6 +123,13 @@ families:
     - IO100
     - IO101
     - IO102
+  OT2xx:
+    anchor: OT200
+    alias: RTC Modules
+    members:
+    - OT200
+    - OT201
+    - OT202
   MC1xx:
     anchor: MC100
     alias: ESP32

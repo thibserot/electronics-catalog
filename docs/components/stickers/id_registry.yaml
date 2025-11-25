@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T01:38:32Z'
+generated_at: '2025-11-25T03:03:44Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -376,6 +376,30 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Logic-ICs/OT102/
   source: components/Logic-ICs/OT102.md
+- id: OT200
+  name: RTC Modules
+  category: OT
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/RTC-Modules/
+  source: components/RTC-Modules/index.md
+- id: OT201
+  name: DS1302
+  category: OT
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RTC-Modules/OT201/
+  source: components/RTC-Modules/OT201.md
+- id: OT202
+  name: DS1307
+  category: OT
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RTC-Modules/OT202/
+  source: components/RTC-Modules/OT202.md
 - id: PA001
   name: 3296W Potentiometer
   category: PA
@@ -717,16 +741,20 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 5
+    count: 8
     used_numbers:
     - 1
     - 2
     - 100
     - 101
     - 102
+    - 200
+    - 201
+    - 202
     next_any: OT003
     next_by_family:
       OT1xx: OT103
+      OT2xx: OT203
   SW:
     title: Switches & Buttons
     count: 8
@@ -807,6 +835,14 @@ families:
     - IO100
     - IO101
     - IO102
+  OT2xx:
+    key: OT2xx
+    anchor: OT200
+    alias: RTC Modules
+    members:
+    - OT200
+    - OT201
+    - OT202
   MC1xx:
     key: MC1xx
     anchor: MC100
