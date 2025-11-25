@@ -275,12 +275,42 @@ void loop() {
 - **Bold text before list needs blank line**
   - ❌ Wrong: `**Use when:**\n- Item 1` (list doesn't render)
   - ✅ Correct: `**Use when:**\n\n- Item 1` (blank line separates)
+- **Numbered lists need blank line after header**
+  - ❌ Wrong: `### Sensitivity\nMQ-2 is most sensitive to:\n1. Propane` (doesn't render)
+  - ✅ Correct: `### Sensitivity\n\nMQ-2 is most sensitive to:\n\n1. Propane` (blank lines)
 - **Code blocks** use triple backticks with optional language: ` ```cpp ` or ` ```python `
 - **Tables** require proper alignment with pipes and dashes (see Pinout examples)
+- **Sources sections need blank line before list**
+  - ❌ Wrong: `**Sources:**\n- [Link](url)` (doesn't render)
+  - ✅ Correct: `**Sources:**\n\n- [Link](url)` (blank line)
+
+**Nested Component Paths:**
+- Components in nested folders must use **relative paths** for sticker images
+- **Wrong:** `![QR sticker](stickers/ENV201.png)` (looks in current folder)
+- **Correct:** `![QR sticker](../../stickers/ENV201.png)` (goes up to docs/components/)
+- Path calculation: `docs/components/Environmental/Air-Quality/ENV201.md` → `../../stickers/ENV201.png`
+
+**Voltage/Power Tags:**
+- Don't use `esp32-safe` if component requires 5V power (even if logic is 3.3V)
+- Use specific tags instead:
+  - `5v-power` - Requires 5V power supply
+  - `3v3-logic` - Logic levels are 3.3V (safe for ESP32 GPIO)
+  - `esp32-safe` - ONLY if works at 3.3V power AND logic
+  - `arduino-safe` - Works at 5V power and logic
+- Clarify in "Important" section: "Requires 5V power (ESP32 5V pin) but logic is 3.3V (GPIO safe)"
 
 ### Family Index Pages
 
 Each family `index.md` should have:
+
+**IMPORTANT: Avoid duplication!**
+- Don't repeat wiring details (those belong in component pages)
+- Don't repeat technical notes (those belong in component pages)
+- Focus on comparison and selection guidance only
+
+**Make comparison table links clickable:**
+- Component names in table should link to component pages
+- Example: `| [ENV201](ENV201.md) (MH-Z19C) |` (clickable link)
 
 ```markdown
 ---

@@ -1,4 +1,4 @@
-generated_at: '2025-11-24T23:46:10Z'
+generated_at: '2025-11-25T00:28:48Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -216,6 +216,30 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/ENV002/
   source: components/ENV002.md
+- id: ENV200
+  name: Air Quality & Gas Sensors
+  category: ENV
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/
+  source: components/Environmental/Air-Quality/index.md
+- id: ENV201
+  name: MH-Z19C
+  category: ENV
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV201/
+  source: components/Environmental/Air-Quality/ENV201.md
+- id: ENV202
+  name: MQ-2
+  category: ENV
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV202/
+  source: components/Environmental/Air-Quality/ENV202.md
 - id: IO003
   name: KY-040
   category: IO
@@ -554,12 +578,16 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 2
+    count: 5
     used_numbers:
     - 1
     - 2
+    - 200
+    - 201
+    - 202
     next_any: ENV003
-    next_by_family: {}
+    next_by_family:
+      ENV2xx: ENV203
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 12
@@ -719,6 +747,14 @@ families:
     - PS001
     - PS002
     - PS003
+  ENV2xx:
+    key: ENV2xx
+    anchor: ENV200
+    alias: Air Quality & Gas Sensors
+    members:
+    - ENV200
+    - ENV201
+    - ENV202
   PS3xx:
     key: PS3xx
     anchor: PS300
