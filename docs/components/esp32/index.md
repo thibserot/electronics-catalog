@@ -9,7 +9,7 @@ tags:
   - wifi
   - bluetooth
 short: "ESP32 dev boards"
-use: "WiFi+BT • various"
+use: "WiFi+BT • Dev/IoT"
 ---
 
 # ESP32 Development Boards - MC100
