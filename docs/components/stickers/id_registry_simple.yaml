@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T10:07:17Z'
+generated_at: '2025-11-25T20:35:46Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -14,10 +14,10 @@ categories:
       ENV3xx: ENV305
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
-    count: 12
-    next_any: PS004
+    count: 11
+    next_any: PS001
     next_by_family:
-      PS0xx: PS004
+      PS1xx: PS104
       PS2xx: PS203
       PS3xx: PS303
   MC:
@@ -89,14 +89,15 @@ families:
     - AC208
     - AC209
     - AC210
-  PS0xx:
-    anchor: PS000
-    alias: DC-DC Converter
+  PS1xx:
+    anchor: PS100
+    alias: DC-DC Converters
     members:
-    - PS000
-    - PS001
-    - PS002
-    - PS003
+    - PS100
+    - PS101
+    - PS101
+    - PS102
+    - PS103
   ENV2xx:
     anchor: ENV200
     alias: Air Quality & Gas Sensors

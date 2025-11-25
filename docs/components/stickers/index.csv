@@ -26,10 +26,10 @@ CN001,Male Pin Header,https://thibserot.github.io/electronics-catalog/qr/CN001/,
 CN002,Female Pin Header,https://thibserot.github.io/electronics-catalog/qr/CN002/,components/stickers/CN002.png
 CN003,Battery Spring Contacts Set,https://thibserot.github.io/electronics-catalog/qr/CN003/,components/stickers/CN003.png
 CN004,8-pin DIP IC socket,https://thibserot.github.io/electronics-catalog/qr/CN004/,components/stickers/CN004.png
-PS001,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS001/,components/stickers/PS001.png
-PS002,Step down,https://thibserot.github.io/electronics-catalog/qr/PS002/,components/stickers/PS002.png
-PS003,LAOMAO 3R3,https://thibserot.github.io/electronics-catalog/qr/PS003/,components/stickers/PS003.png
-PS000,DC-DC Converter,https://thibserot.github.io/electronics-catalog/qr/PS000/,components/stickers/PS000.png
+PS101,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS101/,components/stickers/PS101.png
+PS102,5V Buck Converter,https://thibserot.github.io/electronics-catalog/qr/PS102/,components/stickers/PS102.png
+PS103,Boost Converter,https://thibserot.github.io/electronics-catalog/qr/PS103/,components/stickers/PS103.png
+PS100,DC-DC Converters,https://thibserot.github.io/electronics-catalog/qr/PS100/,components/stickers/PS100.png
 ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
 ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
 ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png

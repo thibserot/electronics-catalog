@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-25T10:07:17Z
+**Generated:** 2025-11-25T20:35:46Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -19,7 +19,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 8 | `MC001` | MC1xx → `MC108` |
 | `OT` | Other / misc | 8 | `OT003` | OT1xx → `OT103`<br/>OT2xx → `OT203` |
 | `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 3 | `PA004` |  |
-| `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 12 | `PS004` | PS0xx → `PS004`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
+| `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 11 | `PS001` | PS1xx → `PS104`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
 | `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 3 | `RF001` |  |
 | `SW` | Switches & Buttons | 8 | `SW008` |  |
 | `TS` | Temperature sensors (DS18B20, PT100, MAX31865, etc.) | 1 | `TS002` |  |
@@ -35,7 +35,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `MC1xx` | ESP32 | `MC100` | `MC100`, `MC101`, `MC102`, `MC103`, `MC104`, `MC105`, `MC106`, `MC107` |
 | `OT1xx` | Logic ICs | `OT100` | `OT100`, `OT101`, `OT102` |
 | `OT2xx` | RTC Modules | `OT200` | `OT200`, `OT201`, `OT202` |
-| `PS0xx` | DC-DC Converter | `PS000` | `PS000`, `PS001`, `PS002`, `PS003` |
+| `PS1xx` | DC-DC Converters | `PS100` | `PS100`, `PS101`, `PS101`, `PS102`, `PS103` |
 | `PS2xx` | Battery Charging | `PS200` | `PS200`, `PS201`, `PS202` |
 | `PS3xx` | LDO Regulators | `PS300` | `PS300`, `PS301`, `PS302` |
 
