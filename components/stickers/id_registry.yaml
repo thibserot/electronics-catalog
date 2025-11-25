@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T00:45:58Z'
+generated_at: '2025-11-25T05:02:30Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -64,14 +64,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC008/
   source: components/AC008.md
-- id: AC009
-  name: SG92R
-  category: AC
-  number: 9
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC009/
-  source: components/AC009.md
 - id: AC010
   name: 25mm Fan 12V
   category: AC
@@ -168,6 +160,38 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC210/
   source: components/Bipolar Junction Transistor/AC210.md
+- id: AC500
+  name: Servos
+  category: AC
+  number: 500
+  hundreds: 5
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/
+  source: components/Servos/index.md
+- id: AC501
+  name: SG92R
+  category: AC
+  number: 501
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/AC501/
+  source: components/Servos/AC501.md
+- id: AC502
+  name: SG90
+  category: AC
+  number: 502
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/AC502/
+  source: components/Servos/AC502.md
+- id: AC503
+  name: SG90-360
+  category: AC
+  number: 503
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/AC503/
+  source: components/Servos/AC503.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -352,6 +376,54 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/OT002/
   source: components/OT002.md
+- id: OT100
+  name: Logic ICs
+  category: OT
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Logic-ICs/
+  source: components/Logic-ICs/index.md
+- id: OT101
+  name: 74HC595
+  category: OT
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Logic-ICs/OT101/
+  source: components/Logic-ICs/OT101.md
+- id: OT102
+  name: LMC555
+  category: OT
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Logic-ICs/OT102/
+  source: components/Logic-ICs/OT102.md
+- id: OT200
+  name: RTC Modules
+  category: OT
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/RTC-Modules/
+  source: components/RTC-Modules/index.md
+- id: OT201
+  name: DS1302
+  category: OT
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RTC-Modules/OT201/
+  source: components/RTC-Modules/OT201.md
+- id: OT202
+  name: DS1307
+  category: OT
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/RTC-Modules/OT202/
+  source: components/RTC-Modules/OT202.md
 - id: PA001
   name: 3296W Potentiometer
   category: PA
@@ -646,7 +718,7 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 21
+    count: 24
     used_numbers:
     - 1
     - 2
@@ -656,7 +728,6 @@ categories:
     - 6
     - 7
     - 8
-    - 9
     - 10
     - 200
     - 201
@@ -669,9 +740,14 @@ categories:
     - 208
     - 209
     - 210
-    next_any: AC011
+    - 500
+    - 501
+    - 502
+    - 503
+    next_any: AC009
     next_by_family:
       AC2xx: AC211
+      AC5xx: AC504
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -693,12 +769,20 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 2
+    count: 8
     used_numbers:
     - 1
     - 2
+    - 100
+    - 101
+    - 102
+    - 200
+    - 201
+    - 202
     next_any: OT003
-    next_by_family: {}
+    next_by_family:
+      OT1xx: OT103
+      OT2xx: OT203
   SW:
     title: Switches & Buttons
     count: 8
@@ -763,6 +847,14 @@ families:
     - PS300
     - PS301
     - PS302
+  OT1xx:
+    key: OT1xx
+    anchor: OT100
+    alias: Logic ICs
+    members:
+    - OT100
+    - OT101
+    - OT102
   IO1xx:
     key: IO1xx
     anchor: IO100
@@ -771,6 +863,23 @@ families:
     - IO100
     - IO101
     - IO102
+  OT2xx:
+    key: OT2xx
+    anchor: OT200
+    alias: RTC Modules
+    members:
+    - OT200
+    - OT201
+    - OT202
+  AC5xx:
+    key: AC5xx
+    anchor: AC500
+    alias: Servos
+    members:
+    - AC500
+    - AC501
+    - AC502
+    - AC503
   MC1xx:
     key: MC1xx
     anchor: MC100
