@@ -309,7 +309,33 @@ def build_order(comp_ids):
     save_assignment(order)
     return order
 
-def pack_sheets_stable(id_to_img, order, prefix='sheet'):
+def create_placeholder_image():
+    """Create a blank placeholder sticker for padding sheets."""
+    from PIL import Image, ImageDraw, ImageFont
+
+    img = Image.new("L", (MAX_WIDTH, LABEL_HEIGHT_PX), 255)
+    d = ImageDraw.Draw(img)
+
+    # Draw border
+    d.rectangle([0, 0, MAX_WIDTH - 1, LABEL_HEIGHT_PX - 1], outline=200, width=2)
+
+    # Add centered text "Reserved"
+    try:
+        font = ImageFont.truetype(str(FONTS_DIR / "DejaVuSans.ttf"), 24)
+    except:
+        font = ImageFont.load_default()
+
+    text = "Reserved"
+    bbox = d.textbbox((0, 0), text, font=font)
+    text_width = bbox[2] - bbox[0]
+    text_height = bbox[3] - bbox[1]
+    x = (MAX_WIDTH - text_width) // 2
+    y = (LABEL_HEIGHT_PX - text_height) // 2
+    d.text((x, y), text, fill=128, font=font)
+
+    return img
+
+def pack_sheets_stable(id_to_img, order, prefix='sheet', pad_sheets=False):
     from PIL import Image
 
     img_map = {cid: Image.open(path).convert("L") for cid, path in id_to_img.items()}
@@ -323,6 +349,13 @@ def pack_sheets_stable(id_to_img, order, prefix='sheet'):
     while i < len(seq):
         chunk = seq[i:i+4]
         images = [img_map[cid] for cid in chunk]
+
+        # Pad incomplete sheets if requested
+        if pad_sheets and len(images) < 4:
+            placeholder = create_placeholder_image()
+            while len(images) < 4:
+                images.append(placeholder)
+                chunk.append(f"PLACEHOLDER_{len(images)}")
         total_h = sum(im.height for im in images) + LABEL_GAP_PX * max(0, len(images) - 1)
         sheet = Image.new("L", (MAX_WIDTH, total_h), 255)
         d = ImageDraw.Draw(sheet)
@@ -405,11 +438,13 @@ def main():
     parser.add_argument('--family', type=str, help='Generate stickers for specific family (e.g., ENV1xx, AC2xx)')
     parser.add_argument('--ids', type=str, help='Generate stickers for specific IDs (comma-separated, e.g., ENV101,ENV102)')
     parser.add_argument('--output-prefix', type=str, default='sheet', help='Prefix for sheet output files (default: sheet)')
+    parser.add_argument('--pad-sheets', action='store_true', help='Pad incomplete sheets to 4 stickers with placeholders')
     args = parser.parse_args()
 
     family_filter = args.family
     ids_filter = [x.strip() for x in args.ids.split(',')] if args.ids else None
     output_prefix = args.output_prefix
+    pad_sheets = args.pad_sheets
 
     if family_filter:
         print(f"Filtering by family: {family_filter}")
@@ -476,7 +511,7 @@ def main():
     print(f"Generated {len(rows)} sticker(s)")
 
     order = build_order(sorted(id_to_path.keys()))
-    sheets_meta = pack_sheets_stable(id_to_path, order, prefix=output_prefix)
+    sheets_meta = pack_sheets_stable(id_to_path, order, prefix=output_prefix, pad_sheets=pad_sheets)
     if sheets_meta:
         with open(OUT / "sheets.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["sheet","height_px","labels"])
