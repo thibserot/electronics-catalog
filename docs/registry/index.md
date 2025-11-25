@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-25T00:44:46Z
+**Generated:** 2025-11-25T00:53:56Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -17,7 +17,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 5 | `ENV003` | ENV2xx → `ENV203` |
 | `IO` | I/O expanders / ADC / DAC / level shifting | 4 | `IO001` | IO1xx → `IO103` |
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 8 | `MC001` | MC1xx → `MC108` |
-| `OT` | Other / misc | 2 | `OT003` |  |
+| `OT` | Other / misc | 5 | `OT003` | OT1xx → `OT103` |
 | `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 3 | `PA004` |  |
 | `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 12 | `PS004` | PS0xx → `PS004`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
 | `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 3 | `RF001` |  |
@@ -31,6 +31,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `ENV2xx` | Air Quality & Gas Sensors | `ENV200` | `ENV200`, `ENV201`, `ENV202` |
 | `IO1xx` | Magnetic Sensors | `IO100` | `IO100`, `IO101`, `IO102` |
 | `MC1xx` | ESP32 | `MC100` | `MC100`, `MC101`, `MC102`, `MC103`, `MC104`, `MC105`, `MC106`, `MC107` |
+| `OT1xx` | Logic ICs | `OT100` | `OT100`, `OT101`, `OT102` |
 | `PS0xx` | DC-DC Converter | `PS000` | `PS000`, `PS001`, `PS002`, `PS003` |
 | `PS2xx` | Battery Charging | `PS200` | `PS200`, `PS201`, `PS202` |
 | `PS3xx` | LDO | `PS300` | `PS300`, `PS301`, `PS302` |
