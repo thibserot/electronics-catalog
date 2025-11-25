@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T09:22:22Z'
+generated_at: '2025-11-25T10:07:17Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -545,7 +545,7 @@ ids:
   url: https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/PS202/
   source: components/Battery Charging/PS202.md
 - id: PS300
-  name: LDO
+  name: LDO Regulators
   category: PS
   number: 300
   hundreds: 3
@@ -889,7 +889,7 @@ families:
   PS3xx:
     key: PS3xx
     anchor: PS300
-    alias: LDO
+    alias: LDO Regulators
     members:
     - PS300
     - PS301

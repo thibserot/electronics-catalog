@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-25T09:22:22Z
+**Generated:** 2025-11-25T10:07:17Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -37,5 +37,5 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `OT2xx` | RTC Modules | `OT200` | `OT200`, `OT201`, `OT202` |
 | `PS0xx` | DC-DC Converter | `PS000` | `PS000`, `PS001`, `PS002`, `PS003` |
 | `PS2xx` | Battery Charging | `PS200` | `PS200`, `PS201`, `PS202` |
-| `PS3xx` | LDO | `PS300` | `PS300`, `PS301`, `PS302` |
+| `PS3xx` | LDO Regulators | `PS300` | `PS300`, `PS301`, `PS302` |
 

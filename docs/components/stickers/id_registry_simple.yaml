@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T09:22:22Z'
+generated_at: '2025-11-25T10:07:17Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -115,7 +115,7 @@ families:
     - ENV304
   PS3xx:
     anchor: PS300
-    alias: LDO
+    alias: LDO Regulators
     members:
     - PS300
     - PS301
