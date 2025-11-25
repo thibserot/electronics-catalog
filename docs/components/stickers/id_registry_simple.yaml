@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T03:26:09Z'
+generated_at: '2025-11-25T03:40:07Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -38,10 +38,11 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 21
-    next_any: AC011
+    count: 24
+    next_any: AC009
     next_by_family:
       AC2xx: AC211
+      AC5xx: AC504
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -130,6 +131,14 @@ families:
     - OT200
     - OT201
     - OT202
+  AC5xx:
+    anchor: AC500
+    alias: Servos
+    members:
+    - AC500
+    - AC501
+    - AC502
+    - AC503
   MC1xx:
     anchor: MC100
     alias: ESP32

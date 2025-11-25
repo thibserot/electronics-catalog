@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T03:26:09Z'
+generated_at: '2025-11-25T03:40:07Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -64,14 +64,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC008/
   source: components/AC008.md
-- id: AC009
-  name: SG92R
-  category: AC
-  number: 9
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC009/
-  source: components/AC009.md
 - id: AC010
   name: 25mm Fan 12V
   category: AC
@@ -168,6 +160,38 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC210/
   source: components/Bipolar Junction Transistor/AC210.md
+- id: AC500
+  name: Servos
+  category: AC
+  number: 500
+  hundreds: 5
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/
+  source: components/Servos/index.md
+- id: AC501
+  name: SG92R
+  category: AC
+  number: 501
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/AC501/
+  source: components/Servos/AC501.md
+- id: AC502
+  name: SG90
+  category: AC
+  number: 502
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/AC502/
+  source: components/Servos/AC502.md
+- id: AC503
+  name: SG90-360
+  category: AC
+  number: 503
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Servos/AC503/
+  source: components/Servos/AC503.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -694,7 +718,7 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 21
+    count: 24
     used_numbers:
     - 1
     - 2
@@ -704,7 +728,6 @@ categories:
     - 6
     - 7
     - 8
-    - 9
     - 10
     - 200
     - 201
@@ -717,9 +740,14 @@ categories:
     - 208
     - 209
     - 210
-    next_any: AC011
+    - 500
+    - 501
+    - 502
+    - 503
+    next_any: AC009
     next_by_family:
       AC2xx: AC211
+      AC5xx: AC504
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -843,6 +871,15 @@ families:
     - OT200
     - OT201
     - OT202
+  AC5xx:
+    key: AC5xx
+    anchor: AC500
+    alias: Servos
+    members:
+    - AC500
+    - AC501
+    - AC502
+    - AC503
   MC1xx:
     key: MC1xx
     anchor: MC100
