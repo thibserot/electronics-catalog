@@ -309,7 +309,7 @@ def build_order(comp_ids):
     save_assignment(order)
     return order
 
-def pack_sheets_stable(id_to_img, order):
+def pack_sheets_stable(id_to_img, order, prefix='sheet'):
     from PIL import Image
 
     img_map = {cid: Image.open(path).convert("L") for cid, path in id_to_img.items()}
@@ -345,7 +345,7 @@ def pack_sheets_stable(id_to_img, order):
             x1 = max(0, min(MAX_WIDTH - 1, x0 + CUT_LINE_WIDTH - 1))
             d.rectangle([x0, 0, x1, total_h - 1], fill=0)
 
-        out_name = f"sheet_{sheet_index:03d}.png"
+        out_name = f"{prefix}_{sheet_index:03d}.png"
         out_path = OUT / out_name
         sheet.save(out_path)
 
@@ -404,10 +404,12 @@ def main():
     parser = argparse.ArgumentParser(description="Generate QR code stickers for components")
     parser.add_argument('--family', type=str, help='Generate stickers for specific family (e.g., ENV1xx, AC2xx)')
     parser.add_argument('--ids', type=str, help='Generate stickers for specific IDs (comma-separated, e.g., ENV101,ENV102)')
+    parser.add_argument('--output-prefix', type=str, default='sheet', help='Prefix for sheet output files (default: sheet)')
     args = parser.parse_args()
 
     family_filter = args.family
     ids_filter = [x.strip() for x in args.ids.split(',')] if args.ids else None
+    output_prefix = args.output_prefix
 
     if family_filter:
         print(f"Filtering by family: {family_filter}")
@@ -474,7 +476,7 @@ def main():
     print(f"Generated {len(rows)} sticker(s)")
 
     order = build_order(sorted(id_to_path.keys()))
-    sheets_meta = pack_sheets_stable(id_to_path, order)
+    sheets_meta = pack_sheets_stable(id_to_path, order, prefix=output_prefix)
     if sheets_meta:
         with open(OUT / "sheets.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["sheet","height_px","labels"])
