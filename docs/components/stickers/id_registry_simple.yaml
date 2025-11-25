@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T00:53:56Z'
+generated_at: '2025-11-25T01:06:58Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -108,13 +108,6 @@ families:
     - PS300
     - PS301
     - PS302
-  IO1xx:
-    anchor: IO100
-    alias: Magnetic Sensors
-    members:
-    - IO100
-    - IO101
-    - IO102
   OT1xx:
     anchor: OT100
     alias: Logic ICs
@@ -122,6 +115,13 @@ families:
     - OT100
     - OT101
     - OT102
+  IO1xx:
+    anchor: IO100
+    alias: Magnetic Sensors
+    members:
+    - IO100
+    - IO101
+    - IO102
   MC1xx:
     anchor: MC100
     alias: ESP32
