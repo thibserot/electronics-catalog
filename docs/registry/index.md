@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-25T20:35:46Z
+**Generated:** 2025-11-25T21:09:56Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -18,7 +18,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `IO` | I/O expanders / ADC / DAC / level shifting | 4 | `IO001` | IO1xx → `IO103` |
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 8 | `MC001` | MC1xx → `MC108` |
 | `OT` | Other / misc | 8 | `OT003` | OT1xx → `OT103`<br/>OT2xx → `OT203` |
-| `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 3 | `PA004` |  |
+| `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 4 | `PA005` |  |
 | `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 11 | `PS001` | PS1xx → `PS104`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
 | `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 3 | `RF001` |  |
 | `SW` | Switches & Buttons | 8 | `SW008` |  |

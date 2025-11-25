@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T20:35:46Z'
+generated_at: '2025-11-25T21:09:56Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -480,6 +480,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/PA003/
   source: components/PA003.md
+- id: PA004
+  name: Schottky Diodes
+  category: PA
+  number: 4
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA004/
+  source: components/PA004.md
 - id: PS100
   name: DC-DC Converters
   category: PS
@@ -796,12 +804,13 @@ categories:
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
-    count: 3
+    count: 4
     used_numbers:
     - 1
     - 2
     - 3
-    next_any: PA004
+    - 4
+    next_any: PA005
     next_by_family: {}
   OT:
     title: Other / misc
