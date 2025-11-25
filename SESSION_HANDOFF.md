@@ -122,11 +122,10 @@ Tags should help answer: "I want to measure/control X with Y platform - what do 
    - Examples: `waterproof`, `outdoor`, `high-precision`, `low-power`
    - Examples: `toggle`, `momentary`, `latching`
 
-4. **Compatibility tags** - Practical voltage/platform support
-   - `esp32-safe` (works at 3.3V natively - direct GPIO connection)
-   - `arduino-safe` (works at 5V natively)
-   - `wide-voltage` (supports broad range like 2.5-36V)
-   - `12v`, `24v` (specific voltage required)
+4. **Compatibility tags** - Platform support (what can I use this with?)
+   - `esp32-compatible` (works with ESP32 - may need 5V pin for power, but GPIO-safe)
+   - `arduino-compatible` (works with Arduino 5V system)
+   - Most components get BOTH tags if they work with both platforms
 
 5. **Interface tags** - Only if relevant for discovery
    - Examples: `i2c`, `spi`, `uart`, `1-wire`, `analog`, `pwm`
@@ -290,14 +289,34 @@ void loop() {
 - **Correct:** `![QR sticker](../../stickers/ENV201.png)` (goes up to docs/components/)
 - Path calculation: `docs/components/Environmental/Air-Quality/ENV201.md` → `../../stickers/ENV201.png`
 
-**Voltage/Power Tags:**
-- Don't use `esp32-safe` if component requires 5V power (even if logic is 3.3V)
-- Use specific tags instead:
-  - `5v-power` - Requires 5V power supply
-  - `3v3-logic` - Logic levels are 3.3V (safe for ESP32 GPIO)
-  - `esp32-safe` - ONLY if works at 3.3V power AND logic
-  - `arduino-safe` - Works at 5V power and logic
-- Clarify in "Important" section: "Requires 5V power (ESP32 5V pin) but logic is 3.3V (GPIO safe)"
+**Platform Compatibility Tags:**
+
+Tag components based on which platforms they work with:
+
+- `esp32-compatible` - Works with ESP32 (may need 5V pin for power, but GPIO-safe)
+- `arduino-compatible` - Works with Arduino (5V system)
+
+**Tagging rules:**
+
+Tag `esp32-compatible` if:
+- Runs on 3.3V (use ESP32 3.3V pin), OR
+- Runs on 5V with 3.3V-safe GPIO (use ESP32 5V pin for power), OR
+- Requires adapters (voltage divider, level shifter) that are documented
+
+Tag `arduino-compatible` if:
+- Works with 5V power and logic
+
+**Most components get BOTH tags** (wide compatibility)
+
+**Document special requirements in component page:**
+- "Requires 5V power (connect to ESP32 5V pin)"
+- "Use voltage divider for ESP32 ADC (5V analog output)"
+- "GPIO-safe (3.3V logic levels)"
+
+**Search behavior:**
+- User searches `esp32-compatible` → Finds everything that works with ESP32
+- User searches `arduino-compatible` → Finds everything that works with Arduino
+- Complexity lives in documentation, not tags
 
 ### Family Index Pages
 
