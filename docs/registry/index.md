@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-25T21:09:56Z
+**Generated:** 2025-11-25T21:39:05Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -32,10 +32,10 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `ENV2xx` | Air Quality & Gas Sensors | `ENV200` | `ENV200`, `ENV201`, `ENV202` |
 | `ENV3xx` | Light Sensors | `ENV300` | `ENV300`, `ENV301`, `ENV302`, `ENV303`, `ENV304` |
 | `IO1xx` | Magnetic Sensors | `IO100` | `IO100`, `IO101`, `IO102` |
-| `MC1xx` | ESP32 | `MC100` | `MC100`, `MC101`, `MC102`, `MC103`, `MC104`, `MC105`, `MC106`, `MC107` |
+| `MC1xx` | ESP32 Boards | `MC100` | `MC100`, `MC101`, `MC102`, `MC103`, `MC104`, `MC105`, `MC106`, `MC107` |
 | `OT1xx` | Logic ICs | `OT100` | `OT100`, `OT101`, `OT102` |
 | `OT2xx` | RTC Modules | `OT200` | `OT200`, `OT201`, `OT202` |
-| `PS1xx` | DC-DC Converters | `PS100` | `PS100`, `PS101`, `PS101`, `PS102`, `PS103` |
+| `PS1xx` | DC-DC Converters | `PS100` | `PS100`, `PS101`, `PS102`, `PS103` |
 | `PS2xx` | Battery Charging | `PS200` | `PS200`, `PS201`, `PS202` |
 | `PS3xx` | LDO Regulators | `PS300` | `PS300`, `PS301`, `PS302` |
 

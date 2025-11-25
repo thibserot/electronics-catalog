@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T21:09:56Z'
+generated_at: '2025-11-25T21:39:05Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -329,7 +329,7 @@ ids:
   url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
   source: components/Magnetic Sensors/IO102.md
 - id: MC100
-  name: ESP32
+  name: ESP32 Boards
   category: MC
   number: 100
   hundreds: 1
@@ -504,14 +504,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS101/
   source: components/DC-DC-Converters/PS101.md
-- id: PS101
-  name: Schottky Diodes
-  category: PS
-  number: 101
-  hundreds: 1
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/PS101/
-  source: components/PS101.md
 - id: PS102
   name: 5V Buck Converter
   category: PS
@@ -874,7 +866,6 @@ families:
     members:
     - PS100
     - PS101
-    - PS101
     - PS102
     - PS103
   ENV2xx:
@@ -939,7 +930,7 @@ families:
   MC1xx:
     key: MC1xx
     anchor: MC100
-    alias: ESP32
+    alias: ESP32 Boards
     members:
     - MC100
     - MC101

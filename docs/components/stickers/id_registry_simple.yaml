@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T21:09:56Z'
+generated_at: '2025-11-25T21:39:05Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -95,7 +95,6 @@ families:
     members:
     - PS100
     - PS101
-    - PS101
     - PS102
     - PS103
   ENV2xx:
@@ -152,7 +151,7 @@ families:
     - AC503
   MC1xx:
     anchor: MC100
-    alias: ESP32
+    alias: ESP32 Boards
     members:
     - MC100
     - MC101
