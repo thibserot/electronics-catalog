@@ -26,26 +26,11 @@ use: "Position • Continuous rotation"
 
 ## Selection Guide
 
-**Choose [AC501](AC501.md) (SG92R) when:**
+**[AC501](AC501.md) (SG92R):** Strongest and most durable (carbon fiber gears), best for repeated use
 
-- Need reliable position control with durability (carbon fiber gears)
-- Want highest torque (2.5 kg·cm) for 9g servo
-- Building mechanisms that will be used repeatedly
-- Budget allows for slightly higher cost (~2× SG90 price)
+**[AC502](AC502.md) (SG90-180°):** Cheapest option, good for learning/prototyping (plastic gears)
 
-**Choose [AC502](AC502.md) (SG90-180°) when:**
-
-- Learning servo basics or quick prototyping
-- Need position control (0-180°) for light-duty tasks
-- Cost-sensitive project (cheapest option)
-- Acceptable to replace if gears strip (plastic gears less durable)
-
-**Choose [AC503](AC503.md) (SG90-360°) when:**
-
-- Need continuous rotation, not position control
-- Building wheeled robots or motorized mechanisms
-- Want bidirectional variable-speed motor with simple PWM control
-- Don't need precise speed regulation (speed varies with load)
+**[AC503](AC503.md) (SG90-360°):** Continuous rotation for wheels and motors (not position control)
 
 ## Common Applications
 
