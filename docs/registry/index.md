@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-26T02:02:22Z
+**Generated:** 2025-11-26T02:16:23Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -21,7 +21,7 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 4 | `PA005` |  |
 | `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 11 | `PS001` | PS1xx → `PS104`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
 | `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 3 | `RF001` |  |
-| `SW` | Switches & Buttons | 8 | `SW008` |  |
+| `SW` | Switches & Buttons | 9 | `SW001` | SW1xx → `SW108` |
 | `TS` | Temperature sensors (DS18B20, PT100, MAX31865, etc.) | 1 | `TS002` |  |
 
 ## Families
@@ -38,4 +38,5 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `PS1xx` | DC-DC Converters | `PS100` | `PS100`, `PS101`, `PS102`, `PS103` |
 | `PS2xx` | Battery Charging | `PS200` | `PS200`, `PS201`, `PS202` |
 | `PS3xx` | LDO Regulators | `PS300` | `PS300`, `PS301`, `PS302` |
+| `SW1xx` | Physical Switches & Buttons | `SW100` | `SW100`, `SW101`, `SW102`, `SW103`, `SW104`, `SW105`, `SW106`, `SW107` |
 

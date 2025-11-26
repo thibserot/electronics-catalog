@@ -1,4 +1,4 @@
-generated_at: '2025-11-26T02:02:22Z'
+generated_at: '2025-11-26T02:16:23Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -600,62 +600,70 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF101/
   source: components/RF101.md
-- id: SW001
+- id: SW100
+  name: Physical Switches & Buttons
+  category: SW
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/
+  source: components/Switches & Buttons/index.md
+- id: SW101
   name: 3‑pin MX mechanical switch (10pcs)
   category: SW
-  number: 1
-  hundreds: 0
+  number: 101
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW001/
-  source: components/SW001.md
-- id: SW002
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW101/
+  source: components/Switches & Buttons/SW101.md
+- id: SW102
   name: Tact switch kit
   category: SW
-  number: 2
-  hundreds: 0
+  number: 102
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW002/
-  source: components/SW002.md
-- id: SW003
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW102/
+  source: components/Switches & Buttons/SW102.md
+- id: SW103
   name: MTS‑102/103
   category: SW
-  number: 3
-  hundreds: 0
+  number: 103
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW003/
-  source: components/SW003.md
-- id: SW004
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW103/
+  source: components/Switches & Buttons/SW103.md
+- id: SW104
   name: Momentary push
   category: SW
-  number: 4
-  hundreds: 0
+  number: 104
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW004/
-  source: components/SW004.md
-- id: SW005
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW104/
+  source: components/Switches & Buttons/SW104.md
+- id: SW105
   name: Pushbutton
   category: SW
-  number: 5
-  hundreds: 0
+  number: 105
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW005/
-  source: components/SW005.md
-- id: SW006
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW105/
+  source: components/Switches & Buttons/SW105.md
+- id: SW106
   name: Mini rocker switch
   category: SW
-  number: 6
-  hundreds: 0
+  number: 106
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW006/
-  source: components/SW006.md
-- id: SW007
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW106/
+  source: components/Switches & Buttons/SW106.md
+- id: SW107
   name: Mini rocker switch
   category: SW
-  number: 7
-  hundreds: 0
+  number: 107
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/SW007/
-  source: components/SW007.md
+  url: https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW107/
+  source: components/Switches & Buttons/SW107.md
 - id: SW201
   name: TTP223
   category: SW
@@ -822,18 +830,20 @@ categories:
       OT2xx: OT203
   SW:
     title: Switches & Buttons
-    count: 8
+    count: 9
     used_numbers:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
     - 201
-    next_any: SW008
-    next_by_family: {}
+    next_any: SW001
+    next_by_family:
+      SW1xx: SW108
 families:
   PS2xx:
     key: PS2xx
@@ -927,6 +937,19 @@ families:
     - AC501
     - AC502
     - AC503
+  SW1xx:
+    key: SW1xx
+    anchor: SW100
+    alias: Physical Switches & Buttons
+    members:
+    - SW100
+    - SW101
+    - SW102
+    - SW103
+    - SW104
+    - SW105
+    - SW106
+    - SW107
   MC1xx:
     key: MC1xx
     anchor: MC100
