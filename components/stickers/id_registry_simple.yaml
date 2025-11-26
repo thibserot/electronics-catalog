@@ -1,4 +1,4 @@
-generated_at: '2025-11-26T02:02:31Z'
+generated_at: '2025-11-26T02:58:47Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -63,9 +63,10 @@ categories:
       OT2xx: OT203
   SW:
     title: Switches & Buttons
-    count: 8
-    next_any: SW008
-    next_by_family: {}
+    count: 9
+    next_any: SW001
+    next_by_family:
+      SW1xx: SW108
 families:
   PS2xx:
     anchor: PS200
@@ -149,6 +150,18 @@ families:
     - AC501
     - AC502
     - AC503
+  SW1xx:
+    anchor: SW100
+    alias: Physical Switches & Buttons
+    members:
+    - SW100
+    - SW101
+    - SW102
+    - SW103
+    - SW104
+    - SW105
+    - SW106
+    - SW107
   MC1xx:
     anchor: MC100
     alias: ESP32 Boards
