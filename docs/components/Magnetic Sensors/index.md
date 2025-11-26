@@ -4,16 +4,17 @@ name: Magnetic Sensors
 title: Magnetic Sensors
 category: IO
 tags:
-  - magnetic
-  - switch
-  - reed
-  - hall
+  - magnetic-sensor
   - proximity
-  - step-up
+  - hall-effect
+  - reed-switch
+short: "Magnetic sensors"
+use: "Reed/Hall switches"
 ---
 
+# Magnetic Sensors - IO100
 
-# Magnetic Sensors
+Magnetic proximity sensors for contactless switching. Choose between passive reed switches (no power needed) and active Hall-effect sensors (bounce-free, solid-state).
 
 ## Components in This Family
 
@@ -21,8 +22,9 @@ tags:
 
 ---
 
-## Comparison: Reed vs Hall (A3144E)
-| Aspect | Reed Switch | A3144E (Hall) |
+## Comparison: Reed vs Hall
+
+| Aspect | [IO101 - Reed Switch](IO101.md) | [IO102 - A3144E Hall](IO102.md) |
 |---|---|---|
 | Power needed | **None** | **Yes** (≥4.5 V) |
 | Output type | Dry contact (polarity‑free) | Open‑collector (active LOW) |
@@ -32,7 +34,21 @@ tags:
 | Robustness | Glass capsule, shock sensitive | Solid‑state |
 | Price | Very cheap | Cheap |
 
-**Rule of thumb:** For **simple door/end‑stop** or battery‑off operation, **reed** is perfect. For **RPM** or noisy environments, pick the **Hall**.
+## Selection Guide
+
+**[IO101 - Reed Switch](IO101.md):** Choose for battery-off operation, simple door/window sensors, or end-stops. No power consumption, completely passive.
+
+**[IO102 - A3144E Hall Effect](IO102.md):** Choose for RPM sensing, noisy environments, or when you need bounce-free clean edges. Solid-state reliability.
+
+## Common Applications
+
+**Door/window sensors:** Use IO101 (Reed) for ultra-low power installations - works even when system is off.
+
+**RPM/speed sensing:** Use IO102 (Hall) for motor tachometers, wheel encoders, or rotation counters with clean digital output.
+
+**End-stops/limit switches:** Either works, but IO101 (Reed) is simpler for 3D printers or CNC machines with moving magnets.
+
+**Proximity detection:** IO102 (Hall) for industrial/automotive applications needing solid-state reliability and noise immunity.
 
 
 ---
