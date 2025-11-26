@@ -1,4 +1,4 @@
-generated_at: '2025-11-26T02:16:23Z'
+generated_at: '2025-11-26T07:03:50Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -296,6 +296,14 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV304/
   source: components/Environmental/Light/ENV304.md
+- id: ENV305
+  name: LDR 5528
+  category: ENV
+  number: 305
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV305/
+  source: components/Environmental/Light/ENV305.md
 - id: IO003
   name: KY-040
   category: IO
@@ -690,7 +698,7 @@ categories:
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 9
+    count: 10
     used_numbers:
     - 1
     - 200
@@ -701,10 +709,11 @@ categories:
     - 302
     - 303
     - 304
+    - 305
     next_any: ENV002
     next_by_family:
       ENV2xx: ENV203
-      ENV3xx: ENV305
+      ENV3xx: ENV306
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 11
@@ -896,6 +905,7 @@ families:
     - ENV302
     - ENV303
     - ENV304
+    - ENV305
   PS3xx:
     key: PS3xx
     anchor: PS300

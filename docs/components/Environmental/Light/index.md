@@ -24,6 +24,7 @@ Light sensors for measuring illuminance (lux) or detecting brightness levels. Ch
 | [ENV302](ENV302.md) (TSL2591) | Digital | 188µ-88k lux | I2C (0x29) | Higher | Extreme range, high sensitivity |
 | [ENV303](ENV303.md) (BH1750) | Digital | 1-65k lux | I2C (0x23/5C) | 0.12 mA | Low power, simple output |
 | [ENV304](ENV304.md) (Photoresistor) | Analog | Qualitative | ADC (voltage divider) | Passive | Cheapest, threshold detection |
+| [ENV305](ENV305.md) (LDR 5528) | Analog | 10-20kΩ light | ADC (voltage divider) | Passive | Simple ambient light sensing |
 
 ## Selection Guide
 
@@ -34,6 +35,8 @@ Light sensors for measuring illuminance (lux) or detecting brightness levels. Ch
 **[ENV303](ENV303.md) (BH1750):** Simplest code, lowest power (0.12 mA), direct lux output
 
 **[ENV304](ENV304.md) (Photoresistor):** Cheapest option, analog only, good for "dark/bright" thresholds
+
+**[ENV305](ENV305.md) (LDR 5528):** GL5528 CdS photoresistor, classic voltage divider design
 
 ## Common Applications
 
