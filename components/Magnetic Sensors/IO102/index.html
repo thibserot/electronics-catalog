@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a3144e-hall-effect-switch-io002" class="md-skip">
+        <a href="#a3144e-hall-effect-switch-io102" class="md-skip">
           Skip to content
         </a>
       
@@ -3188,38 +3188,38 @@
       
       
       
-        <a href="../../../tags/#tag:digital" class="md-tag">digital</a>
+        <a href="../../../tags/#tag:arduino-compatible" class="md-tag">arduino-compatible</a>
       
     
       
       
       
-        <a href="../../../tags/#tag:hall" class="md-tag">hall</a>
+        <a href="../../../tags/#tag:esp32-compatible" class="md-tag">esp32-compatible</a>
       
     
       
       
       
-        <a href="../../../tags/#tag:magnetic" class="md-tag">magnetic</a>
+        <a href="../../../tags/#tag:hall-effect" class="md-tag">hall-effect</a>
       
     
       
       
       
-        <a href="../../../tags/#tag:open-collector" class="md-tag">open-collector</a>
+        <a href="../../../tags/#tag:magnetic-sensor" class="md-tag">magnetic-sensor</a>
       
     
       
       
       
-        <a href="../../../tags/#tag:sensor" class="md-tag">sensor</a>
+        <a href="../../../tags/#tag:proximity" class="md-tag">proximity</a>
       
     
   </nav>
 
 
 
-<h1 id="a3144e-hall-effect-switch-io002">A3144E Hall-Effect Switch — IO002<a class="headerlink" href="#a3144e-hall-effect-switch-io002" title="Permanent link">&para;</a></h1>
+<h1 id="a3144e-hall-effect-switch-io102">A3144E Hall-Effect Switch — IO102<a class="headerlink" href="#a3144e-hall-effect-switch-io102" title="Permanent link">&para;</a></h1>
 <p><strong>Package:</strong> TO‑92 (no PCB, no LED, no resistors)<br />
 <strong>Type:</strong> Unipolar Hall‑effect <strong>switch</strong> (digital on/off) with <strong>open‑collector</strong> NPN output.</p>
 <hr />
@@ -3230,10 +3230,14 @@
 </ul>
 <h2 id="can-i-wire-it-directly-to-an-esp32-gpio">Can I wire it directly to an ESP32 GPIO?<a class="headerlink" href="#can-i-wire-it-directly-to-an-esp32-gpio" title="Permanent link">&para;</a></h2>
 <p><strong>Yes, for reading</strong>, but mind two rules:</p>
-<p>1) <strong>Power the A3144E from 5 V (min 4.5 V).</strong> It is <strong>not</strong> a 3.3 V part.<br />
-2) <strong>Pull the OUT pin up to 3.3 V (not 5 V)</strong> before feeding it to the ESP32.<br />
-   - Because the output is <strong>open‑collector (a switch to GND)</strong>, you choose the pull‑up voltage. Using <strong>3.3 V</strong> keeps the ESP32 safe.<br />
-   - The ESP32's internal pull‑up (~45–50 kΩ) often works at low speed, but an <strong>external 10 kΩ to 3.3 V</strong> is <strong>recommended</strong> for clean edges and noise immunity.</p>
+<ol>
+<li><strong>Power the A3144E from 5 V (min 4.5 V).</strong> It is <strong>not</strong> a 3.3 V part.  </li>
+<li><strong>Pull the OUT pin up to 3.3 V (not 5 V)</strong> before feeding it to the ESP32.  <ul>
+<li>Because the output is <strong>open‑collector (a switch to GND)</strong>, you choose the pull‑up voltage. Using <strong>3.3 V</strong> keeps the ESP32 safe.  </li>
+<li>The ESP32's internal pull‑up (~45–50 kΩ) often works at low speed, but an <strong>external 10 kΩ to 3.3 V</strong> is <strong>recommended</strong> for clean edges and noise immunity.</li>
+</ul>
+</li>
+</ol>
 <blockquote>
 <p>Summary: <strong>VCC=5 V</strong>, <strong>OUT → 10 kΩ → 3.3 V</strong>, and read OUT on a GPIO with input mode. Common GND.</p>
 </blockquote>

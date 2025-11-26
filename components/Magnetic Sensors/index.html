@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#magnetic-sensors" class="md-skip">
+        <a href="#magnetic-sensors-io100" class="md-skip">
           Skip to content
         </a>
       
@@ -2993,9 +2993,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparison-reed-vs-hall-a3144e" class="md-nav__link">
+  <a href="#comparison-reed-vs-hall" class="md-nav__link">
     <span class="md-ellipsis">
-      Comparison: Reed vs Hall (A3144E)
+      Comparison: Reed vs Hall
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Applications
     </span>
   </a>
   
@@ -3020,13 +3038,13 @@
       
       
       
-        <a href="../../tags/#tag:hall" class="md-tag">hall</a>
+        <a href="../../tags/#tag:hall-effect" class="md-tag">hall-effect</a>
       
     
       
       
       
-        <a href="../../tags/#tag:magnetic" class="md-tag">magnetic</a>
+        <a href="../../tags/#tag:magnetic-sensor" class="md-tag">magnetic-sensor</a>
       
     
       
@@ -3038,39 +3056,28 @@
       
       
       
-        <a href="../../tags/#tag:reed" class="md-tag">reed</a>
-      
-    
-      
-      
-      
-        <a href="../../tags/#tag:step-up" class="md-tag">step-up</a>
-      
-    
-      
-      
-      
-        <a href="../../tags/#tag:switch" class="md-tag">switch</a>
+        <a href="../../tags/#tag:reed-switch" class="md-tag">reed-switch</a>
       
     
   </nav>
 
 
 
-<h1 id="magnetic-sensors">Magnetic Sensors<a class="headerlink" href="#magnetic-sensors" title="Permanent link">&para;</a></h1>
+<h1 id="magnetic-sensors-io100">Magnetic Sensors - IO100<a class="headerlink" href="#magnetic-sensors-io100" title="Permanent link">&para;</a></h1>
+<p>Magnetic proximity sensors for contactless switching. Choose between passive reed switches (no power needed) and active Hall-effect sensors (bounce-free, solid-state).</p>
 <h2 id="components-in-this-family">Components in This Family<a class="headerlink" href="#components-in-this-family" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="IO102/">A3144E Hall-Effect Switch</a></li>
 <li><a href="IO101/">GPS-14A Reed Switch</a></li>
 </ul>
 <hr />
-<h2 id="comparison-reed-vs-hall-a3144e">Comparison: Reed vs Hall (A3144E)<a class="headerlink" href="#comparison-reed-vs-hall-a3144e" title="Permanent link">&para;</a></h2>
+<h2 id="comparison-reed-vs-hall">Comparison: Reed vs Hall<a class="headerlink" href="#comparison-reed-vs-hall" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Aspect</th>
-<th>Reed Switch</th>
-<th>A3144E (Hall)</th>
+<th><a href="IO101/">IO101 - Reed Switch</a></th>
+<th><a href="IO102/">IO102 - A3144E Hall</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3111,7 +3118,14 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Rule of thumb:</strong> For <strong>simple door/end‑stop</strong> or battery‑off operation, <strong>reed</strong> is perfect. For <strong>RPM</strong> or noisy environments, pick the <strong>Hall</strong>.</p>
+<h2 id="selection-guide">Selection Guide<a class="headerlink" href="#selection-guide" title="Permanent link">&para;</a></h2>
+<p><strong><a href="IO101/">IO101 - Reed Switch</a>:</strong> Choose for battery-off operation, simple door/window sensors, or end-stops. No power consumption, completely passive.</p>
+<p><strong><a href="IO102/">IO102 - A3144E Hall Effect</a>:</strong> Choose for RPM sensing, noisy environments, or when you need bounce-free clean edges. Solid-state reliability.</p>
+<h2 id="common-applications">Common Applications<a class="headerlink" href="#common-applications" title="Permanent link">&para;</a></h2>
+<p><strong>Door/window sensors:</strong> Use IO101 (Reed) for ultra-low power installations - works even when system is off.</p>
+<p><strong>RPM/speed sensing:</strong> Use IO102 (Hall) for motor tachometers, wheel encoders, or rotation counters with clean digital output.</p>
+<p><strong>End-stops/limit switches:</strong> Either works, but IO101 (Reed) is simpler for 3D printers or CNC machines with moving magnets.</p>
+<p><strong>Proximity detection:</strong> IO102 (Hall) for industrial/automotive applications needing solid-state reliability and noise immunity.</p>
 <hr />
 <p><em>QR for printing will appear here after you run the script:</em></p>
 <p><img alt="QR sticker" src="../stickers/IO100.png" /></p>
