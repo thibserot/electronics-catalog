@@ -1,17 +1,19 @@
-generated_at: '2025-11-27T06:00:33Z'
+generated_at: '2025-11-27T07:08:51Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
-    count: 1
-    next_any: TS002
+    count: 0
+    next_any: TS001
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 10
-    next_any: ENV002
+    count: 19
+    next_any: ENV001
     next_by_family:
+      ENV1xx: ENV106
       ENV2xx: ENV203
       ENV3xx: ENV306
+      ENV4xx: ENV404
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 11
@@ -166,6 +168,14 @@ families:
     - IO100
     - IO101
     - IO102
+  ENV4xx:
+    anchor: ENV400
+    alias: Moisture & Water Sensors
+    members:
+    - ENV400
+    - ENV401
+    - ENV402
+    - ENV403
   AC1xx:
     anchor: AC100
     alias: Motor Drivers
@@ -207,6 +217,16 @@ families:
     - SW105
     - SW106
     - SW107
+  ENV1xx:
+    anchor: ENV100
+    alias: Temperature & Humidity Sensors
+    members:
+    - ENV100
+    - ENV101
+    - ENV102
+    - ENV103
+    - ENV104
+    - ENV105
   MC1xx:
     anchor: MC100
     alias: ESP32 Boards

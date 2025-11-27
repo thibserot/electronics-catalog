@@ -39,7 +39,6 @@ PS101,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS101/,compone
 PS102,5V Buck Converter,https://thibserot.github.io/electronics-catalog/qr/PS102/,components/stickers/PS102.png
 PS103,Boost Converter,https://thibserot.github.io/electronics-catalog/qr/PS103/,components/stickers/PS103.png
 PS100,DC-DC Converters,https://thibserot.github.io/electronics-catalog/qr/PS100/,components/stickers/PS100.png
-ENV001,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV001/,components/stickers/ENV001.png
 ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
 ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png
 ENV200,Air Quality & Gas Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV200/,components/stickers/ENV200.png
@@ -63,6 +62,9 @@ OT100,Logic ICs,https://thibserot.github.io/electronics-catalog/qr/OT100/,compon
 IO101,GPS-14A,https://thibserot.github.io/electronics-catalog/qr/IO101/,components/stickers/IO101.png
 IO102,A3144E,https://thibserot.github.io/electronics-catalog/qr/IO102/,components/stickers/IO102.png
 IO100,Magnetic Sensors,https://thibserot.github.io/electronics-catalog/qr/IO100/,components/stickers/IO100.png
+ENV401,Soil Moisture Sensor,https://thibserot.github.io/electronics-catalog/qr/ENV401/,components/stickers/ENV401.png
+ENV402,Water Level Sensor,https://thibserot.github.io/electronics-catalog/qr/ENV402/,components/stickers/ENV402.png
+ENV403,Rain Sensor,https://thibserot.github.io/electronics-catalog/qr/ENV403/,components/stickers/ENV403.png
 AC101,TB6612 Dual Motor Driver,https://thibserot.github.io/electronics-catalog/qr/AC101/,components/stickers/AC101.png
 AC102,L293D Motor Driver IC,https://thibserot.github.io/electronics-catalog/qr/AC102/,components/stickers/AC102.png
 OT002,Key lock switch,https://thibserot.github.io/electronics-catalog/qr/OT002/,components/stickers/OT002.png
@@ -92,7 +94,11 @@ SW105,Pushbutton,https://thibserot.github.io/electronics-catalog/qr/SW105/,compo
 SW106,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW106/,components/stickers/SW106.png
 SW107,Mini rocker switch,https://thibserot.github.io/electronics-catalog/qr/SW107/,components/stickers/SW107.png
 SW100,Physical Switches & Buttons,https://thibserot.github.io/electronics-catalog/qr/SW100/,components/stickers/SW100.png
-TS001,DS18B20,https://thibserot.github.io/electronics-catalog/qr/TS001/,components/stickers/TS001.png
+ENV101,DS18B20,https://thibserot.github.io/electronics-catalog/qr/ENV101/,components/stickers/ENV101.png
+ENV102,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV102/,components/stickers/ENV102.png
+ENV103,DHT11,https://thibserot.github.io/electronics-catalog/qr/ENV103/,components/stickers/ENV103.png
+ENV104,GY-SHT45,https://thibserot.github.io/electronics-catalog/qr/ENV104/,components/stickers/ENV104.png
+ENV105,Thermistor,https://thibserot.github.io/electronics-catalog/qr/ENV105/,components/stickers/ENV105.png
 MC101,ESP32-C3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC101/,components/stickers/MC101.png
 MC102,ESP32-S3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC102/,components/stickers/MC102.png
 MC103,ESP32 CAM OV5640,https://thibserot.github.io/electronics-catalog/qr/MC103/,components/stickers/MC103.png
