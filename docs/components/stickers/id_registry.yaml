@@ -1,4 +1,4 @@
-generated_at: '2025-11-26T07:03:50Z'
+generated_at: '2025-11-27T06:00:33Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -8,30 +8,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC001/
   source: components/AC001.md
-- id: AC002
-  name: Ultra-thin Horn Speaker
-  category: AC
-  number: 2
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC002/
-  source: components/AC002.md
-- id: AC003
-  name: Piezo Ceramic Elements
-  category: AC
-  number: 3
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC003/
-  source: components/AC003.md
-- id: AC004
-  name: Passive buzzer
-  category: AC
-  number: 4
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC004/
-  source: components/AC004.md
 - id: AC005
   name: Electromagnetic lock
   category: AC
@@ -64,14 +40,54 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC008/
   source: components/AC008.md
-- id: AC010
-  name: 25mm Fan 12V
+- id: AC011
+  name: Standard LEDs
   category: AC
-  number: 10
+  number: 11
   hundreds: 0
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC010/
-  source: components/AC010.md
+  url: https://thibserot.github.io/electronics-catalog/components/AC011/
+  source: components/AC011.md
+- id: AC012
+  name: 12V Solenoid Valve 1/2"
+  category: AC
+  number: 12
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC012/
+  source: components/AC012.md
+- id: AC013
+  name: Water Pressure Sensor
+  category: AC
+  number: 13
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC013/
+  source: components/AC013.md
+- id: AC100
+  name: Motor Drivers
+  category: AC
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/
+  source: components/Motor-Drivers/index.md
+- id: AC101
+  name: TB6612 Dual Motor Driver
+  category: AC
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/AC101/
+  source: components/Motor-Drivers/AC101.md
+- id: AC102
+  name: L293D Motor Driver IC
+  category: AC
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/AC102/
+  source: components/Motor-Drivers/AC102.md
 - id: AC200
   name: Transistor
   category: AC
@@ -160,6 +176,38 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC210/
   source: components/Bipolar Junction Transistor/AC210.md
+- id: AC301
+  name: IRLZ44N N-Ch MOSFET
+  category: AC
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC301/
+  source: components/AC301.md
+- id: AC400
+  name: Small Motors
+  category: AC
+  number: 400
+  hundreds: 4
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Small-Motors/
+  source: components/Small-Motors/index.md
+- id: AC401
+  name: 716 Coreless Motor
+  category: AC
+  number: 401
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Small-Motors/AC401/
+  source: components/Small-Motors/AC401.md
+- id: AC402
+  name: N20 Gear Motor 60RPM
+  category: AC
+  number: 402
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Small-Motors/AC402/
+  source: components/Small-Motors/AC402.md
 - id: AC500
   name: Servos
   category: AC
@@ -192,6 +240,110 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Servos/AC503/
   source: components/Servos/AC503.md
+- id: AC600
+  name: Cooling Fans
+  category: AC
+  number: 600
+  hundreds: 6
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/
+  source: components/Cooling-Fans/index.md
+- id: AC601
+  name: 25mm Fan 12V
+  category: AC
+  number: 601
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/AC601/
+  source: components/Cooling-Fans/AC601.md
+- id: AC602
+  name: 25mm Fan 5V
+  category: AC
+  number: 602
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/AC602/
+  source: components/Cooling-Fans/AC602.md
+- id: AC800
+  name: Audio Output
+  category: AC
+  number: 800
+  hundreds: 8
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/
+  source: components/Audio-Output/index.md
+- id: AC801
+  name: Ultra-thin Horn Speaker
+  category: AC
+  number: 801
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC801/
+  source: components/Audio-Output/AC801.md
+- id: AC802
+  name: Piezo Ceramic Elements
+  category: AC
+  number: 802
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC802/
+  source: components/Audio-Output/AC802.md
+- id: AC803
+  name: Passive buzzer
+  category: AC
+  number: 803
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC803/
+  source: components/Audio-Output/AC803.md
+- id: AC804
+  name: LM386
+  category: AC
+  number: 804
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC804/
+  source: components/Audio-Output/AC804.md
+- id: AC805
+  name: Active Buzzer
+  category: AC
+  number: 805
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC805/
+  source: components/Audio-Output/AC805.md
+- id: AC900
+  name: High-Power Light
+  category: AC
+  number: 900
+  hundreds: 9
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/
+  source: components/High-Power-Light/index.md
+- id: AC901
+  name: XPG3 S4 7W LED
+  category: AC
+  number: 901
+  hundreds: 9
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC901/
+  source: components/High-Power-Light/AC901.md
+- id: AC902
+  name: Laser Diode Module
+  category: AC
+  number: 902
+  hundreds: 9
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC902/
+  source: components/High-Power-Light/AC902.md
+- id: AC903
+  name: KY-008 Laser Module
+  category: AC
+  number: 903
+  hundreds: 9
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC903/
+  source: components/High-Power-Light/AC903.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -400,14 +552,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC107/
   source: components/esp32/Other/MC107.md
-- id: OT001
-  name: LM386
-  category: OT
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/OT001/
-  source: components/OT001.md
 - id: OT002
   name: Key lock switch
   category: OT
@@ -771,17 +915,19 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 24
+    count: 43
     used_numbers:
     - 1
-    - 2
-    - 3
-    - 4
     - 5
     - 6
     - 7
     - 8
-    - 10
+    - 11
+    - 12
+    - 13
+    - 100
+    - 101
+    - 102
     - 200
     - 201
     - 202
@@ -793,14 +939,36 @@ categories:
     - 208
     - 209
     - 210
+    - 301
+    - 400
+    - 401
+    - 402
     - 500
     - 501
     - 502
     - 503
-    next_any: AC009
+    - 600
+    - 601
+    - 602
+    - 800
+    - 801
+    - 802
+    - 803
+    - 804
+    - 805
+    - 900
+    - 901
+    - 902
+    - 903
+    next_any: AC002
     next_by_family:
+      AC1xx: AC103
       AC2xx: AC211
+      AC4xx: AC403
       AC5xx: AC504
+      AC6xx: AC603
+      AC8xx: AC806
+      AC9xx: AC904
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -823,9 +991,8 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 8
+    count: 7
     used_numbers:
-    - 1
     - 2
     - 100
     - 101
@@ -833,7 +1000,7 @@ categories:
     - 200
     - 201
     - 202
-    next_any: OT003
+    next_any: OT001
     next_by_family:
       OT1xx: OT103
       OT2xx: OT203
@@ -854,6 +1021,17 @@ categories:
     next_by_family:
       SW1xx: SW108
 families:
+  AC8xx:
+    key: AC8xx
+    anchor: AC800
+    alias: Audio Output
+    members:
+    - AC800
+    - AC801
+    - AC802
+    - AC803
+    - AC804
+    - AC805
   PS2xx:
     key: PS2xx
     anchor: PS200
@@ -878,6 +1056,14 @@ families:
     - AC208
     - AC209
     - AC210
+  AC6xx:
+    key: AC6xx
+    anchor: AC600
+    alias: Cooling Fans
+    members:
+    - AC600
+    - AC601
+    - AC602
   PS1xx:
     key: PS1xx
     anchor: PS100
@@ -906,6 +1092,15 @@ families:
     - ENV303
     - ENV304
     - ENV305
+  AC9xx:
+    key: AC9xx
+    anchor: AC900
+    alias: High-Power Light
+    members:
+    - AC900
+    - AC901
+    - AC902
+    - AC903
   PS3xx:
     key: PS3xx
     anchor: PS300
@@ -930,6 +1125,14 @@ families:
     - IO100
     - IO101
     - IO102
+  AC1xx:
+    key: AC1xx
+    anchor: AC100
+    alias: Motor Drivers
+    members:
+    - AC100
+    - AC101
+    - AC102
   OT2xx:
     key: OT2xx
     anchor: OT200
@@ -947,6 +1150,14 @@ families:
     - AC501
     - AC502
     - AC503
+  AC4xx:
+    key: AC4xx
+    anchor: AC400
+    alias: Small Motors
+    members:
+    - AC400
+    - AC401
+    - AC402
   SW1xx:
     key: SW1xx
     anchor: SW100

@@ -7,17 +7,17 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-26T07:03:50Z
+**Generated:** 2025-11-27T06:00:33Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
 |---|---|---:|---|---|
-| `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 24 | `AC009` | AC2xx → `AC211`<br/>AC5xx → `AC504` |
+| `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 43 | `AC002` | AC1xx → `AC103`<br/>AC2xx → `AC211`<br/>AC4xx → `AC403`<br/>AC5xx → `AC504`<br/>AC6xx → `AC603`<br/>AC8xx → `AC806`<br/>AC9xx → `AC904` |
 | `CN` | Connectors / cables / adapters | 4 | `CN005` |  |
 | `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 10 | `ENV002` | ENV2xx → `ENV203`<br/>ENV3xx → `ENV306` |
 | `IO` | I/O expanders / ADC / DAC / level shifting | 4 | `IO001` | IO1xx → `IO103` |
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 8 | `MC001` | MC1xx → `MC108` |
-| `OT` | Other / misc | 8 | `OT003` | OT1xx → `OT103`<br/>OT2xx → `OT203` |
+| `OT` | Other / misc | 7 | `OT001` | OT1xx → `OT103`<br/>OT2xx → `OT203` |
 | `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 4 | `PA005` |  |
 | `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 11 | `PS001` | PS1xx → `PS104`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
 | `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 3 | `RF001` |  |
@@ -27,8 +27,13 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 ## Families
 | Family | Alias | Anchor | Members |
 |---|---|---|---|
+| `AC1xx` | Motor Drivers | `AC100` | `AC100`, `AC101`, `AC102` |
 | `AC2xx` | Transistor | `AC200` | `AC200`, `AC201`, `AC202`, `AC203`, `AC204`, `AC205`, `AC206`, `AC207`, `AC208`, `AC209`, `AC210` |
+| `AC4xx` | Small Motors | `AC400` | `AC400`, `AC401`, `AC402` |
 | `AC5xx` | Servos | `AC500` | `AC500`, `AC501`, `AC502`, `AC503` |
+| `AC6xx` | Cooling Fans | `AC600` | `AC600`, `AC601`, `AC602` |
+| `AC8xx` | Audio Output | `AC800` | `AC800`, `AC801`, `AC802`, `AC803`, `AC804`, `AC805` |
+| `AC9xx` | High-Power Light | `AC900` | `AC900`, `AC901`, `AC902`, `AC903` |
 | `ENV2xx` | Air Quality & Gas Sensors | `ENV200` | `ENV200`, `ENV201`, `ENV202` |
 | `ENV3xx` | Light Sensors | `ENV300` | `ENV300`, `ENV301`, `ENV302`, `ENV303`, `ENV304`, `ENV305` |
 | `IO1xx` | Magnetic Sensors | `IO100` | `IO100`, `IO101`, `IO102` |

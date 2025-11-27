@@ -1,4 +1,4 @@
-generated_at: '2025-11-26T07:03:50Z'
+generated_at: '2025-11-27T06:00:33Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -39,11 +39,16 @@ categories:
       IO1xx: IO103
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 24
-    next_any: AC009
+    count: 43
+    next_any: AC002
     next_by_family:
+      AC1xx: AC103
       AC2xx: AC211
+      AC4xx: AC403
       AC5xx: AC504
+      AC6xx: AC603
+      AC8xx: AC806
+      AC9xx: AC904
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -56,8 +61,8 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 8
-    next_any: OT003
+    count: 7
+    next_any: OT001
     next_by_family:
       OT1xx: OT103
       OT2xx: OT203
@@ -68,6 +73,16 @@ categories:
     next_by_family:
       SW1xx: SW108
 families:
+  AC8xx:
+    anchor: AC800
+    alias: Audio Output
+    members:
+    - AC800
+    - AC801
+    - AC802
+    - AC803
+    - AC804
+    - AC805
   PS2xx:
     anchor: PS200
     alias: Battery Charging
@@ -90,6 +105,13 @@ families:
     - AC208
     - AC209
     - AC210
+  AC6xx:
+    anchor: AC600
+    alias: Cooling Fans
+    members:
+    - AC600
+    - AC601
+    - AC602
   PS1xx:
     anchor: PS100
     alias: DC-DC Converters
@@ -115,6 +137,14 @@ families:
     - ENV303
     - ENV304
     - ENV305
+  AC9xx:
+    anchor: AC900
+    alias: High-Power Light
+    members:
+    - AC900
+    - AC901
+    - AC902
+    - AC903
   PS3xx:
     anchor: PS300
     alias: LDO Regulators
@@ -136,6 +166,13 @@ families:
     - IO100
     - IO101
     - IO102
+  AC1xx:
+    anchor: AC100
+    alias: Motor Drivers
+    members:
+    - AC100
+    - AC101
+    - AC102
   OT2xx:
     anchor: OT200
     alias: RTC Modules
@@ -151,6 +188,13 @@ families:
     - AC501
     - AC502
     - AC503
+  AC4xx:
+    anchor: AC400
+    alias: Small Motors
+    members:
+    - AC400
+    - AC401
+    - AC402
   SW1xx:
     anchor: SW100
     alias: Physical Switches & Buttons
