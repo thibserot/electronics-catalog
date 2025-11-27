@@ -1,4 +1,4 @@
-generated_at: '2025-11-27T09:42:55Z'
+generated_at: '2025-11-27T22:25:47Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -528,14 +528,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV403/
   source: components/Moisture-Water/ENV403.md
-- id: IO003
-  name: KY-040
-  category: IO
-  number: 3
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/IO003/
-  source: components/IO003.md
 - id: IO100
   name: Magnetic Sensors
   category: IO
@@ -560,6 +552,182 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
   source: components/Magnetic Sensors/IO102.md
+- id: IO300
+  name: Rotary Encoders & Joysticks
+  category: IO
+  number: 300
+  hundreds: 3
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/
+  source: components/Rotary-Joystick/index.md
+- id: IO301
+  name: KY-040 Rotary Encoder
+  category: IO
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO301/
+  source: components/Rotary-Joystick/IO301.md
+- id: IO302
+  name: Rotary Encoder Module
+  category: IO
+  number: 302
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO302/
+  source: components/Rotary-Joystick/IO302.md
+- id: IO303
+  name: Joystick Module
+  category: IO
+  number: 303
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO303/
+  source: components/Rotary-Joystick/IO303.md
+- id: IO400
+  name: Motion & Orientation Sensors
+  category: IO
+  number: 400
+  hundreds: 4
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/
+  source: components/Motion-Orientation/index.md
+- id: IO401
+  name: MPU6050
+  category: IO
+  number: 401
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO401/
+  source: components/Motion-Orientation/IO401.md
+- id: IO402
+  name: ADXL345
+  category: IO
+  number: 402
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO402/
+  source: components/Motion-Orientation/IO402.md
+- id: IO403
+  name: GY-271 HMC5883L
+  category: IO
+  number: 403
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO403/
+  source: components/Motion-Orientation/IO403.md
+- id: IO404
+  name: Tilt Switch
+  category: IO
+  number: 404
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO404/
+  source: components/Motion-Orientation/IO404.md
+- id: IO405
+  name: SW-420 Vibration Sensor
+  category: IO
+  number: 405
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO405/
+  source: components/Motion-Orientation/IO405.md
+- id: IO406
+  name: HC-SR501 PIR
+  category: IO
+  number: 406
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO406/
+  source: components/Motion-Orientation/IO406.md
+- id: IO500
+  name: Distance & Proximity Sensors
+  category: IO
+  number: 500
+  hundreds: 5
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/
+  source: components/Distance-Proximity/index.md
+- id: IO501
+  name: HC-SR04
+  category: IO
+  number: 501
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/IO501/
+  source: components/Distance-Proximity/IO501.md
+- id: IO502
+  name: VL53L0X
+  category: IO
+  number: 502
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/IO502/
+  source: components/Distance-Proximity/IO502.md
+- id: IO600
+  name: Audio Input Microphones
+  category: IO
+  number: 600
+  hundreds: 6
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Input/
+  source: components/Audio-Input/index.md
+- id: IO601
+  name: MAX4466 Microphone
+  category: IO
+  number: 601
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Input/IO601/
+  source: components/Audio-Input/IO601.md
+- id: IO602
+  name: INMP441 I2S
+  category: IO
+  number: 602
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Input/IO602/
+  source: components/Audio-Input/IO602.md
+- id: IO700
+  name: Displays
+  category: IO
+  number: 700
+  hundreds: 7
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/
+  source: components/Displays/index.md
+- id: IO701
+  name: 0.96" OLED I2C
+  category: IO
+  number: 701
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO701/
+  source: components/Displays/IO701.md
+- id: IO702
+  name: 1.3" OLED I2C
+  category: IO
+  number: 702
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO702/
+  source: components/Displays/IO702.md
+- id: IO703
+  name: 16x2 LCD I2C
+  category: IO
+  number: 703
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO703/
+  source: components/Displays/IO703.md
+- id: IO704
+  name: TM1637 7-Segment
+  category: IO
+  number: 704
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO704/
+  source: components/Displays/IO704.md
 - id: MC100
   name: ESP32 Boards
   category: MC
@@ -808,14 +976,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF002/
   source: components/RF002.md
-- id: RF003
-  name: USR-ES1 W5500
-  category: RF
-  number: 3
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/RF003/
-  source: components/RF003.md
 - id: RF101
   name: MFRC522
   category: RF
@@ -824,6 +984,54 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF101/
   source: components/RF101.md
+- id: RF200
+  name: Wireless & Ethernet
+  category: RF
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/
+  source: components/Wireless-Ethernet/index.md
+- id: RF201
+  name: USR-ES1 W5500
+  category: RF
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/RF201/
+  source: components/Wireless-Ethernet/RF201.md
+- id: RF202
+  name: ESP-01S
+  category: RF
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/RF202/
+  source: components/Wireless-Ethernet/RF202.md
+- id: RF300
+  name: Infrared
+  category: RF
+  number: 300
+  hundreds: 3
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Infrared/
+  source: components/Infrared/index.md
+- id: RF301
+  name: IR Receiver VS1838B
+  category: RF
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Infrared/RF301/
+  source: components/Infrared/RF301.md
+- id: RF302
+  name: IR LED Transmitter
+  category: RF
+  number: 302
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Infrared/RF302/
+  source: components/Infrared/RF302.md
 - id: SW100
   name: Physical Switches & Buttons
   category: SW
@@ -969,24 +1177,57 @@ categories:
       MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 3
+    count: 8
     used_numbers:
     - 2
-    - 3
     - 101
+    - 200
+    - 201
+    - 202
+    - 300
+    - 301
+    - 302
     next_any: RF001
-    next_by_family: {}
+    next_by_family:
+      RF2xx: RF203
+      RF3xx: RF303
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 4
+    count: 25
     used_numbers:
-    - 3
     - 100
     - 101
     - 102
+    - 300
+    - 301
+    - 302
+    - 303
+    - 400
+    - 401
+    - 402
+    - 403
+    - 404
+    - 405
+    - 406
+    - 500
+    - 501
+    - 502
+    - 600
+    - 601
+    - 602
+    - 700
+    - 701
+    - 702
+    - 703
+    - 704
     next_any: IO001
     next_by_family:
       IO1xx: IO103
+      IO3xx: IO304
+      IO4xx: IO407
+      IO5xx: IO503
+      IO6xx: IO603
+      IO7xx: IO705
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
     count: 43
@@ -1095,6 +1336,14 @@ categories:
     next_by_family:
       SW1xx: SW108
 families:
+  IO6xx:
+    key: IO6xx
+    anchor: IO600
+    alias: Audio Input Microphones
+    members:
+    - IO600
+    - IO601
+    - IO602
   AC8xx:
     key: AC8xx
     anchor: AC800
@@ -1147,6 +1396,24 @@ families:
     - PS101
     - PS102
     - PS103
+  IO7xx:
+    key: IO7xx
+    anchor: IO700
+    alias: Displays
+    members:
+    - IO700
+    - IO701
+    - IO702
+    - IO703
+    - IO704
+  IO5xx:
+    key: IO5xx
+    anchor: IO500
+    alias: Distance & Proximity Sensors
+    members:
+    - IO500
+    - IO501
+    - IO502
   ENV2xx:
     key: ENV2xx
     anchor: ENV200
@@ -1175,6 +1442,14 @@ families:
     - AC901
     - AC902
     - AC903
+  RF3xx:
+    key: RF3xx
+    anchor: RF300
+    alias: Infrared
+    members:
+    - RF300
+    - RF301
+    - RF302
   PS3xx:
     key: PS3xx
     anchor: PS300
@@ -1208,6 +1483,18 @@ families:
     - ENV401
     - ENV402
     - ENV403
+  IO4xx:
+    key: IO4xx
+    anchor: IO400
+    alias: Motion & Orientation Sensors
+    members:
+    - IO400
+    - IO401
+    - IO402
+    - IO403
+    - IO404
+    - IO405
+    - IO406
   AC1xx:
     key: AC1xx
     anchor: AC100
@@ -1224,6 +1511,15 @@ families:
     - OT200
     - OT201
     - OT202
+  IO3xx:
+    key: IO3xx
+    anchor: IO300
+    alias: Rotary Encoders & Joysticks
+    members:
+    - IO300
+    - IO301
+    - IO302
+    - IO303
   AC5xx:
     key: AC5xx
     anchor: AC500
@@ -1265,6 +1561,14 @@ families:
     - ENV103
     - ENV104
     - ENV105
+  RF2xx:
+    key: RF2xx
+    anchor: RF200
+    alias: Wireless & Ethernet
+    members:
+    - RF200
+    - RF201
+    - RF202
   MC1xx:
     key: MC1xx
     anchor: MC100

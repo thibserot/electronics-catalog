@@ -8,6 +8,8 @@ AC011,Standard LEDs,https://thibserot.github.io/electronics-catalog/qr/AC011/,co
 AC012,"12V Solenoid Valve 1/2""",https://thibserot.github.io/electronics-catalog/qr/AC012/,components/stickers/AC012.png
 AC013,Water Pressure Sensor,https://thibserot.github.io/electronics-catalog/qr/AC013/,components/stickers/AC013.png
 AC301,IRLZ44N N-Ch MOSFET,https://thibserot.github.io/electronics-catalog/qr/AC301/,components/stickers/AC301.png
+IO601,MAX4466 Microphone,https://thibserot.github.io/electronics-catalog/qr/IO601/,components/stickers/IO601.png
+IO602,INMP441 I2S,https://thibserot.github.io/electronics-catalog/qr/IO602/,components/stickers/IO602.png
 AC801,Ultra-thin Horn Speaker,https://thibserot.github.io/electronics-catalog/qr/AC801/,components/stickers/AC801.png
 AC802,Piezo Ceramic Elements,https://thibserot.github.io/electronics-catalog/qr/AC802/,components/stickers/AC802.png
 AC803,Passive buzzer,https://thibserot.github.io/electronics-catalog/qr/AC803/,components/stickers/AC803.png
@@ -39,6 +41,12 @@ PS101,TPS63020,https://thibserot.github.io/electronics-catalog/qr/PS101/,compone
 PS102,5V Buck Converter,https://thibserot.github.io/electronics-catalog/qr/PS102/,components/stickers/PS102.png
 PS103,Boost Converter,https://thibserot.github.io/electronics-catalog/qr/PS103/,components/stickers/PS103.png
 PS100,DC-DC Converters,https://thibserot.github.io/electronics-catalog/qr/PS100/,components/stickers/PS100.png
+IO701,"0.96"" OLED I2C",https://thibserot.github.io/electronics-catalog/qr/IO701/,components/stickers/IO701.png
+IO702,"1.3"" OLED I2C",https://thibserot.github.io/electronics-catalog/qr/IO702/,components/stickers/IO702.png
+IO703,16x2 LCD I2C,https://thibserot.github.io/electronics-catalog/qr/IO703/,components/stickers/IO703.png
+IO704,TM1637 7-Segment,https://thibserot.github.io/electronics-catalog/qr/IO704/,components/stickers/IO704.png
+IO501,HC-SR04,https://thibserot.github.io/electronics-catalog/qr/IO501/,components/stickers/IO501.png
+IO502,VL53L0X,https://thibserot.github.io/electronics-catalog/qr/IO502/,components/stickers/IO502.png
 ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
 ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png
 ENV200,Air Quality & Gas Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV200/,components/stickers/ENV200.png
@@ -52,7 +60,8 @@ AC901,XPG3 S4 7W LED,https://thibserot.github.io/electronics-catalog/qr/AC901/,c
 AC902,Laser Diode Module,https://thibserot.github.io/electronics-catalog/qr/AC902/,components/stickers/AC902.png
 AC903,KY-008 Laser Module,https://thibserot.github.io/electronics-catalog/qr/AC903/,components/stickers/AC903.png
 AC900,High-Power Light,https://thibserot.github.io/electronics-catalog/qr/AC900/,components/stickers/AC900.png
-IO003,KY-040,https://thibserot.github.io/electronics-catalog/qr/IO003/,components/stickers/IO003.png
+RF301,IR Receiver VS1838B,https://thibserot.github.io/electronics-catalog/qr/RF301/,components/stickers/RF301.png
+RF302,IR LED Transmitter,https://thibserot.github.io/electronics-catalog/qr/RF302/,components/stickers/RF302.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
 PS302,HT7333,https://thibserot.github.io/electronics-catalog/qr/PS302/,components/stickers/PS302.png
 PS300,LDO Regulators,https://thibserot.github.io/electronics-catalog/qr/PS300/,components/stickers/PS300.png
@@ -65,6 +74,12 @@ IO100,Magnetic Sensors,https://thibserot.github.io/electronics-catalog/qr/IO100/
 ENV401,Soil Moisture Sensor,https://thibserot.github.io/electronics-catalog/qr/ENV401/,components/stickers/ENV401.png
 ENV402,Water Level Sensor,https://thibserot.github.io/electronics-catalog/qr/ENV402/,components/stickers/ENV402.png
 ENV403,Rain Sensor,https://thibserot.github.io/electronics-catalog/qr/ENV403/,components/stickers/ENV403.png
+IO401,MPU6050,https://thibserot.github.io/electronics-catalog/qr/IO401/,components/stickers/IO401.png
+IO402,ADXL345,https://thibserot.github.io/electronics-catalog/qr/IO402/,components/stickers/IO402.png
+IO403,GY-271 HMC5883L,https://thibserot.github.io/electronics-catalog/qr/IO403/,components/stickers/IO403.png
+IO404,Tilt Switch,https://thibserot.github.io/electronics-catalog/qr/IO404/,components/stickers/IO404.png
+IO405,SW-420 Vibration Sensor,https://thibserot.github.io/electronics-catalog/qr/IO405/,components/stickers/IO405.png
+IO406,HC-SR501 PIR,https://thibserot.github.io/electronics-catalog/qr/IO406/,components/stickers/IO406.png
 AC101,TB6612 Dual Motor Driver,https://thibserot.github.io/electronics-catalog/qr/AC101/,components/stickers/AC101.png
 AC102,L293D Motor Driver IC,https://thibserot.github.io/electronics-catalog/qr/AC102/,components/stickers/AC102.png
 OT002,Key lock switch,https://thibserot.github.io/electronics-catalog/qr/OT002/,components/stickers/OT002.png
@@ -74,11 +89,13 @@ PA003,Electrolytic Capacitor,https://thibserot.github.io/electronics-catalog/qr/
 PA004,Schottky Diodes,https://thibserot.github.io/electronics-catalog/qr/PA004/,components/stickers/PA004.png
 PS401,Multi-output linear power board,https://thibserot.github.io/electronics-catalog/qr/PS401/,components/stickers/PS401.png
 RF002,WiFi antenna,https://thibserot.github.io/electronics-catalog/qr/RF002/,components/stickers/RF002.png
-RF003,USR-ES1 W5500,https://thibserot.github.io/electronics-catalog/qr/RF003/,components/stickers/RF003.png
 RF101,MFRC522,https://thibserot.github.io/electronics-catalog/qr/RF101/,components/stickers/RF101.png
 OT201,DS1302,https://thibserot.github.io/electronics-catalog/qr/OT201/,components/stickers/OT201.png
 OT202,DS1307,https://thibserot.github.io/electronics-catalog/qr/OT202/,components/stickers/OT202.png
 OT200,RTC Modules,https://thibserot.github.io/electronics-catalog/qr/OT200/,components/stickers/OT200.png
+IO301,KY-040 Rotary Encoder,https://thibserot.github.io/electronics-catalog/qr/IO301/,components/stickers/IO301.png
+IO302,Rotary Encoder Module,https://thibserot.github.io/electronics-catalog/qr/IO302/,components/stickers/IO302.png
+IO303,Joystick Module,https://thibserot.github.io/electronics-catalog/qr/IO303/,components/stickers/IO303.png
 SW201,TTP223,https://thibserot.github.io/electronics-catalog/qr/SW201/,components/stickers/SW201.png
 AC501,SG92R,https://thibserot.github.io/electronics-catalog/qr/AC501/,components/stickers/AC501.png
 AC502,SG90,https://thibserot.github.io/electronics-catalog/qr/AC502/,components/stickers/AC502.png
@@ -99,6 +116,8 @@ ENV102,BME280 BMP280,https://thibserot.github.io/electronics-catalog/qr/ENV102/,
 ENV103,DHT11,https://thibserot.github.io/electronics-catalog/qr/ENV103/,components/stickers/ENV103.png
 ENV104,GY-SHT45,https://thibserot.github.io/electronics-catalog/qr/ENV104/,components/stickers/ENV104.png
 ENV105,Thermistor,https://thibserot.github.io/electronics-catalog/qr/ENV105/,components/stickers/ENV105.png
+RF201,USR-ES1 W5500,https://thibserot.github.io/electronics-catalog/qr/RF201/,components/stickers/RF201.png
+RF202,ESP-01S,https://thibserot.github.io/electronics-catalog/qr/RF202/,components/stickers/RF202.png
 MC101,ESP32-C3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC101/,components/stickers/MC101.png
 MC102,ESP32-S3 SuperMini,https://thibserot.github.io/electronics-catalog/qr/MC102/,components/stickers/MC102.png
 MC103,ESP32 CAM OV5640,https://thibserot.github.io/electronics-catalog/qr/MC103/,components/stickers/MC103.png

@@ -1,4 +1,4 @@
-generated_at: '2025-11-27T09:42:55Z'
+generated_at: '2025-11-27T22:25:47Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -30,15 +30,22 @@ categories:
       MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 3
+    count: 8
     next_any: RF001
-    next_by_family: {}
+    next_by_family:
+      RF2xx: RF203
+      RF3xx: RF303
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 4
+    count: 25
     next_any: IO001
     next_by_family:
       IO1xx: IO103
+      IO3xx: IO304
+      IO4xx: IO407
+      IO5xx: IO503
+      IO6xx: IO603
+      IO7xx: IO705
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
     count: 43
@@ -75,6 +82,13 @@ categories:
     next_by_family:
       SW1xx: SW108
 families:
+  IO6xx:
+    anchor: IO600
+    alias: Audio Input Microphones
+    members:
+    - IO600
+    - IO601
+    - IO602
   AC8xx:
     anchor: AC800
     alias: Audio Output
@@ -122,6 +136,22 @@ families:
     - PS101
     - PS102
     - PS103
+  IO7xx:
+    anchor: IO700
+    alias: Displays
+    members:
+    - IO700
+    - IO701
+    - IO702
+    - IO703
+    - IO704
+  IO5xx:
+    anchor: IO500
+    alias: Distance & Proximity Sensors
+    members:
+    - IO500
+    - IO501
+    - IO502
   ENV2xx:
     anchor: ENV200
     alias: Air Quality & Gas Sensors
@@ -147,6 +177,13 @@ families:
     - AC901
     - AC902
     - AC903
+  RF3xx:
+    anchor: RF300
+    alias: Infrared
+    members:
+    - RF300
+    - RF301
+    - RF302
   PS3xx:
     anchor: PS300
     alias: LDO Regulators
@@ -176,6 +213,17 @@ families:
     - ENV401
     - ENV402
     - ENV403
+  IO4xx:
+    anchor: IO400
+    alias: Motion & Orientation Sensors
+    members:
+    - IO400
+    - IO401
+    - IO402
+    - IO403
+    - IO404
+    - IO405
+    - IO406
   AC1xx:
     anchor: AC100
     alias: Motor Drivers
@@ -190,6 +238,14 @@ families:
     - OT200
     - OT201
     - OT202
+  IO3xx:
+    anchor: IO300
+    alias: Rotary Encoders & Joysticks
+    members:
+    - IO300
+    - IO301
+    - IO302
+    - IO303
   AC5xx:
     anchor: AC500
     alias: Servos
@@ -227,6 +283,13 @@ families:
     - ENV103
     - ENV104
     - ENV105
+  RF2xx:
+    anchor: RF200
+    alias: Wireless & Ethernet
+    members:
+    - RF200
+    - RF201
+    - RF202
   MC1xx:
     anchor: MC100
     alias: ESP32 Boards
