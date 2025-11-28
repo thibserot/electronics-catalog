@@ -17,10 +17,6 @@ no_label: true
 
 Infrared (IR) transmitter and receiver modules for wireless communication and remote control applications. Uses modulated 38 kHz infrared light for reliable short-range communication.
 
-## Components in This Family
-
-{{ children() }}
-
 ## Comparison
 
 | Component | Type | Function | Range | Best For |
@@ -114,3 +110,7 @@ Infrared (IR) transmitter and receiver modules for wireless communication and re
 **IR communication:** Simple point-to-point data transfer.
 
 **Proximity sensing:** Detect obstacles using IR reflection.
+
+## Components in This Family
+
+{{ children() }}

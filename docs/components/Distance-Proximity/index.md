@@ -19,10 +19,6 @@ no_label: true
 
 Sensors for measuring distance to objects or detecting proximity. Includes ultrasonic rangefinders and Time-of-Flight (ToF) laser sensors.
 
-## Components in This Family
-
-{{ children() }}
-
 ## Comparison
 
 | Component | Technology | Range | Accuracy | Interface | Best For |
@@ -101,3 +97,7 @@ Sensors for measuring distance to objects or detecting proximity. Includes ultra
 - Precise bin level monitoring
 - Hand sanitizer dispenser (proximity trigger)
 - VR/AR tracking
+
+## Components in This Family
+
+{{ children() }}

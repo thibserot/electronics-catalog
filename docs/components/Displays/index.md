@@ -18,10 +18,6 @@ no_label: true
 
 Display modules for showing text, numbers, and graphics. Includes OLED displays, LCD character displays, and 7-segment numeric displays.
 
-## Components in This Family
-
-{{ children() }}
-
 ## Comparison
 
 | Component | Type | Resolution | Size | Interface | Best For |
@@ -126,3 +122,7 @@ Display modules for showing text, numbers, and graphics. Includes OLED displays,
 - Timers
 - Score displays
 - Temperature (numeric)
+
+## Components in This Family
+
+{{ children() }}

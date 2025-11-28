@@ -16,18 +16,14 @@ no_label: true
 
 # Wireless & Ethernet Modules - RF200
 
-Network connectivity modules for wired Ethernet and wireless WiFi communication. Enables internet access, local network communication, and IoT applications.
-
-## Components in This Family
-
-{{ children() }}
+Network connectivity modules for wired Ethernet and wireless WiFi/RF communication. Enables internet access, local network communication, and IoT applications.
 
 ## Comparison
 
-| Component | Type | Speed | Interface | Best For |
+| Component | Type | Range | Interface | Best For |
 |-----------|------|-------|-----------|----------|
-| [RF201](RF201.md) | Wired Ethernet | 10/100 Mbps | SPI | Reliable wired connection, no WiFi interference |
-| [RF202](RF202.md) | WiFi 802.11 b/g/n | Up to 72 Mbps | UART (AT commands) | Adding WiFi to non-WiFi MCUs |
+| [RF201](RF201.md) | Wired Ethernet | N/A (wired) | SPI | Reliable wired connection, no interference |
+| [RF202](RF202.md) | 433MHz RF Transceiver | ~100m | UART | Wireless communication, point-to-point |
 
 ## Selection Guide
 
@@ -38,15 +34,11 @@ Network connectivity modules for wired Ethernet and wireless WiFi communication.
 - PoE capable (with PoE module)
 - Industrial applications
 
-**For wireless connectivity:**
-- Use RF202 (ESP-01S WiFi)
-- No cables needed
-- Mobile/portable devices
-- Already have MCU without WiFi
-
-**For new projects:**
-- Consider using ESP32 directly (built-in WiFi + Bluetooth)
-- Cheaper and more integrated than MCU + WiFi module
+**For wireless RF communication:**
+- Use RF202 (RF-5V transceiver)
+- Simple point-to-point wireless
+- Remote control applications
+- No internet needed (local wireless only)
 
 ## Key Concepts
 
@@ -56,11 +48,11 @@ Network connectivity modules for wired Ethernet and wireless WiFi communication.
 - Handles all network protocols in hardware
 - Offloads network processing from MCU
 
-**WiFi Module (ESP8266):**
-- Full WiFi stack
-- AT command interface via UART
-- Can run standalone or as WiFi-to-serial bridge
-- 2.4 GHz only (no 5 GHz)
+**RF Transceiver (433MHz):**
+- Simple wireless serial communication
+- Point-to-point or broadcast
+- No WiFi/internet (local only)
+- Low power, long range
 
 **MAC Address:**
 - Unique hardware identifier
@@ -80,12 +72,11 @@ Network connectivity modules for wired Ethernet and wireless WiFi communication.
 - Cable length limited (~100m for Cat5e)
 - Need network switch/router
 
-**WiFi (ESP-01S):**
-- 2.4 GHz only (crowded band)
-- AT commands can be complex
-- 3.3V only! (5V will damage)
-- Limited GPIO pins exposed
-- ESP32 often better choice than Arduino + ESP-01S
+**RF Transceiver (RF-5V):**
+- 433MHz (unlicensed ISM band)
+- Limited data rate
+- No error correction (packet loss possible)
+- Range depends on environment/antenna
 
 ## Typical Applications
 
@@ -96,9 +87,13 @@ Network connectivity modules for wired Ethernet and wireless WiFi communication.
 - Security systems
 - PoE-powered devices
 
-**WiFi (RF202):**
-- IoT sensors
-- Home automation
-- Wireless data logging
-- Adding WiFi to Arduino
-- Portable devices
+**RF Transceiver (RF202):**
+- Wireless sensors
+- Remote control
+- Point-to-point communication
+- Home automation (local only)
+- Battery-powered devices
+
+## Components in This Family
+
+{{ children() }}
