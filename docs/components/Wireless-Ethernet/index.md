@@ -11,7 +11,6 @@ tags:
   - connectivity
 short: "Network connectivity • WiFi • Ethernet"
 use: "internet connectivity, local network"
-no_label: true
 ---
 
 # Wireless & Ethernet Modules - RF200

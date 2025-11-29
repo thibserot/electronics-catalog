@@ -12,7 +12,6 @@ tags:
   - magnetometer
 short: "IMU • Tilt • Motion detect"
 use: "orientation tracking, motion detection"
-no_label: true
 ---
 
 # Motion & Orientation Sensors - IO400

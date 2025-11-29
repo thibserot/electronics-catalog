@@ -12,7 +12,8 @@ tags:
   - environmental
   - esp32-compatible
   - arduino-compatible
-no_label: true
+short: "Soil • Water level • Rain"
+use: "irrigation, leak detection"
 ---
 
 # Moisture & Water Sensors - ENV400

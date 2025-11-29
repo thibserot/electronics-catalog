@@ -10,7 +10,6 @@ tags:
   - user-interface
 short: "Rotary input • Joystick XY"
 use: "user interface control"
-no_label: true
 ---
 
 # Rotary Encoders & Joysticks - IO300

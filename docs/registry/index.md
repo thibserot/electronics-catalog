@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-28T03:10:52Z
+**Generated:** 2025-11-29T03:39:45Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |

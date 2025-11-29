@@ -21,6 +21,7 @@ registry_stickers: registry stickers
 registry:
 	$(PY) scripts/generate_id_registry.py
 	$(PY) scripts/build_registry_page.py
+	$(PY) scripts/build_id_lookup.py
 
 stickers:
 	$(PY) scripts/build_labels.py

@@ -10,7 +10,6 @@ tags:
   - wireless
 short: "IR TX/RX • Remote control"
 use: "remote control, IR communication"
-no_label: true
 ---
 
 # Infrared Communication - RF300

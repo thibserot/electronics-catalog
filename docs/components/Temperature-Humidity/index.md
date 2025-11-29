@@ -9,7 +9,8 @@ tags:
   - environmental
   - esp32-compatible
   - arduino-compatible
-no_label: true
+short: "Temp & humidity • I2C/1-Wire"
+use: "environmental monitoring"
 ---
 
 # Temperature & Humidity Sensors - ENV100
