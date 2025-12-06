@@ -2,354 +2,558 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/tags/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/AC001/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/AC002/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/AC003/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/AC004/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/AC005/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/AC006/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/AC007/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/AC008/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/AC010/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <loc>https://thibserot.github.io/electronics-catalog/components/AC011/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/AC012/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/AC013/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/AC301/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/CN001/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/CN002/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/CN003/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/CN004/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/ENV001/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/IO003/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/OT001/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/OT002/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/PA001/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/PA002/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/PA003/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/PA004/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/PS401/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/RF002/</loc>
-         <lastmod>2025-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/RF003/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/RF101/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/SW201/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
-         <loc>https://thibserot.github.io/electronics-catalog/components/TS001/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Input/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Input/IO601/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Input/IO602/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Output/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC801/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC802/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC803/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC804/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC805/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/PS201/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Battery%20Charging/PS202/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC201/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC202/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC203/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC204/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC205/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC206/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC207/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC208/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC209/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC210/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/AC601/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/AC602/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS101/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS102/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/DC-DC-Converters/PS103/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Displays/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Displays/IO701/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Displays/IO702/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Displays/IO703/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Displays/IO704/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/IO501/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV201/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Air-Quality/ENV202/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Light/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV301/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV302/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV303/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV304/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV305/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/High-Power-Light/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC901/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC902/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC903/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Infrared/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Infrared/RF301/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/LDO/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/LDO/PS301/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/LDO/PS302/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Logic-ICs/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Logic-ICs/OT101/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Logic-ICs/OT102/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO101/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Moisture-Water/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV401/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV402/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV403/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO401/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO402/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO403/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO404/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO405/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO406/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/AC101/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/AC102/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/RTC-Modules/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/RTC-Modules/OT201/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/RTC-Modules/OT202/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO301/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO303/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Servos/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Servos/AC501/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Servos/AC502/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Servos/AC503/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Small-Motors/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Small-Motors/AC401/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Small-Motors/AC402/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW101/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW102/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW103/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW104/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW105/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW106/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/Switches%20%26%20Buttons/SW107/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV101/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV102/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV103/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV104/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV105/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/RF201/</loc>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/RF202/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/MC101/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/MC102/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/MC103/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/MC104/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC105/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC106/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC107/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://thibserot.github.io/electronics-catalog/id-lookup/</loc>
+         <lastmod>2025-12-06</lastmod>
     </url>
     <url>
          <loc>https://thibserot.github.io/electronics-catalog/registry/</loc>
-         <lastmod>2025-11-26</lastmod>
+         <lastmod>2025-12-06</lastmod>
     </url>
 </urlset>

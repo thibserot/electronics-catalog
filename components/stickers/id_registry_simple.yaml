@@ -1,17 +1,19 @@
-generated_at: '2025-11-26T02:58:47Z'
+generated_at: '2025-12-06T21:18:49Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
-    count: 1
-    next_any: TS002
+    count: 0
+    next_any: TS001
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 9
-    next_any: ENV002
+    count: 19
+    next_any: ENV001
     next_by_family:
+      ENV1xx: ENV106
       ENV2xx: ENV203
-      ENV3xx: ENV305
+      ENV3xx: ENV306
+      ENV4xx: ENV404
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 11
@@ -28,22 +30,34 @@ categories:
       MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 3
+    count: 7
     next_any: RF001
-    next_by_family: {}
+    next_by_family:
+      RF2xx: RF203
+      RF3xx: RF302
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 4
+    count: 23
     next_any: IO001
     next_by_family:
       IO1xx: IO103
+      IO3xx: IO302
+      IO4xx: IO407
+      IO5xx: IO502
+      IO6xx: IO603
+      IO7xx: IO705
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 24
-    next_any: AC009
+    count: 43
+    next_any: AC002
     next_by_family:
+      AC1xx: AC103
       AC2xx: AC211
+      AC4xx: AC403
       AC5xx: AC504
+      AC6xx: AC603
+      AC8xx: AC806
+      AC9xx: AC904
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -56,8 +70,8 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 8
-    next_any: OT003
+    count: 7
+    next_any: OT001
     next_by_family:
       OT1xx: OT103
       OT2xx: OT203
@@ -68,6 +82,23 @@ categories:
     next_by_family:
       SW1xx: SW108
 families:
+  IO6xx:
+    anchor: IO600
+    alias: Audio Input Microphones
+    members:
+    - IO600
+    - IO601
+    - IO602
+  AC8xx:
+    anchor: AC800
+    alias: Audio Output
+    members:
+    - AC800
+    - AC801
+    - AC802
+    - AC803
+    - AC804
+    - AC805
   PS2xx:
     anchor: PS200
     alias: Battery Charging
@@ -90,6 +121,13 @@ families:
     - AC208
     - AC209
     - AC210
+  AC6xx:
+    anchor: AC600
+    alias: Cooling Fans
+    members:
+    - AC600
+    - AC601
+    - AC602
   PS1xx:
     anchor: PS100
     alias: DC-DC Converters
@@ -98,6 +136,21 @@ families:
     - PS101
     - PS102
     - PS103
+  IO7xx:
+    anchor: IO700
+    alias: Displays
+    members:
+    - IO700
+    - IO701
+    - IO702
+    - IO703
+    - IO704
+  IO5xx:
+    anchor: IO500
+    alias: Distance & Proximity Sensors
+    members:
+    - IO500
+    - IO501
   ENV2xx:
     anchor: ENV200
     alias: Air Quality & Gas Sensors
@@ -114,6 +167,21 @@ families:
     - ENV302
     - ENV303
     - ENV304
+    - ENV305
+  AC9xx:
+    anchor: AC900
+    alias: High-Power Light
+    members:
+    - AC900
+    - AC901
+    - AC902
+    - AC903
+  RF3xx:
+    anchor: RF300
+    alias: Infrared
+    members:
+    - RF300
+    - RF301
   PS3xx:
     anchor: PS300
     alias: LDO Regulators
@@ -135,6 +203,32 @@ families:
     - IO100
     - IO101
     - IO102
+  ENV4xx:
+    anchor: ENV400
+    alias: Moisture & Water Sensors
+    members:
+    - ENV400
+    - ENV401
+    - ENV402
+    - ENV403
+  IO4xx:
+    anchor: IO400
+    alias: Motion & Orientation Sensors
+    members:
+    - IO400
+    - IO401
+    - IO402
+    - IO403
+    - IO404
+    - IO405
+    - IO406
+  AC1xx:
+    anchor: AC100
+    alias: Motor Drivers
+    members:
+    - AC100
+    - AC101
+    - AC102
   OT2xx:
     anchor: OT200
     alias: RTC Modules
@@ -142,6 +236,13 @@ families:
     - OT200
     - OT201
     - OT202
+  IO3xx:
+    anchor: IO300
+    alias: Rotary Encoders & Joysticks
+    members:
+    - IO300
+    - IO301
+    - IO303
   AC5xx:
     anchor: AC500
     alias: Servos
@@ -150,6 +251,13 @@ families:
     - AC501
     - AC502
     - AC503
+  AC4xx:
+    anchor: AC400
+    alias: Small Motors
+    members:
+    - AC400
+    - AC401
+    - AC402
   SW1xx:
     anchor: SW100
     alias: Physical Switches & Buttons
@@ -162,6 +270,23 @@ families:
     - SW105
     - SW106
     - SW107
+  ENV1xx:
+    anchor: ENV100
+    alias: Temperature & Humidity Sensors
+    members:
+    - ENV100
+    - ENV101
+    - ENV102
+    - ENV103
+    - ENV104
+    - ENV105
+  RF2xx:
+    anchor: RF200
+    alias: Wireless & Ethernet
+    members:
+    - RF200
+    - RF201
+    - RF202
   MC1xx:
     anchor: MC100
     alias: ESP32 Boards

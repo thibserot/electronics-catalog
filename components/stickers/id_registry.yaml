@@ -1,4 +1,4 @@
-generated_at: '2025-11-26T02:58:47Z'
+generated_at: '2025-12-06T21:18:49Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -8,30 +8,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC001/
   source: components/AC001.md
-- id: AC002
-  name: Ultra-thin Horn Speaker
-  category: AC
-  number: 2
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC002/
-  source: components/AC002.md
-- id: AC003
-  name: Piezo Ceramic Elements
-  category: AC
-  number: 3
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC003/
-  source: components/AC003.md
-- id: AC004
-  name: Passive buzzer
-  category: AC
-  number: 4
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC004/
-  source: components/AC004.md
 - id: AC005
   name: Electromagnetic lock
   category: AC
@@ -64,14 +40,54 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/AC008/
   source: components/AC008.md
-- id: AC010
-  name: 25mm Fan 12V
+- id: AC011
+  name: Standard LEDs
   category: AC
-  number: 10
+  number: 11
   hundreds: 0
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/AC010/
-  source: components/AC010.md
+  url: https://thibserot.github.io/electronics-catalog/components/AC011/
+  source: components/AC011.md
+- id: AC012
+  name: 12V Solenoid Valve 1/2"
+  category: AC
+  number: 12
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC012/
+  source: components/AC012.md
+- id: AC013
+  name: Water Pressure Sensor
+  category: AC
+  number: 13
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC013/
+  source: components/AC013.md
+- id: AC100
+  name: Motor Drivers
+  category: AC
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/
+  source: components/Motor-Drivers/index.md
+- id: AC101
+  name: TB6612 Dual Motor Driver
+  category: AC
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/AC101/
+  source: components/Motor-Drivers/AC101.md
+- id: AC102
+  name: L293D Motor Driver IC
+  category: AC
+  number: 102
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motor-Drivers/AC102/
+  source: components/Motor-Drivers/AC102.md
 - id: AC200
   name: Transistor
   category: AC
@@ -160,6 +176,38 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Bipolar%20Junction%20Transistor/AC210/
   source: components/Bipolar Junction Transistor/AC210.md
+- id: AC301
+  name: IRLZ44N N-Ch MOSFET
+  category: AC
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/AC301/
+  source: components/AC301.md
+- id: AC400
+  name: Small Motors
+  category: AC
+  number: 400
+  hundreds: 4
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Small-Motors/
+  source: components/Small-Motors/index.md
+- id: AC401
+  name: 716 Coreless Motor
+  category: AC
+  number: 401
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Small-Motors/AC401/
+  source: components/Small-Motors/AC401.md
+- id: AC402
+  name: N20 Gear Motor 60RPM
+  category: AC
+  number: 402
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Small-Motors/AC402/
+  source: components/Small-Motors/AC402.md
 - id: AC500
   name: Servos
   category: AC
@@ -192,6 +240,110 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Servos/AC503/
   source: components/Servos/AC503.md
+- id: AC600
+  name: Cooling Fans
+  category: AC
+  number: 600
+  hundreds: 6
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/
+  source: components/Cooling-Fans/index.md
+- id: AC601
+  name: 25mm Fan 12V
+  category: AC
+  number: 601
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/AC601/
+  source: components/Cooling-Fans/AC601.md
+- id: AC602
+  name: 25mm Fan 5V
+  category: AC
+  number: 602
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Cooling-Fans/AC602/
+  source: components/Cooling-Fans/AC602.md
+- id: AC800
+  name: Audio Output
+  category: AC
+  number: 800
+  hundreds: 8
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/
+  source: components/Audio-Output/index.md
+- id: AC801
+  name: Ultra-thin Horn Speaker
+  category: AC
+  number: 801
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC801/
+  source: components/Audio-Output/AC801.md
+- id: AC802
+  name: Piezo Ceramic Elements
+  category: AC
+  number: 802
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC802/
+  source: components/Audio-Output/AC802.md
+- id: AC803
+  name: Passive buzzer
+  category: AC
+  number: 803
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC803/
+  source: components/Audio-Output/AC803.md
+- id: AC804
+  name: LM386
+  category: AC
+  number: 804
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC804/
+  source: components/Audio-Output/AC804.md
+- id: AC805
+  name: Active Buzzer
+  category: AC
+  number: 805
+  hundreds: 8
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Output/AC805/
+  source: components/Audio-Output/AC805.md
+- id: AC900
+  name: High-Power Light
+  category: AC
+  number: 900
+  hundreds: 9
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/
+  source: components/High-Power-Light/index.md
+- id: AC901
+  name: XPG3 S4 7W LED
+  category: AC
+  number: 901
+  hundreds: 9
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC901/
+  source: components/High-Power-Light/AC901.md
+- id: AC902
+  name: Laser Diode Module
+  category: AC
+  number: 902
+  hundreds: 9
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC902/
+  source: components/High-Power-Light/AC902.md
+- id: AC903
+  name: KY-008 Laser Module
+  category: AC
+  number: 903
+  hundreds: 9
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/High-Power-Light/AC903/
+  source: components/High-Power-Light/AC903.md
 - id: CN001
   name: Male Pin Header
   category: CN
@@ -224,14 +376,54 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/CN004/
   source: components/CN004.md
-- id: ENV001
+- id: ENV100
+  name: Temperature & Humidity Sensors
+  category: ENV
+  number: 100
+  hundreds: 1
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/
+  source: components/Temperature-Humidity/index.md
+- id: ENV101
+  name: DS18B20
+  category: ENV
+  number: 101
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV101/
+  source: components/Temperature-Humidity/ENV101.md
+- id: ENV102
   name: BME280 BMP280
   category: ENV
-  number: 1
-  hundreds: 0
+  number: 102
+  hundreds: 1
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/ENV001/
-  source: components/ENV001.md
+  url: https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV102/
+  source: components/Temperature-Humidity/ENV102.md
+- id: ENV103
+  name: DHT11
+  category: ENV
+  number: 103
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV103/
+  source: components/Temperature-Humidity/ENV103.md
+- id: ENV104
+  name: GY-SHT45
+  category: ENV
+  number: 104
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV104/
+  source: components/Temperature-Humidity/ENV104.md
+- id: ENV105
+  name: Thermistor
+  category: ENV
+  number: 105
+  hundreds: 1
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Temperature-Humidity/ENV105/
+  source: components/Temperature-Humidity/ENV105.md
 - id: ENV200
   name: Air Quality & Gas Sensors
   category: ENV
@@ -296,14 +488,46 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV304/
   source: components/Environmental/Light/ENV304.md
-- id: IO003
-  name: KY-040
-  category: IO
-  number: 3
-  hundreds: 0
+- id: ENV305
+  name: LDR 5528
+  category: ENV
+  number: 305
+  hundreds: 3
   is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/IO003/
-  source: components/IO003.md
+  url: https://thibserot.github.io/electronics-catalog/components/Environmental/Light/ENV305/
+  source: components/Environmental/Light/ENV305.md
+- id: ENV400
+  name: Moisture & Water Sensors
+  category: ENV
+  number: 400
+  hundreds: 4
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Moisture-Water/
+  source: components/Moisture-Water/index.md
+- id: ENV401
+  name: Soil Moisture Sensor
+  category: ENV
+  number: 401
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV401/
+  source: components/Moisture-Water/ENV401.md
+- id: ENV402
+  name: Water Level Sensor
+  category: ENV
+  number: 402
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV402/
+  source: components/Moisture-Water/ENV402.md
+- id: ENV403
+  name: Rain Sensor
+  category: ENV
+  number: 403
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Moisture-Water/ENV403/
+  source: components/Moisture-Water/ENV403.md
 - id: IO100
   name: Magnetic Sensors
   category: IO
@@ -328,6 +552,166 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Magnetic%20Sensors/IO102/
   source: components/Magnetic Sensors/IO102.md
+- id: IO300
+  name: Rotary Encoders & Joysticks
+  category: IO
+  number: 300
+  hundreds: 3
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/
+  source: components/Rotary-Joystick/index.md
+- id: IO301
+  name: KY-040 Rotary Encoder
+  category: IO
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO301/
+  source: components/Rotary-Joystick/IO301.md
+- id: IO303
+  name: Joystick Module
+  category: IO
+  number: 303
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO303/
+  source: components/Rotary-Joystick/IO303.md
+- id: IO400
+  name: Motion & Orientation Sensors
+  category: IO
+  number: 400
+  hundreds: 4
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/
+  source: components/Motion-Orientation/index.md
+- id: IO401
+  name: MPU6050
+  category: IO
+  number: 401
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO401/
+  source: components/Motion-Orientation/IO401.md
+- id: IO402
+  name: ADXL345
+  category: IO
+  number: 402
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO402/
+  source: components/Motion-Orientation/IO402.md
+- id: IO403
+  name: GY-271 HMC5883L
+  category: IO
+  number: 403
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO403/
+  source: components/Motion-Orientation/IO403.md
+- id: IO404
+  name: Tilt Switch
+  category: IO
+  number: 404
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO404/
+  source: components/Motion-Orientation/IO404.md
+- id: IO405
+  name: SW-420 Vibration Sensor
+  category: IO
+  number: 405
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO405/
+  source: components/Motion-Orientation/IO405.md
+- id: IO406
+  name: HC-SR501 PIR
+  category: IO
+  number: 406
+  hundreds: 4
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Motion-Orientation/IO406/
+  source: components/Motion-Orientation/IO406.md
+- id: IO500
+  name: Distance & Proximity Sensors
+  category: IO
+  number: 500
+  hundreds: 5
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/
+  source: components/Distance-Proximity/index.md
+- id: IO501
+  name: HC-SR04
+  category: IO
+  number: 501
+  hundreds: 5
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/IO501/
+  source: components/Distance-Proximity/IO501.md
+- id: IO600
+  name: Audio Input Microphones
+  category: IO
+  number: 600
+  hundreds: 6
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Input/
+  source: components/Audio-Input/index.md
+- id: IO601
+  name: MAX4466 Microphone
+  category: IO
+  number: 601
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Input/IO601/
+  source: components/Audio-Input/IO601.md
+- id: IO602
+  name: INMP441 I2S
+  category: IO
+  number: 602
+  hundreds: 6
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Audio-Input/IO602/
+  source: components/Audio-Input/IO602.md
+- id: IO700
+  name: Displays
+  category: IO
+  number: 700
+  hundreds: 7
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/
+  source: components/Displays/index.md
+- id: IO701
+  name: 0.96" OLED I2C
+  category: IO
+  number: 701
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO701/
+  source: components/Displays/IO701.md
+- id: IO702
+  name: 1.3" OLED I2C
+  category: IO
+  number: 702
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO702/
+  source: components/Displays/IO702.md
+- id: IO703
+  name: 16x2 LCD I2C
+  category: IO
+  number: 703
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO703/
+  source: components/Displays/IO703.md
+- id: IO704
+  name: TM1637 7-Segment
+  category: IO
+  number: 704
+  hundreds: 7
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Displays/IO704/
+  source: components/Displays/IO704.md
 - id: MC100
   name: ESP32 Boards
   category: MC
@@ -392,14 +776,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/esp32/Other/MC107/
   source: components/esp32/Other/MC107.md
-- id: OT001
-  name: LM386
-  category: OT
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/OT001/
-  source: components/OT001.md
 - id: OT002
   name: Key lock switch
   category: OT
@@ -584,14 +960,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF002/
   source: components/RF002.md
-- id: RF003
-  name: USR-ES1 W5500
-  category: RF
-  number: 3
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/RF003/
-  source: components/RF003.md
 - id: RF101
   name: MFRC522
   category: RF
@@ -600,6 +968,46 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/RF101/
   source: components/RF101.md
+- id: RF200
+  name: Wireless & Ethernet
+  category: RF
+  number: 200
+  hundreds: 2
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/
+  source: components/Wireless-Ethernet/index.md
+- id: RF201
+  name: USR-ES1 W5500
+  category: RF
+  number: 201
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/RF201/
+  source: components/Wireless-Ethernet/RF201.md
+- id: RF202
+  name: RF-5V
+  category: RF
+  number: 202
+  hundreds: 2
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Wireless-Ethernet/RF202/
+  source: components/Wireless-Ethernet/RF202.md
+- id: RF300
+  name: Infrared
+  category: RF
+  number: 300
+  hundreds: 3
+  is_family_anchor: true
+  url: https://thibserot.github.io/electronics-catalog/components/Infrared/
+  source: components/Infrared/index.md
+- id: RF301
+  name: IR Receiver VS1838B
+  category: RF
+  number: 301
+  hundreds: 3
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/Infrared/RF301/
+  source: components/Infrared/RF301.md
 - id: SW100
   name: Physical Switches & Buttons
   category: SW
@@ -672,27 +1080,23 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/SW201/
   source: components/SW201.md
-- id: TS001
-  name: DS18B20
-  category: TS
-  number: 1
-  hundreds: 0
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/TS001/
-  source: components/TS001.md
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
-    count: 1
-    used_numbers:
-    - 1
-    next_any: TS002
+    count: 0
+    used_numbers: []
+    next_any: TS001
     next_by_family: {}
   ENV:
     title: Environmental sensors (BME280/BMP280, SHT4x, TSL2561…)
-    count: 9
+    count: 19
     used_numbers:
-    - 1
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
     - 200
     - 201
     - 202
@@ -701,10 +1105,17 @@ categories:
     - 302
     - 303
     - 304
-    next_any: ENV002
+    - 305
+    - 400
+    - 401
+    - 402
+    - 403
+    next_any: ENV001
     next_by_family:
+      ENV1xx: ENV106
       ENV2xx: ENV203
-      ENV3xx: ENV305
+      ENV3xx: ENV306
+      ENV4xx: ENV404
   PS:
     title: Power supplies/chargers/regulators (buck, LDO, TP4056…)
     count: 11
@@ -742,37 +1153,69 @@ categories:
       MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 3
+    count: 7
     used_numbers:
     - 2
-    - 3
     - 101
+    - 200
+    - 201
+    - 202
+    - 300
+    - 301
     next_any: RF001
-    next_by_family: {}
+    next_by_family:
+      RF2xx: RF203
+      RF3xx: RF302
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 4
+    count: 23
     used_numbers:
-    - 3
     - 100
     - 101
     - 102
+    - 300
+    - 301
+    - 303
+    - 400
+    - 401
+    - 402
+    - 403
+    - 404
+    - 405
+    - 406
+    - 500
+    - 501
+    - 600
+    - 601
+    - 602
+    - 700
+    - 701
+    - 702
+    - 703
+    - 704
     next_any: IO001
     next_by_family:
       IO1xx: IO103
+      IO3xx: IO302
+      IO4xx: IO407
+      IO5xx: IO502
+      IO6xx: IO603
+      IO7xx: IO705
   AC:
     title: Actuators (fans, motors, servos, relays, MOSFET boards)
-    count: 24
+    count: 43
     used_numbers:
     - 1
-    - 2
-    - 3
-    - 4
     - 5
     - 6
     - 7
     - 8
-    - 10
+    - 11
+    - 12
+    - 13
+    - 100
+    - 101
+    - 102
     - 200
     - 201
     - 202
@@ -784,14 +1227,36 @@ categories:
     - 208
     - 209
     - 210
+    - 301
+    - 400
+    - 401
+    - 402
     - 500
     - 501
     - 502
     - 503
-    next_any: AC009
+    - 600
+    - 601
+    - 602
+    - 800
+    - 801
+    - 802
+    - 803
+    - 804
+    - 805
+    - 900
+    - 901
+    - 902
+    - 903
+    next_any: AC002
     next_by_family:
+      AC1xx: AC103
       AC2xx: AC211
+      AC4xx: AC403
       AC5xx: AC504
+      AC6xx: AC603
+      AC8xx: AC806
+      AC9xx: AC904
   CN:
     title: Connectors / cables / adapters
     count: 4
@@ -814,9 +1279,8 @@ categories:
     next_by_family: {}
   OT:
     title: Other / misc
-    count: 8
+    count: 7
     used_numbers:
-    - 1
     - 2
     - 100
     - 101
@@ -824,7 +1288,7 @@ categories:
     - 200
     - 201
     - 202
-    next_any: OT003
+    next_any: OT001
     next_by_family:
       OT1xx: OT103
       OT2xx: OT203
@@ -845,6 +1309,25 @@ categories:
     next_by_family:
       SW1xx: SW108
 families:
+  IO6xx:
+    key: IO6xx
+    anchor: IO600
+    alias: Audio Input Microphones
+    members:
+    - IO600
+    - IO601
+    - IO602
+  AC8xx:
+    key: AC8xx
+    anchor: AC800
+    alias: Audio Output
+    members:
+    - AC800
+    - AC801
+    - AC802
+    - AC803
+    - AC804
+    - AC805
   PS2xx:
     key: PS2xx
     anchor: PS200
@@ -869,6 +1352,14 @@ families:
     - AC208
     - AC209
     - AC210
+  AC6xx:
+    key: AC6xx
+    anchor: AC600
+    alias: Cooling Fans
+    members:
+    - AC600
+    - AC601
+    - AC602
   PS1xx:
     key: PS1xx
     anchor: PS100
@@ -878,6 +1369,23 @@ families:
     - PS101
     - PS102
     - PS103
+  IO7xx:
+    key: IO7xx
+    anchor: IO700
+    alias: Displays
+    members:
+    - IO700
+    - IO701
+    - IO702
+    - IO703
+    - IO704
+  IO5xx:
+    key: IO5xx
+    anchor: IO500
+    alias: Distance & Proximity Sensors
+    members:
+    - IO500
+    - IO501
   ENV2xx:
     key: ENV2xx
     anchor: ENV200
@@ -896,6 +1404,23 @@ families:
     - ENV302
     - ENV303
     - ENV304
+    - ENV305
+  AC9xx:
+    key: AC9xx
+    anchor: AC900
+    alias: High-Power Light
+    members:
+    - AC900
+    - AC901
+    - AC902
+    - AC903
+  RF3xx:
+    key: RF3xx
+    anchor: RF300
+    alias: Infrared
+    members:
+    - RF300
+    - RF301
   PS3xx:
     key: PS3xx
     anchor: PS300
@@ -920,6 +1445,35 @@ families:
     - IO100
     - IO101
     - IO102
+  ENV4xx:
+    key: ENV4xx
+    anchor: ENV400
+    alias: Moisture & Water Sensors
+    members:
+    - ENV400
+    - ENV401
+    - ENV402
+    - ENV403
+  IO4xx:
+    key: IO4xx
+    anchor: IO400
+    alias: Motion & Orientation Sensors
+    members:
+    - IO400
+    - IO401
+    - IO402
+    - IO403
+    - IO404
+    - IO405
+    - IO406
+  AC1xx:
+    key: AC1xx
+    anchor: AC100
+    alias: Motor Drivers
+    members:
+    - AC100
+    - AC101
+    - AC102
   OT2xx:
     key: OT2xx
     anchor: OT200
@@ -928,6 +1482,14 @@ families:
     - OT200
     - OT201
     - OT202
+  IO3xx:
+    key: IO3xx
+    anchor: IO300
+    alias: Rotary Encoders & Joysticks
+    members:
+    - IO300
+    - IO301
+    - IO303
   AC5xx:
     key: AC5xx
     anchor: AC500
@@ -937,6 +1499,14 @@ families:
     - AC501
     - AC502
     - AC503
+  AC4xx:
+    key: AC4xx
+    anchor: AC400
+    alias: Small Motors
+    members:
+    - AC400
+    - AC401
+    - AC402
   SW1xx:
     key: SW1xx
     anchor: SW100
@@ -950,6 +1520,25 @@ families:
     - SW105
     - SW106
     - SW107
+  ENV1xx:
+    key: ENV1xx
+    anchor: ENV100
+    alias: Temperature & Humidity Sensors
+    members:
+    - ENV100
+    - ENV101
+    - ENV102
+    - ENV103
+    - ENV104
+    - ENV105
+  RF2xx:
+    key: RF2xx
+    anchor: RF200
+    alias: Wireless & Ethernet
+    members:
+    - RF200
+    - RF201
+    - RF202
   MC1xx:
     key: MC1xx
     anchor: MC100
