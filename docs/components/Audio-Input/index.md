@@ -12,7 +12,6 @@ tags:
   - analog
 short: "Audio capture • Sound level"
 use: "voice input, sound detection"
-no_label: true
 ---
 
 # Audio Input Microphones - IO600

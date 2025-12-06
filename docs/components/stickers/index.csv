@@ -10,6 +10,7 @@ AC013,Water Pressure Sensor,https://thibserot.github.io/electronics-catalog/qr/A
 AC301,IRLZ44N N-Ch MOSFET,https://thibserot.github.io/electronics-catalog/qr/AC301/,components/stickers/AC301.png
 IO601,MAX4466 Microphone,https://thibserot.github.io/electronics-catalog/qr/IO601/,components/stickers/IO601.png
 IO602,INMP441 I2S,https://thibserot.github.io/electronics-catalog/qr/IO602/,components/stickers/IO602.png
+IO600,Audio Input Microphones,https://thibserot.github.io/electronics-catalog/qr/IO600/,components/stickers/IO600.png
 AC801,Ultra-thin Horn Speaker,https://thibserot.github.io/electronics-catalog/qr/AC801/,components/stickers/AC801.png
 AC802,Piezo Ceramic Elements,https://thibserot.github.io/electronics-catalog/qr/AC802/,components/stickers/AC802.png
 AC803,Passive buzzer,https://thibserot.github.io/electronics-catalog/qr/AC803/,components/stickers/AC803.png
@@ -45,8 +46,9 @@ IO701,"0.96"" OLED I2C",https://thibserot.github.io/electronics-catalog/qr/IO701
 IO702,"1.3"" OLED I2C",https://thibserot.github.io/electronics-catalog/qr/IO702/,components/stickers/IO702.png
 IO703,16x2 LCD I2C,https://thibserot.github.io/electronics-catalog/qr/IO703/,components/stickers/IO703.png
 IO704,TM1637 7-Segment,https://thibserot.github.io/electronics-catalog/qr/IO704/,components/stickers/IO704.png
+IO700,Displays,https://thibserot.github.io/electronics-catalog/qr/IO700/,components/stickers/IO700.png
 IO501,HC-SR04,https://thibserot.github.io/electronics-catalog/qr/IO501/,components/stickers/IO501.png
-IO502,VL53L0X,https://thibserot.github.io/electronics-catalog/qr/IO502/,components/stickers/IO502.png
+IO500,Distance & Proximity Sensors,https://thibserot.github.io/electronics-catalog/qr/IO500/,components/stickers/IO500.png
 ENV201,MH-Z19C,https://thibserot.github.io/electronics-catalog/qr/ENV201/,components/stickers/ENV201.png
 ENV202,MQ-2,https://thibserot.github.io/electronics-catalog/qr/ENV202/,components/stickers/ENV202.png
 ENV200,Air Quality & Gas Sensors,https://thibserot.github.io/electronics-catalog/qr/ENV200/,components/stickers/ENV200.png
@@ -61,7 +63,6 @@ AC902,Laser Diode Module,https://thibserot.github.io/electronics-catalog/qr/AC90
 AC903,KY-008 Laser Module,https://thibserot.github.io/electronics-catalog/qr/AC903/,components/stickers/AC903.png
 AC900,High-Power Light,https://thibserot.github.io/electronics-catalog/qr/AC900/,components/stickers/AC900.png
 RF301,IR Receiver VS1838B,https://thibserot.github.io/electronics-catalog/qr/RF301/,components/stickers/RF301.png
-RF302,IR LED Transmitter,https://thibserot.github.io/electronics-catalog/qr/RF302/,components/stickers/RF302.png
 RF300,Infrared,https://thibserot.github.io/electronics-catalog/qr/RF300/,components/stickers/RF300.png
 PS301,MCP1700,https://thibserot.github.io/electronics-catalog/qr/PS301/,components/stickers/PS301.png
 PS302,HT7333,https://thibserot.github.io/electronics-catalog/qr/PS302/,components/stickers/PS302.png
@@ -97,7 +98,6 @@ OT201,DS1302,https://thibserot.github.io/electronics-catalog/qr/OT201/,component
 OT202,DS1307,https://thibserot.github.io/electronics-catalog/qr/OT202/,components/stickers/OT202.png
 OT200,RTC Modules,https://thibserot.github.io/electronics-catalog/qr/OT200/,components/stickers/OT200.png
 IO301,KY-040 Rotary Encoder,https://thibserot.github.io/electronics-catalog/qr/IO301/,components/stickers/IO301.png
-IO302,Rotary Encoder Module,https://thibserot.github.io/electronics-catalog/qr/IO302/,components/stickers/IO302.png
 IO303,Joystick Module,https://thibserot.github.io/electronics-catalog/qr/IO303/,components/stickers/IO303.png
 IO300,Rotary Encoders & Joysticks,https://thibserot.github.io/electronics-catalog/qr/IO300/,components/stickers/IO300.png
 SW201,TTP223,https://thibserot.github.io/electronics-catalog/qr/SW201/,components/stickers/SW201.png

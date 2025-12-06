@@ -7,7 +7,7 @@ hide:
 # Component ID Lookup
 
 _This page is generated from `components/stickers/id_registry.yaml`._
-**Generated:** 2025-11-29T03:27:41Z
+**Generated:** 2025-11-29T03:40:05Z
 
 Quick lookup table for all component IDs. Use this to find components in subdirectories.
 

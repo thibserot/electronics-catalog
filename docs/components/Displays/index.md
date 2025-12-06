@@ -11,7 +11,6 @@ tags:
   - i2c
 short: "Visual output • Text & graphics"
 use: "information display, user interface"
-no_label: true
 ---
 
 # Displays - IO700

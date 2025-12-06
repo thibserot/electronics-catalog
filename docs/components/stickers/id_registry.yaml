@@ -1,4 +1,4 @@
-generated_at: '2025-11-29T03:39:45Z'
+generated_at: '2025-12-06T21:18:33Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -568,14 +568,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO301/
   source: components/Rotary-Joystick/IO301.md
-- id: IO302
-  name: Rotary Encoder Module
-  category: IO
-  number: 302
-  hundreds: 3
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/Rotary-Joystick/IO302/
-  source: components/Rotary-Joystick/IO302.md
 - id: IO303
   name: Joystick Module
   category: IO
@@ -656,14 +648,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/IO501/
   source: components/Distance-Proximity/IO501.md
-- id: IO502
-  name: VL53L0X
-  category: IO
-  number: 502
-  hundreds: 5
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/Distance-Proximity/IO502/
-  source: components/Distance-Proximity/IO502.md
 - id: IO600
   name: Audio Input Microphones
   category: IO
@@ -1024,14 +1008,6 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/Infrared/RF301/
   source: components/Infrared/RF301.md
-- id: RF302
-  name: IR LED Transmitter
-  category: RF
-  number: 302
-  hundreds: 3
-  is_family_anchor: false
-  url: https://thibserot.github.io/electronics-catalog/components/Infrared/RF302/
-  source: components/Infrared/RF302.md
 - id: SW100
   name: Physical Switches & Buttons
   category: SW
@@ -1177,7 +1153,7 @@ categories:
       MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 8
+    count: 7
     used_numbers:
     - 2
     - 101
@@ -1186,21 +1162,19 @@ categories:
     - 202
     - 300
     - 301
-    - 302
     next_any: RF001
     next_by_family:
       RF2xx: RF203
-      RF3xx: RF303
+      RF3xx: RF302
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 25
+    count: 23
     used_numbers:
     - 100
     - 101
     - 102
     - 300
     - 301
-    - 302
     - 303
     - 400
     - 401
@@ -1211,7 +1185,6 @@ categories:
     - 406
     - 500
     - 501
-    - 502
     - 600
     - 601
     - 602
@@ -1223,9 +1196,9 @@ categories:
     next_any: IO001
     next_by_family:
       IO1xx: IO103
-      IO3xx: IO304
+      IO3xx: IO302
       IO4xx: IO407
-      IO5xx: IO503
+      IO5xx: IO502
       IO6xx: IO603
       IO7xx: IO705
   AC:
@@ -1413,7 +1386,6 @@ families:
     members:
     - IO500
     - IO501
-    - IO502
   ENV2xx:
     key: ENV2xx
     anchor: ENV200
@@ -1449,7 +1421,6 @@ families:
     members:
     - RF300
     - RF301
-    - RF302
   PS3xx:
     key: PS3xx
     anchor: PS300
@@ -1518,7 +1489,6 @@ families:
     members:
     - IO300
     - IO301
-    - IO302
     - IO303
   AC5xx:
     key: AC5xx

@@ -7,7 +7,7 @@ hide:
 # Component ID Registry
 
 _This page is generated from `components/stickers/id_registry_simple.yaml`._  
-**Generated:** 2025-11-29T03:39:45Z
+**Generated:** 2025-12-06T21:18:33Z
 
 ## Categories
 | Code | Title | Count | Next ID | Next by family |
@@ -15,12 +15,12 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `AC` | Actuators (fans, motors, servos, relays, MOSFET boards) | 43 | `AC002` | AC1xx → `AC103`<br/>AC2xx → `AC211`<br/>AC4xx → `AC403`<br/>AC5xx → `AC504`<br/>AC6xx → `AC603`<br/>AC8xx → `AC806`<br/>AC9xx → `AC904` |
 | `CN` | Connectors / cables / adapters | 4 | `CN005` |  |
 | `ENV` | Environmental sensors (BME280/BMP280, SHT4x, TSL2561…) | 19 | `ENV001` | ENV1xx → `ENV106`<br/>ENV2xx → `ENV203`<br/>ENV3xx → `ENV306`<br/>ENV4xx → `ENV404` |
-| `IO` | I/O expanders / ADC / DAC / level shifting | 25 | `IO001` | IO1xx → `IO103`<br/>IO3xx → `IO304`<br/>IO4xx → `IO407`<br/>IO5xx → `IO503`<br/>IO6xx → `IO603`<br/>IO7xx → `IO705` |
+| `IO` | I/O expanders / ADC / DAC / level shifting | 23 | `IO001` | IO1xx → `IO103`<br/>IO3xx → `IO302`<br/>IO4xx → `IO407`<br/>IO5xx → `IO502`<br/>IO6xx → `IO603`<br/>IO7xx → `IO705` |
 | `MC` | Microcontrollers / dev boards (ESP32, RP2040…) | 8 | `MC001` | MC1xx → `MC108` |
 | `OT` | Other / misc | 7 | `OT001` | OT1xx → `OT103`<br/>OT2xx → `OT203` |
 | `PA` | Passive Components (resistors, capacitors, potentiometers, trim pots) | 4 | `PA005` |  |
 | `PS` | Power supplies/chargers/regulators (buck, LDO, TP4056…) | 11 | `PS001` | PS1xx → `PS104`<br/>PS2xx → `PS203`<br/>PS3xx → `PS303` |
-| `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 8 | `RF001` | RF2xx → `RF203`<br/>RF3xx → `RF303` |
+| `RF` | Radios / comms (LoRa, nRF24, ESP-Now modules…) | 7 | `RF001` | RF2xx → `RF203`<br/>RF3xx → `RF302` |
 | `SW` | Switches & Buttons | 9 | `SW001` | SW1xx → `SW108` |
 | `TS` | Temperature sensors (DS18B20, PT100, MAX31865, etc.) | 0 | `TS001` |  |
 
@@ -39,9 +39,9 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `ENV3xx` | Light Sensors | `ENV300` | `ENV300`, `ENV301`, `ENV302`, `ENV303`, `ENV304`, `ENV305` |
 | `ENV4xx` | Moisture & Water Sensors | `ENV400` | `ENV400`, `ENV401`, `ENV402`, `ENV403` |
 | `IO1xx` | Magnetic Sensors | `IO100` | `IO100`, `IO101`, `IO102` |
-| `IO3xx` | Rotary Encoders & Joysticks | `IO300` | `IO300`, `IO301`, `IO302`, `IO303` |
+| `IO3xx` | Rotary Encoders & Joysticks | `IO300` | `IO300`, `IO301`, `IO303` |
 | `IO4xx` | Motion & Orientation Sensors | `IO400` | `IO400`, `IO401`, `IO402`, `IO403`, `IO404`, `IO405`, `IO406` |
-| `IO5xx` | Distance & Proximity Sensors | `IO500` | `IO500`, `IO501`, `IO502` |
+| `IO5xx` | Distance & Proximity Sensors | `IO500` | `IO500`, `IO501` |
 | `IO6xx` | Audio Input Microphones | `IO600` | `IO600`, `IO601`, `IO602` |
 | `IO7xx` | Displays | `IO700` | `IO700`, `IO701`, `IO702`, `IO703`, `IO704` |
 | `MC1xx` | ESP32 Boards | `MC100` | `MC100`, `MC101`, `MC102`, `MC103`, `MC104`, `MC105`, `MC106`, `MC107` |
@@ -51,6 +51,6 @@ _This page is generated from `components/stickers/id_registry_simple.yaml`._
 | `PS2xx` | Battery Charging | `PS200` | `PS200`, `PS201`, `PS202` |
 | `PS3xx` | LDO Regulators | `PS300` | `PS300`, `PS301`, `PS302` |
 | `RF2xx` | Wireless & Ethernet | `RF200` | `RF200`, `RF201`, `RF202` |
-| `RF3xx` | Infrared | `RF300` | `RF300`, `RF301`, `RF302` |
+| `RF3xx` | Infrared | `RF300` | `RF300`, `RF301` |
 | `SW1xx` | Physical Switches & Buttons | `SW100` | `SW100`, `SW101`, `SW102`, `SW103`, `SW104`, `SW105`, `SW106`, `SW107` |
 

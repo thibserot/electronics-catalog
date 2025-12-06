@@ -12,7 +12,6 @@ tags:
   - tof
 short: "Distance measurement • Proximity"
 use: "ranging, obstacle detection"
-no_label: true
 ---
 
 # Distance & Proximity Sensors - IO500

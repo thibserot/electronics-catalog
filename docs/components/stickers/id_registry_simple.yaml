@@ -1,4 +1,4 @@
-generated_at: '2025-11-29T03:39:45Z'
+generated_at: '2025-12-06T21:18:33Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -30,20 +30,20 @@ categories:
       MC1xx: MC108
   RF:
     title: Radios / comms (LoRa, nRF24, ESP-Now modules…)
-    count: 8
+    count: 7
     next_any: RF001
     next_by_family:
       RF2xx: RF203
-      RF3xx: RF303
+      RF3xx: RF302
   IO:
     title: I/O expanders / ADC / DAC / level shifting
-    count: 25
+    count: 23
     next_any: IO001
     next_by_family:
       IO1xx: IO103
-      IO3xx: IO304
+      IO3xx: IO302
       IO4xx: IO407
-      IO5xx: IO503
+      IO5xx: IO502
       IO6xx: IO603
       IO7xx: IO705
   AC:
@@ -151,7 +151,6 @@ families:
     members:
     - IO500
     - IO501
-    - IO502
   ENV2xx:
     anchor: ENV200
     alias: Air Quality & Gas Sensors
@@ -183,7 +182,6 @@ families:
     members:
     - RF300
     - RF301
-    - RF302
   PS3xx:
     anchor: PS300
     alias: LDO Regulators
@@ -244,7 +242,6 @@ families:
     members:
     - IO300
     - IO301
-    - IO302
     - IO303
   AC5xx:
     anchor: AC500
