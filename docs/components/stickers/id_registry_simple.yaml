@@ -1,4 +1,4 @@
-generated_at: '2025-12-06T21:18:33Z'
+generated_at: '2026-06-21T08:35:25Z'
 categories:
   TS:
     title: Temperature sensors (DS18B20, PT100, MAX31865, etc.)
@@ -65,8 +65,8 @@ categories:
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
-    count: 4
-    next_any: PA005
+    count: 8
+    next_any: PA009
     next_by_family: {}
   OT:
     title: Other / misc

@@ -1,4 +1,4 @@
-generated_at: '2025-12-06T21:18:33Z'
+generated_at: '2026-06-21T08:35:25Z'
 ids:
 - id: AC001
   name: AOD4184
@@ -849,7 +849,7 @@ ids:
   url: https://thibserot.github.io/electronics-catalog/components/PA002/
   source: components/PA002.md
 - id: PA003
-  name: Electrolytic Capacitor
+  name: Electrolytic Capacitor Kit (high-freq)
   category: PA
   number: 3
   hundreds: 0
@@ -864,6 +864,38 @@ ids:
   is_family_anchor: false
   url: https://thibserot.github.io/electronics-catalog/components/PA004/
   source: components/PA004.md
+- id: PA005
+  name: Resistor Assortment Box
+  category: PA
+  number: 5
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA005/
+  source: components/PA005.md
+- id: PA006
+  name: Metal Film Resistor Kit
+  category: PA
+  number: 6
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA006/
+  source: components/PA006.md
+- id: PA007
+  name: Ceramic Capacitor Kit
+  category: PA
+  number: 7
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA007/
+  source: components/PA007.md
+- id: PA008
+  name: Electrolytic Capacitor Kit (low-freq)
+  category: PA
+  number: 8
+  hundreds: 0
+  is_family_anchor: false
+  url: https://thibserot.github.io/electronics-catalog/components/PA008/
+  source: components/PA008.md
 - id: PS100
   name: DC-DC Converters
   category: PS
@@ -1269,13 +1301,17 @@ categories:
     next_by_family: {}
   PA:
     title: Passive Components (resistors, capacitors, potentiometers, trim pots)
-    count: 4
+    count: 8
     used_numbers:
     - 1
     - 2
     - 3
     - 4
-    next_any: PA005
+    - 5
+    - 6
+    - 7
+    - 8
+    next_any: PA009
     next_by_family: {}
   OT:
     title: Other / misc

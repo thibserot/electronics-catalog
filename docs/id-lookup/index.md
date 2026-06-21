@@ -7,7 +7,7 @@ hide:
 # Component ID Lookup
 
 _This page is generated from `components/stickers/id_registry.yaml`._
-**Generated:** 2025-11-29T03:40:05Z
+**Generated:** 2026-06-21T08:14:40Z
 
 Quick lookup table for all component IDs. Use this to find components in subdirectories.
 
@@ -84,7 +84,6 @@ Quick lookup table for all component IDs. Use this to find components in subdire
 | `IO102` | A3144E | `IO` | [IO102](../components/Magnetic Sensors/IO102.md) |
 | `IO300` | Rotary Encoders & Joysticks | `IO` | [IO300](../components/Rotary-Joystick/index.md) |
 | `IO301` | KY-040 Rotary Encoder | `IO` | [IO301](../components/Rotary-Joystick/IO301.md) |
-| `IO302` | Rotary Encoder Module | `IO` | [IO302](../components/Rotary-Joystick/IO302.md) |
 | `IO303` | Joystick Module | `IO` | [IO303](../components/Rotary-Joystick/IO303.md) |
 | `IO400` | Motion & Orientation Sensors | `IO` | [IO400](../components/Motion-Orientation/index.md) |
 | `IO401` | MPU6050 | `IO` | [IO401](../components/Motion-Orientation/IO401.md) |
@@ -95,7 +94,6 @@ Quick lookup table for all component IDs. Use this to find components in subdire
 | `IO406` | HC-SR501 PIR | `IO` | [IO406](../components/Motion-Orientation/IO406.md) |
 | `IO500` | Distance & Proximity Sensors | `IO` | [IO500](../components/Distance-Proximity/index.md) |
 | `IO501` | HC-SR04 | `IO` | [IO501](../components/Distance-Proximity/IO501.md) |
-| `IO502` | VL53L0X | `IO` | [IO502](../components/Distance-Proximity/IO502.md) |
 | `IO600` | Audio Input Microphones | `IO` | [IO600](../components/Audio-Input/index.md) |
 | `IO601` | MAX4466 Microphone | `IO` | [IO601](../components/Audio-Input/IO601.md) |
 | `IO602` | INMP441 I2S | `IO` | [IO602](../components/Audio-Input/IO602.md) |
@@ -141,7 +139,6 @@ Quick lookup table for all component IDs. Use this to find components in subdire
 | `RF202` | RF-5V | `RF` | [RF202](../components/Wireless-Ethernet/RF202.md) |
 | `RF300` | Infrared | `RF` | [RF300](../components/Infrared/index.md) |
 | `RF301` | IR Receiver VS1838B | `RF` | [RF301](../components/Infrared/RF301.md) |
-| `RF302` | IR LED Transmitter | `RF` | [RF302](../components/Infrared/RF302.md) |
 | `SW100` | Physical Switches & Buttons | `SW` | [SW100](../components/Switches & Buttons/index.md) |
 | `SW101` | 3‑pin MX mechanical switch (10pcs) | `SW` | [SW101](../components/Switches & Buttons/SW101.md) |
 | `SW102` | Tact switch kit | `SW` | [SW102](../components/Switches & Buttons/SW102.md) |
