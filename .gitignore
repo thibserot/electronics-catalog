@@ -16,3 +16,7 @@ Thumbs.db
 
 exports
 docs/qr
+
+# Scratch label output from scripts/make_rc_labels.py
+/rc_label.png
+/rc_labels_*.png

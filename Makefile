@@ -5,8 +5,8 @@
 #   make publish            # build, then mkdocs gh-deploy --force
 #   make precommit-install  # install a git pre-commit hook to run registry_stickers
 
-PY ?= python
-MKDOCS ?= mkdocs
+PY ?= uv run python
+MKDOCS ?= uv run mkdocs
 
 .PHONY: all serve publish build registry stickers registry_stickers clean precommit-install
 
